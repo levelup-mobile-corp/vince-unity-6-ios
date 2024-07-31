@@ -1,0 +1,32 @@
+{
+  "project_info": {
+    "project_number": "594646308330",
+    "firebase_url": "https://appmatrix-141f5-default-rtdb.firebaseio.com",
+    "project_id": "appmatrix-141f5",
+    "storage_bucket": "appmatrix-141f5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:594646308330:ios:649d386d5d2d801470ce93",
+        "android_client_info": {
+          "package_name": "com.supgengame.andrinew"
+        }
+      },
+      "api_key": [
+        {
+          "current_key": "AIzaSyC03wLf8X6FBrZPF7ren8cyNbH4ekkS1x0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 0
+        },
+        "appinvite_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
