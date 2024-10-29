@@ -256,6 +256,14 @@ void RegisterAllStrippedInternalCalls()
 
 	//End Registrations for type : UnityEngine.Analytics.CustomEventData
 
+	//Start Registrations for type : UnityEngine.Android.AndroidApp
+
+		//System.IntPtr UnityEngine.Android.AndroidApp::get_UnityPlayerRaw()
+		void Register_UnityEngine_Android_AndroidApp_get_UnityPlayerRaw();
+		Register_UnityEngine_Android_AndroidApp_get_UnityPlayerRaw();
+
+	//End Registrations for type : UnityEngine.Android.AndroidApp
+
 	//Start Registrations for type : UnityEngine.AndroidJNI
 
 		//System.Boolean UnityEngine.AndroidJNI::CallBooleanMethodUnsafe(System.IntPtr,System.IntPtr,UnityEngine.jvalue*)
@@ -265,10 +273,6 @@ void RegisterAllStrippedInternalCalls()
 		//System.Boolean UnityEngine.AndroidJNI::CallStaticBooleanMethodUnsafe(System.IntPtr,System.IntPtr,UnityEngine.jvalue*)
 		void Register_UnityEngine_AndroidJNI_CallStaticBooleanMethodUnsafe();
 		Register_UnityEngine_AndroidJNI_CallStaticBooleanMethodUnsafe();
-
-		//System.Boolean UnityEngine.AndroidJNI::GetBooleanField(System.IntPtr,System.IntPtr)
-		void Register_UnityEngine_AndroidJNI_GetBooleanField();
-		Register_UnityEngine_AndroidJNI_GetBooleanField();
 
 		//System.Boolean UnityEngine.AndroidJNI::GetStaticBooleanField(System.IntPtr,System.IntPtr)
 		void Register_UnityEngine_AndroidJNI_GetStaticBooleanField();
@@ -294,10 +298,6 @@ void RegisterAllStrippedInternalCalls()
 		void Register_UnityEngine_AndroidJNI_CallStaticCharMethodUnsafe();
 		Register_UnityEngine_AndroidJNI_CallStaticCharMethodUnsafe();
 
-		//System.Char UnityEngine.AndroidJNI::GetCharField(System.IntPtr,System.IntPtr)
-		void Register_UnityEngine_AndroidJNI_GetCharField();
-		Register_UnityEngine_AndroidJNI_GetCharField();
-
 		//System.Char UnityEngine.AndroidJNI::GetStaticCharField(System.IntPtr,System.IntPtr)
 		void Register_UnityEngine_AndroidJNI_GetStaticCharField();
 		Register_UnityEngine_AndroidJNI_GetStaticCharField();
@@ -314,10 +314,6 @@ void RegisterAllStrippedInternalCalls()
 		void Register_UnityEngine_AndroidJNI_CallStaticDoubleMethodUnsafe();
 		Register_UnityEngine_AndroidJNI_CallStaticDoubleMethodUnsafe();
 
-		//System.Double UnityEngine.AndroidJNI::GetDoubleField(System.IntPtr,System.IntPtr)
-		void Register_UnityEngine_AndroidJNI_GetDoubleField();
-		Register_UnityEngine_AndroidJNI_GetDoubleField();
-
 		//System.Double UnityEngine.AndroidJNI::GetStaticDoubleField(System.IntPtr,System.IntPtr)
 		void Register_UnityEngine_AndroidJNI_GetStaticDoubleField();
 		Register_UnityEngine_AndroidJNI_GetStaticDoubleField();
@@ -333,10 +329,6 @@ void RegisterAllStrippedInternalCalls()
 		//System.Int16 UnityEngine.AndroidJNI::CallStaticShortMethodUnsafe(System.IntPtr,System.IntPtr,UnityEngine.jvalue*)
 		void Register_UnityEngine_AndroidJNI_CallStaticShortMethodUnsafe();
 		Register_UnityEngine_AndroidJNI_CallStaticShortMethodUnsafe();
-
-		//System.Int16 UnityEngine.AndroidJNI::GetShortField(System.IntPtr,System.IntPtr)
-		void Register_UnityEngine_AndroidJNI_GetShortField();
-		Register_UnityEngine_AndroidJNI_GetShortField();
 
 		//System.Int16 UnityEngine.AndroidJNI::GetStaticShortField(System.IntPtr,System.IntPtr)
 		void Register_UnityEngine_AndroidJNI_GetStaticShortField();
@@ -358,10 +350,6 @@ void RegisterAllStrippedInternalCalls()
 		void Register_UnityEngine_AndroidJNI_GetArrayLength();
 		Register_UnityEngine_AndroidJNI_GetArrayLength();
 
-		//System.Int32 UnityEngine.AndroidJNI::GetIntField(System.IntPtr,System.IntPtr)
-		void Register_UnityEngine_AndroidJNI_GetIntField();
-		Register_UnityEngine_AndroidJNI_GetIntField();
-
 		//System.Int32 UnityEngine.AndroidJNI::GetStaticIntField(System.IntPtr,System.IntPtr)
 		void Register_UnityEngine_AndroidJNI_GetStaticIntField();
 		Register_UnityEngine_AndroidJNI_GetStaticIntField();
@@ -381,10 +369,6 @@ void RegisterAllStrippedInternalCalls()
 		//System.Int64 UnityEngine.AndroidJNI::CallStaticLongMethodUnsafe(System.IntPtr,System.IntPtr,UnityEngine.jvalue*)
 		void Register_UnityEngine_AndroidJNI_CallStaticLongMethodUnsafe();
 		Register_UnityEngine_AndroidJNI_CallStaticLongMethodUnsafe();
-
-		//System.Int64 UnityEngine.AndroidJNI::GetLongField(System.IntPtr,System.IntPtr)
-		void Register_UnityEngine_AndroidJNI_GetLongField();
-		Register_UnityEngine_AndroidJNI_GetLongField();
 
 		//System.Int64 UnityEngine.AndroidJNI::GetStaticLongField(System.IntPtr,System.IntPtr)
 		void Register_UnityEngine_AndroidJNI_GetStaticLongField();
@@ -429,10 +413,6 @@ void RegisterAllStrippedInternalCalls()
 		//System.IntPtr UnityEngine.AndroidJNI::GetObjectClass(System.IntPtr)
 		void Register_UnityEngine_AndroidJNI_GetObjectClass();
 		Register_UnityEngine_AndroidJNI_GetObjectClass();
-
-		//System.IntPtr UnityEngine.AndroidJNI::GetObjectField(System.IntPtr,System.IntPtr)
-		void Register_UnityEngine_AndroidJNI_GetObjectField();
-		Register_UnityEngine_AndroidJNI_GetObjectField();
 
 		//System.IntPtr UnityEngine.AndroidJNI::GetStaticFieldID(System.IntPtr,System.String,System.String)
 		void Register_UnityEngine_AndroidJNI_GetStaticFieldID();
@@ -522,10 +502,6 @@ void RegisterAllStrippedInternalCalls()
 		void Register_UnityEngine_AndroidJNI_CallStaticSByteMethodUnsafe();
 		Register_UnityEngine_AndroidJNI_CallStaticSByteMethodUnsafe();
 
-		//System.SByte UnityEngine.AndroidJNI::GetSByteField(System.IntPtr,System.IntPtr)
-		void Register_UnityEngine_AndroidJNI_GetSByteField();
-		Register_UnityEngine_AndroidJNI_GetSByteField();
-
 		//System.SByte UnityEngine.AndroidJNI::GetStaticSByteField(System.IntPtr,System.IntPtr)
 		void Register_UnityEngine_AndroidJNI_GetStaticSByteField();
 		Register_UnityEngine_AndroidJNI_GetStaticSByteField();
@@ -541,10 +517,6 @@ void RegisterAllStrippedInternalCalls()
 		//System.Single UnityEngine.AndroidJNI::CallStaticFloatMethodUnsafe(System.IntPtr,System.IntPtr,UnityEngine.jvalue*)
 		void Register_UnityEngine_AndroidJNI_CallStaticFloatMethodUnsafe();
 		Register_UnityEngine_AndroidJNI_CallStaticFloatMethodUnsafe();
-
-		//System.Single UnityEngine.AndroidJNI::GetFloatField(System.IntPtr,System.IntPtr)
-		void Register_UnityEngine_AndroidJNI_GetFloatField();
-		Register_UnityEngine_AndroidJNI_GetFloatField();
 
 		//System.Single UnityEngine.AndroidJNI::GetStaticFloatField(System.IntPtr,System.IntPtr)
 		void Register_UnityEngine_AndroidJNI_GetStaticFloatField();
@@ -570,21 +542,9 @@ void RegisterAllStrippedInternalCalls()
 		void Register_UnityEngine_AndroidJNI_GetStringChars();
 		Register_UnityEngine_AndroidJNI_GetStringChars();
 
-		//System.String UnityEngine.AndroidJNI::GetStringField(System.IntPtr,System.IntPtr)
-		void Register_UnityEngine_AndroidJNI_GetStringField();
-		Register_UnityEngine_AndroidJNI_GetStringField();
-
-		//System.Void UnityEngine.AndroidJNI::CallStaticVoidMethodUnsafe(System.IntPtr,System.IntPtr,UnityEngine.jvalue*)
-		void Register_UnityEngine_AndroidJNI_CallStaticVoidMethodUnsafe();
-		Register_UnityEngine_AndroidJNI_CallStaticVoidMethodUnsafe();
-
 		//System.Void UnityEngine.AndroidJNI::CallVoidMethodUnsafe(System.IntPtr,System.IntPtr,UnityEngine.jvalue*)
 		void Register_UnityEngine_AndroidJNI_CallVoidMethodUnsafe();
 		Register_UnityEngine_AndroidJNI_CallVoidMethodUnsafe();
-
-		//System.Void UnityEngine.AndroidJNI::DeleteGlobalRef(System.IntPtr)
-		void Register_UnityEngine_AndroidJNI_DeleteGlobalRef();
-		Register_UnityEngine_AndroidJNI_DeleteGlobalRef();
 
 		//System.Void UnityEngine.AndroidJNI::DeleteLocalRef(System.IntPtr)
 		void Register_UnityEngine_AndroidJNI_DeleteLocalRef();
@@ -597,6 +557,10 @@ void RegisterAllStrippedInternalCalls()
 		//System.Void UnityEngine.AndroidJNI::ExceptionClear()
 		void Register_UnityEngine_AndroidJNI_ExceptionClear();
 		Register_UnityEngine_AndroidJNI_ExceptionClear();
+
+		//System.Void UnityEngine.AndroidJNI::QueueDeleteGlobalRef(System.IntPtr)
+		void Register_UnityEngine_AndroidJNI_QueueDeleteGlobalRef();
+		Register_UnityEngine_AndroidJNI_QueueDeleteGlobalRef();
 
 		//System.Void UnityEngine.AndroidJNI::SetObjectArrayElement(System.IntPtr,System.Int32,System.IntPtr)
 		void Register_UnityEngine_AndroidJNI_SetObjectArrayElement();
@@ -702,14 +666,6 @@ void RegisterAllStrippedInternalCalls()
 
 	//Start Registrations for type : UnityEngine.Application
 
-		//System.Boolean UnityEngine.Application::get_genuine()
-		void Register_UnityEngine_Application_get_genuine();
-		Register_UnityEngine_Application_get_genuine();
-
-		//System.Boolean UnityEngine.Application::get_genuineCheckAvailable()
-		void Register_UnityEngine_Application_get_genuineCheckAvailable();
-		Register_UnityEngine_Application_get_genuineCheckAvailable();
-
 		//System.Boolean UnityEngine.Application::get_isBatchMode()
 		void Register_UnityEngine_Application_get_isBatchMode();
 		Register_UnityEngine_Application_get_isBatchMode();
@@ -729,10 +685,6 @@ void RegisterAllStrippedInternalCalls()
 		//System.String UnityEngine.Application::get_persistentDataPath()
 		void Register_UnityEngine_Application_get_persistentDataPath();
 		Register_UnityEngine_Application_get_persistentDataPath();
-
-		//System.String UnityEngine.Application::get_productName()
-		void Register_UnityEngine_Application_get_productName();
-		Register_UnityEngine_Application_get_productName();
 
 		//System.String UnityEngine.Application::get_streamingAssetsPath()
 		void Register_UnityEngine_Application_get_streamingAssetsPath();
@@ -765,14 +717,6 @@ void RegisterAllStrippedInternalCalls()
 		//System.Void UnityEngine.Application::set_targetFrameRate(System.Int32)
 		void Register_UnityEngine_Application_set_targetFrameRate();
 		Register_UnityEngine_Application_set_targetFrameRate();
-
-		//UnityEngine.ApplicationInstallMode UnityEngine.Application::get_installMode()
-		void Register_UnityEngine_Application_get_installMode();
-		Register_UnityEngine_Application_get_installMode();
-
-		//UnityEngine.NetworkReachability UnityEngine.Application::get_internetReachability()
-		void Register_UnityEngine_Application_get_internetReachability();
-		Register_UnityEngine_Application_get_internetReachability();
 
 		//UnityEngine.RuntimePlatform UnityEngine.Application::get_platform()
 		void Register_UnityEngine_Application_get_platform();
@@ -3090,6 +3034,10 @@ void RegisterAllStrippedInternalCalls()
 		void Register_UnityEngine_Light_set_range();
 		Register_UnityEngine_Light_set_range();
 
+		//System.Void UnityEngine.Light::set_renderingLayerMask(System.Int32)
+		void Register_UnityEngine_Light_set_renderingLayerMask();
+		Register_UnityEngine_Light_set_renderingLayerMask();
+
 		//System.Void UnityEngine.Light::set_shadowStrength(System.Single)
 		void Register_UnityEngine_Light_set_shadowStrength();
 		Register_UnityEngine_Light_set_shadowStrength();
@@ -3730,27 +3678,11 @@ void RegisterAllStrippedInternalCalls()
 
 	//Start Registrations for type : UnityEngine.Networking.DownloadHandler
 
-		//System.Byte* UnityEngine.Networking.DownloadHandler::InternalGetByteArray(UnityEngine.Networking.DownloadHandler,System.Int32&)
-		void Register_UnityEngine_Networking_DownloadHandler_InternalGetByteArray();
-		Register_UnityEngine_Networking_DownloadHandler_InternalGetByteArray();
-
-		//System.String UnityEngine.Networking.DownloadHandler::GetContentType()
-		void Register_UnityEngine_Networking_DownloadHandler_GetContentType();
-		Register_UnityEngine_Networking_DownloadHandler_GetContentType();
-
 		//System.Void UnityEngine.Networking.DownloadHandler::Release()
 		void Register_UnityEngine_Networking_DownloadHandler_Release();
 		Register_UnityEngine_Networking_DownloadHandler_Release();
 
 	//End Registrations for type : UnityEngine.Networking.DownloadHandler
-
-	//Start Registrations for type : UnityEngine.Networking.DownloadHandlerBuffer
-
-		//System.IntPtr UnityEngine.Networking.DownloadHandlerBuffer::Create(UnityEngine.Networking.DownloadHandlerBuffer)
-		void Register_UnityEngine_Networking_DownloadHandlerBuffer_Create();
-		Register_UnityEngine_Networking_DownloadHandlerBuffer_Create();
-
-	//End Registrations for type : UnityEngine.Networking.DownloadHandlerBuffer
 
 	//Start Registrations for type : UnityEngine.Networking.UnityWebRequest
 
@@ -3765,10 +3697,6 @@ void RegisterAllStrippedInternalCalls()
 		//System.IntPtr UnityEngine.Networking.UnityWebRequest::Create()
 		void Register_UnityEngine_Networking_UnityWebRequest_Create();
 		Register_UnityEngine_Networking_UnityWebRequest_Create();
-
-		//System.String UnityEngine.Networking.UnityWebRequest::GetHTTPStatusString(System.Int64)
-		void Register_UnityEngine_Networking_UnityWebRequest_GetHTTPStatusString();
-		Register_UnityEngine_Networking_UnityWebRequest_GetHTTPStatusString();
 
 		//System.String UnityEngine.Networking.UnityWebRequest::GetWebErrorString(UnityEngine.Networking.UnityWebRequest/UnityWebRequestError)
 		void Register_UnityEngine_Networking_UnityWebRequest_GetWebErrorString();
@@ -3786,21 +3714,9 @@ void RegisterAllStrippedInternalCalls()
 		void Register_UnityEngine_Networking_UnityWebRequest_get_result();
 		Register_UnityEngine_Networking_UnityWebRequest_get_result();
 
-		//UnityEngine.Networking.UnityWebRequest/UnityWebRequestError UnityEngine.Networking.UnityWebRequest::GetError()
-		void Register_UnityEngine_Networking_UnityWebRequest_GetError();
-		Register_UnityEngine_Networking_UnityWebRequest_GetError();
-
-		//UnityEngine.Networking.UnityWebRequest/UnityWebRequestError UnityEngine.Networking.UnityWebRequest::InternalSetRequestHeader(System.String,System.String)
-		void Register_UnityEngine_Networking_UnityWebRequest_InternalSetRequestHeader();
-		Register_UnityEngine_Networking_UnityWebRequest_InternalSetRequestHeader();
-
 		//UnityEngine.Networking.UnityWebRequest/UnityWebRequestError UnityEngine.Networking.UnityWebRequest::SetCustomMethod(System.String)
 		void Register_UnityEngine_Networking_UnityWebRequest_SetCustomMethod();
 		Register_UnityEngine_Networking_UnityWebRequest_SetCustomMethod();
-
-		//UnityEngine.Networking.UnityWebRequest/UnityWebRequestError UnityEngine.Networking.UnityWebRequest::SetDownloadHandler(UnityEngine.Networking.DownloadHandler)
-		void Register_UnityEngine_Networking_UnityWebRequest_SetDownloadHandler();
-		Register_UnityEngine_Networking_UnityWebRequest_SetDownloadHandler();
 
 		//UnityEngine.Networking.UnityWebRequest/UnityWebRequestError UnityEngine.Networking.UnityWebRequest::SetMethod(UnityEngine.Networking.UnityWebRequest/UnityWebRequestMethod)
 		void Register_UnityEngine_Networking_UnityWebRequest_SetMethod();
@@ -3809,10 +3725,6 @@ void RegisterAllStrippedInternalCalls()
 		//UnityEngine.Networking.UnityWebRequest/UnityWebRequestError UnityEngine.Networking.UnityWebRequest::SetTimeoutMsec(System.Int32)
 		void Register_UnityEngine_Networking_UnityWebRequest_SetTimeoutMsec();
 		Register_UnityEngine_Networking_UnityWebRequest_SetTimeoutMsec();
-
-		//UnityEngine.Networking.UnityWebRequest/UnityWebRequestError UnityEngine.Networking.UnityWebRequest::SetUploadHandler(UnityEngine.Networking.UploadHandler)
-		void Register_UnityEngine_Networking_UnityWebRequest_SetUploadHandler();
-		Register_UnityEngine_Networking_UnityWebRequest_SetUploadHandler();
 
 		//UnityEngine.Networking.UnityWebRequest/UnityWebRequestError UnityEngine.Networking.UnityWebRequest::SetUrl(System.String)
 		void Register_UnityEngine_Networking_UnityWebRequest_SetUrl();
@@ -3826,23 +3738,11 @@ void RegisterAllStrippedInternalCalls()
 
 	//Start Registrations for type : UnityEngine.Networking.UploadHandler
 
-		//System.Void UnityEngine.Networking.UploadHandler::InternalSetContentType(System.String)
-		void Register_UnityEngine_Networking_UploadHandler_InternalSetContentType();
-		Register_UnityEngine_Networking_UploadHandler_InternalSetContentType();
-
 		//System.Void UnityEngine.Networking.UploadHandler::Release()
 		void Register_UnityEngine_Networking_UploadHandler_Release();
 		Register_UnityEngine_Networking_UploadHandler_Release();
 
 	//End Registrations for type : UnityEngine.Networking.UploadHandler
-
-	//Start Registrations for type : UnityEngine.Networking.UploadHandlerRaw
-
-		//System.IntPtr UnityEngine.Networking.UploadHandlerRaw::Create(UnityEngine.Networking.UploadHandlerRaw,System.Byte*,System.Int32)
-		void Register_UnityEngine_Networking_UploadHandlerRaw_Create();
-		Register_UnityEngine_Networking_UploadHandlerRaw_Create();
-
-	//End Registrations for type : UnityEngine.Networking.UploadHandlerRaw
 
 	//Start Registrations for type : UnityEngine.NoAllocHelpers
 
@@ -4982,6 +4882,10 @@ void RegisterAllStrippedInternalCalls()
 		void Register_UnityEngine_Rendering_CommandBuffer_SetViewport_Injected();
 		Register_UnityEngine_Rendering_CommandBuffer_SetViewport_Injected();
 
+		//System.Void UnityEngine.Rendering.CommandBuffer::SetWireframe(System.Boolean)
+		void Register_UnityEngine_Rendering_CommandBuffer_SetWireframe();
+		Register_UnityEngine_Rendering_CommandBuffer_SetWireframe();
+
 		//System.Void UnityEngine.Rendering.CommandBuffer::WaitOnGPUFence_Internal(System.IntPtr,UnityEngine.Rendering.SynchronisationStageFlags)
 		void Register_UnityEngine_Rendering_CommandBuffer_WaitOnGPUFence_Internal();
 		Register_UnityEngine_Rendering_CommandBuffer_WaitOnGPUFence_Internal();
@@ -5138,6 +5042,10 @@ void RegisterAllStrippedInternalCalls()
 		void Register_UnityEngine_Rendering_ScriptableRenderContext_CreateRendererList_Internal_Injected();
 		Register_UnityEngine_Rendering_ScriptableRenderContext_CreateRendererList_Internal_Injected();
 
+		//System.Void UnityEngine.Rendering.ScriptableRenderContext::CreateSkyboxRendererList_Internal_Injected(UnityEngine.Rendering.ScriptableRenderContext&,UnityEngine.Camera,System.Int32,UnityEngine.Matrix4x4&,UnityEngine.Matrix4x4&,UnityEngine.Matrix4x4&,UnityEngine.Matrix4x4&,UnityEngine.Rendering.RendererList&)
+		void Register_UnityEngine_Rendering_ScriptableRenderContext_CreateSkyboxRendererList_Internal_Injected();
+		Register_UnityEngine_Rendering_ScriptableRenderContext_CreateSkyboxRendererList_Internal_Injected();
+
 		//System.Void UnityEngine.Rendering.ScriptableRenderContext::DrawRenderers_Internal_Injected(UnityEngine.Rendering.ScriptableRenderContext&,System.IntPtr,UnityEngine.Rendering.DrawingSettings&,UnityEngine.Rendering.FilteringSettings&,UnityEngine.Rendering.ShaderTagId&,System.Boolean,System.IntPtr,System.IntPtr,System.Int32)
 		void Register_UnityEngine_Rendering_ScriptableRenderContext_DrawRenderers_Internal_Injected();
 		Register_UnityEngine_Rendering_ScriptableRenderContext_DrawRenderers_Internal_Injected();
@@ -5145,10 +5053,6 @@ void RegisterAllStrippedInternalCalls()
 		//System.Void UnityEngine.Rendering.ScriptableRenderContext::DrawShadows_Internal_Injected(UnityEngine.Rendering.ScriptableRenderContext&,System.IntPtr)
 		void Register_UnityEngine_Rendering_ScriptableRenderContext_DrawShadows_Internal_Injected();
 		Register_UnityEngine_Rendering_ScriptableRenderContext_DrawShadows_Internal_Injected();
-
-		//System.Void UnityEngine.Rendering.ScriptableRenderContext::DrawSkybox_Internal_Injected(UnityEngine.Rendering.ScriptableRenderContext&,UnityEngine.Camera)
-		void Register_UnityEngine_Rendering_ScriptableRenderContext_DrawSkybox_Internal_Injected();
-		Register_UnityEngine_Rendering_ScriptableRenderContext_DrawSkybox_Internal_Injected();
 
 		//System.Void UnityEngine.Rendering.ScriptableRenderContext::DrawUIOverlay_Internal_Injected(UnityEngine.Rendering.ScriptableRenderContext&,UnityEngine.Camera)
 		void Register_UnityEngine_Rendering_ScriptableRenderContext_DrawUIOverlay_Internal_Injected();
@@ -5959,6 +5863,14 @@ void RegisterAllStrippedInternalCalls()
 		Register_UnityEngine_Sprite_get_vertices();
 
 	//End Registrations for type : UnityEngine.Sprite
+
+	//Start Registrations for type : UnityEngine.SpriteMaskUtility
+
+		//System.Boolean UnityEngine.SpriteMaskUtility::HasSpriteMaskInLayerRange_Injected(UnityEngine.Rendering.SortingLayerRange&)
+		void Register_UnityEngine_SpriteMaskUtility_HasSpriteMaskInLayerRange_Injected();
+		Register_UnityEngine_SpriteMaskUtility_HasSpriteMaskInLayerRange_Injected();
+
+	//End Registrations for type : UnityEngine.SpriteMaskUtility
 
 	//Start Registrations for type : UnityEngine.SpriteRenderer
 
@@ -6830,7 +6742,7 @@ void RegisterAllStrippedInternalCalls()
 
 	//Start Registrations for type : UnityEngine.UIElements.UIPainter2D
 
-		//System.IntPtr UnityEngine.UIElements.UIPainter2D::Create(System.Single)
+		//System.IntPtr UnityEngine.UIElements.UIPainter2D::Create(System.Boolean)
 		void Register_UnityEngine_UIElements_UIPainter2D_Create();
 		Register_UnityEngine_UIElements_UIPainter2D_Create();
 

@@ -1166,6 +1166,7 @@ struct BernoulliLemniscate_tA7B898E8B71AC41BB6C4E4A95D2C8B80F67BF829  : public R
 struct ConfigurationBuilder_tCB23D9049605117E5216D50DC18E1D459590F90D  : public RuntimeObject
 {
 	bool ___U3CuseCatalogProviderU3Ek__BackingField;
+	bool ___U3ClogUnavailableProductsU3Ek__BackingField;
 	HashSet_1_t83DC1A9F0F77879B6812C63406A0B53B8B159195* ___U3CproductsU3Ek__BackingField;
 	PurchasingFactory_tC87E368967334D76A150DEE74D0DDFEB9A502935* ___U3CfactoryU3Ek__BackingField;
 };

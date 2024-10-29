@@ -1059,22 +1059,29 @@ namespace vm
         return type->type == IL2CPP_TYPE_VAR || type->type == IL2CPP_TYPE_MVAR;
     }
 
-    Il2CppReflectionType* Type::GetDeclaringType(const Il2CppType* type)
+    Il2CppClass* Type::GetDeclaringType(const Il2CppType* type)
     {
         Il2CppClass *typeInfo = NULL;
 
         if (type->byref)
             return NULL;
         if (type->type == IL2CPP_TYPE_VAR || type->type == IL2CPP_TYPE_MVAR)
+            return MetadataCache::GetParameterDeclaringType(GetGenericParameterHandle(type));
+        return Class::GetDeclaringType(Class::FromIl2CppType(type));
+    }
+
+    const MethodInfo* Type::GetDeclaringMethod(const Il2CppType* type)
+    {
+        if (type->byref)
+            return NULL;
+
+        if (type->type == IL2CPP_TYPE_MVAR)
         {
-            typeInfo = MetadataCache::GetParameterDeclaringType(GetGenericParameterHandle(type));
-        }
-        else
-        {
-            typeInfo = Class::GetDeclaringType(Class::FromIl2CppType(type));
+            const MethodInfo* methodInfo = MetadataCache::GetParameterDeclaringMethod(GetGenericParameterHandle(type));
+            return methodInfo;
         }
 
-        return typeInfo ? Reflection::GetTypeObject(&typeInfo->byval_arg) : NULL;
+        return NULL;
     }
 
     Il2CppArray* Type::GetGenericArgumentsInternal(Il2CppReflectionType* type, bool runtimeArray)
@@ -1185,19 +1192,19 @@ namespace vm
         if (IsGenericParameter(type))
             return MetadataCache::IsReferenceTypeGenericParameter(MetadataCache::GetGenericParameterFromType(type)) != GenericParameterRestrictionReferenceType;
 
-        // If we're not a generic instance then we'll be a concrete type
-        if (!IsGenericInstance(type))
-            return false;
-
         // If a reference type or pointer then we aren't variable sized
-        if (!GenericInstIsValuetype(type))
+        if (!IsValueType(type))
             return false;
 
         Il2CppClass* klass = Class::FromIl2CppType(type);
-        Il2CppClass* typeDef = GenericClass::GetTypeDefinition(klass->generic_class);
+
+        // If we're not a generic instance or generic type definition then we'll be a concrete type
+        if (!vm::Class::IsInflated(klass) && !vm::Class::IsGeneric(klass))
+            return false;
+
         FieldInfo* field;
         void* iter = NULL;
-        while ((field = Class::GetFields(typeDef, &iter)))
+        while ((field = Class::GetFields(klass, &iter)))
         {
             if (Field::IsInstance(field) && HasVariableRuntimeSizeWhenFullyShared(Field::GetType(field)))
                 return true;

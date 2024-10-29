@@ -118,6 +118,7 @@ IL2CPP_EXTERN_C RuntimeClass* Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_i
 IL2CPP_EXTERN_C RuntimeClass* ShorthandApplicator_t24FC10A4D423202A1206E72BFBB01E0F6B2943DA_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* StylePropertyId_tA3B8A5213F5BA43F9C5443B27B165D744713BE69_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* YogaNode_t9EE7C2B7C0BD1299C28837B1A66CF4660E724C8B_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeField* ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C____inheritedData_FieldInfo_var;
 IL2CPP_EXTERN_C String_t* _stringLiteral05FEB5C1F1801895ED1EA4D802D571B5646ADB02;
 IL2CPP_EXTERN_C String_t* _stringLiteral1D1CE6A47FAB0FED722281ABDA6CBDA9EB4A0E81;
 IL2CPP_EXTERN_C String_t* _stringLiteral4A32683C07BC7B35BD0CFEF74F95165902D6A9ED;
@@ -207,6 +208,7 @@ IL2CPP_EXTERN_C const RuntimeMethod* StyleDataRef_1_Write_m84DD41705A3BBC589B371
 IL2CPP_EXTERN_C const RuntimeMethod* StyleValueExtensions_CopyFrom_TisEasingFunction_t5197D3B06056326A8B5C96032CDEBD5D3BDCA7A4_mACDC9D4A32D1E13BF2D1D8ED03234AEDED6FB906_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* StyleValueExtensions_CopyFrom_TisStylePropertyName_tCBE2B561C690538C8514BF56426AC486DC35B6FF_mD4D2A2F9DB6ADD966604C4BE281C7287E8A987EC_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* StyleValueExtensions_CopyFrom_TisTimeValue_t45AE43B219493F9459363F32C79E8986B5F82E0E_m4011A7CF480EC3F17852C0A8AEA06FF135F292EF_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeType* ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C_0_0_0_var;
 struct ComputedTransitionProperty_tD8E4D8EB5DD69E063944F27A48D9263F4F1354E1;;
 struct ComputedTransitionProperty_tD8E4D8EB5DD69E063944F27A48D9263F4F1354E1_marshaled_com;
 struct ComputedTransitionProperty_tD8E4D8EB5DD69E063944F27A48D9263F4F1354E1_marshaled_com;;
@@ -1153,6 +1155,7 @@ struct RenderChainVEData_t582DE9DA38C6B608A9A38286FCF6FA70398B5847
 	bool ___localFlipsWinding;
 	bool ___localTransformScaleZero;
 	bool ___worldFlipsWinding;
+	bool ___worldTransformScaleZero;
 	int32_t ___clipMethod;
 	int32_t ___childrenStencilRef;
 	int32_t ___childrenMaskDepth;
@@ -1198,6 +1201,7 @@ struct RenderChainVEData_t582DE9DA38C6B608A9A38286FCF6FA70398B5847_marshaled_pin
 	int32_t ___localFlipsWinding;
 	int32_t ___localTransformScaleZero;
 	int32_t ___worldFlipsWinding;
+	int32_t ___worldTransformScaleZero;
 	int32_t ___clipMethod;
 	int32_t ___childrenStencilRef;
 	int32_t ___childrenMaskDepth;
@@ -1243,6 +1247,7 @@ struct RenderChainVEData_t582DE9DA38C6B608A9A38286FCF6FA70398B5847_marshaled_com
 	int32_t ___localFlipsWinding;
 	int32_t ___localTransformScaleZero;
 	int32_t ___worldFlipsWinding;
+	int32_t ___worldTransformScaleZero;
 	int32_t ___clipMethod;
 	int32_t ___childrenStencilRef;
 	int32_t ___childrenMaskDepth;
@@ -1545,7 +1550,7 @@ struct VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115  : public Focusab
 	int32_t ___dependencyPseudoMask;
 	int32_t ___m_PseudoStates;
 	int32_t ___U3CcontainedPointerIdsU3Ek__BackingField;
-	int32_t ___U3CpickingModeU3Ek__BackingField;
+	int32_t ___m_PickingMode;
 	YogaNode_t9EE7C2B7C0BD1299C28837B1A66CF4660E724C8B* ___U3CyogaNodeU3Ek__BackingField;
 	ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C ___m_Style;
 	StyleVariableContext_tF74F2787CE1F6BEBBFBFF0771CF493AC9E403527* ___variableContext;
@@ -2291,12 +2296,26 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Vector4__ctor_m96B2CD8B862B2
 
 IL2CPP_EXTERN_C void ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C_marshal_pinvoke(const ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C& unmarshaled, ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C_marshaled_pinvoke& marshaled)
 {
-	Exception_t* ___inheritedDataException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'inheritedData' of type 'ComputedStyle'.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C____inheritedData_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___inheritedDataException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s'.", ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C____inheritedData_FieldInfo_var, ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___inheritedDataException, NULL);
 }
 IL2CPP_EXTERN_C void ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C_marshal_pinvoke_back(const ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C_marshaled_pinvoke& marshaled, ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C& unmarshaled)
 {
-	Exception_t* ___inheritedDataException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'inheritedData' of type 'ComputedStyle'.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C____inheritedData_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___inheritedDataException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s'.", ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C____inheritedData_FieldInfo_var, ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___inheritedDataException, NULL);
 }
 IL2CPP_EXTERN_C void ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C_marshal_pinvoke_cleanup(ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C_marshaled_pinvoke& marshaled)
@@ -2306,12 +2325,26 @@ IL2CPP_EXTERN_C void ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C_mar
 
 IL2CPP_EXTERN_C void ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C_marshal_com(const ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C& unmarshaled, ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C_marshaled_com& marshaled)
 {
-	Exception_t* ___inheritedDataException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'inheritedData' of type 'ComputedStyle'.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C____inheritedData_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___inheritedDataException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s'.", ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C____inheritedData_FieldInfo_var, ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___inheritedDataException, NULL);
 }
 IL2CPP_EXTERN_C void ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C_marshal_com_back(const ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C_marshaled_com& marshaled, ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C& unmarshaled)
 {
-	Exception_t* ___inheritedDataException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'inheritedData' of type 'ComputedStyle'.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C____inheritedData_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___inheritedDataException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s'.", ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C____inheritedData_FieldInfo_var, ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___inheritedDataException, NULL);
 }
 IL2CPP_EXTERN_C void ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C_marshal_com_cleanup(ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C_marshaled_com& marshaled)
@@ -12359,7 +12392,7 @@ IL_0547:
 		L_189->___visibility = L_190;
 		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_191 = ___0_ve;
 		NullCheck(L_191);
-		VisualElement_IncrementVersion_m03581665EE480D3C329058FFE08734450493E33E(L_191, ((int32_t)2064), NULL);
+		VisualElement_IncrementVersion_m03581665EE480D3C329058FFE08734450493E33E(L_191, ((int32_t)1050640), NULL);
 	}
 
 IL_0582:
@@ -26965,22 +26998,23 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ComputedStyle_CompareChanges_mB855D83
 	bool V_21 = false;
 	bool V_22 = false;
 	bool V_23 = false;
-	int32_t V_24 = 0;
+	bool V_24 = false;
+	int32_t V_25 = 0;
 	int32_t G_B30_0 = 0;
 	int32_t G_B37_0 = 0;
 	int32_t G_B55_0 = 0;
 	int32_t G_B57_0 = 0;
-	int32_t G_B65_0 = 0;
-	int32_t G_B67_0 = 0;
-	int32_t G_B78_0 = 0;
-	int32_t G_B93_0 = 0;
-	int32_t G_B95_0 = 0;
-	int32_t G_B104_0 = 0;
-	int32_t G_B106_0 = 0;
-	int32_t G_B113_0 = 0;
-	int32_t G_B124_0 = 0;
-	int32_t G_B136_0 = 0;
-	int32_t G_B138_0 = 0;
+	int32_t G_B64_0 = 0;
+	int32_t G_B66_0 = 0;
+	int32_t G_B79_0 = 0;
+	int32_t G_B94_0 = 0;
+	int32_t G_B96_0 = 0;
+	int32_t G_B105_0 = 0;
+	int32_t G_B107_0 = 0;
+	int32_t G_B114_0 = 0;
+	int32_t G_B125_0 = 0;
+	int32_t G_B137_0 = 0;
+	int32_t G_B139_0 = 0;
 	{
 		V_0 = ((int32_t)32);
 		ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C* L_0 = ___0_x;
@@ -27491,7 +27525,7 @@ IL_02bc:
 		bool L_168 = V_5;
 		if (!L_168)
 		{
-			goto IL_0426;
+			goto IL_0439;
 		}
 	}
 	{
@@ -27666,794 +27700,802 @@ IL_03a9:
 		int32_t L_217 = V_0;
 		if (((int32_t)((int32_t)L_217&((int32_t)2048))))
 		{
-			goto IL_03f7;
+			goto IL_03e9;
 		}
 	}
 	{
 		ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C* L_218 = ___0_x;
-		int32_t L_219;
-		L_219 = ComputedStyle_get_visibility_m44932DA0A90681EF2ECCB74678FCBDD7891B6835(L_218, NULL);
+		TextShadow_t6BADF37AB90ABCB63859A225B58AC5A580950A05 L_219;
+		L_219 = ComputedStyle_get_textShadow_m74DC8025A89CDA100956D9B97FDC67BCDAC0192C(L_218, NULL);
 		ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C* L_220 = ___1_y;
-		int32_t L_221;
-		L_221 = ComputedStyle_get_visibility_m44932DA0A90681EF2ECCB74678FCBDD7891B6835(L_220, NULL);
-		if ((!(((uint32_t)L_219) == ((uint32_t)L_221))))
+		TextShadow_t6BADF37AB90ABCB63859A225B58AC5A580950A05 L_221;
+		L_221 = ComputedStyle_get_textShadow_m74DC8025A89CDA100956D9B97FDC67BCDAC0192C(L_220, NULL);
+		bool L_222;
+		L_222 = TextShadow_op_Inequality_m69AC68592EC285B81C0E33FC097F42D0681797FC(L_219, L_221, NULL);
+		if (L_222)
 		{
-			goto IL_03f4;
+			goto IL_03e6;
 		}
 	}
 	{
-		ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C* L_222 = ___0_x;
-		TextShadow_t6BADF37AB90ABCB63859A225B58AC5A580950A05 L_223;
-		L_223 = ComputedStyle_get_textShadow_m74DC8025A89CDA100956D9B97FDC67BCDAC0192C(L_222, NULL);
-		ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C* L_224 = ___1_y;
-		TextShadow_t6BADF37AB90ABCB63859A225B58AC5A580950A05 L_225;
-		L_225 = ComputedStyle_get_textShadow_m74DC8025A89CDA100956D9B97FDC67BCDAC0192C(L_224, NULL);
-		bool L_226;
-		L_226 = TextShadow_op_Inequality_m69AC68592EC285B81C0E33FC097F42D0681797FC(L_223, L_225, NULL);
-		if (L_226)
+		ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C* L_223 = ___0_x;
+		int32_t L_224;
+		L_224 = ComputedStyle_get_unityTextAlign_m189359805CF935DB32D33D9C9E42887EBCA63A44(L_223, NULL);
+		ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C* L_225 = ___1_y;
+		int32_t L_226;
+		L_226 = ComputedStyle_get_unityTextAlign_m189359805CF935DB32D33D9C9E42887EBCA63A44(L_225, NULL);
+		if ((!(((uint32_t)L_224) == ((uint32_t)L_226))))
 		{
-			goto IL_03f4;
+			goto IL_03e6;
 		}
 	}
 	{
 		ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C* L_227 = ___0_x;
-		int32_t L_228;
-		L_228 = ComputedStyle_get_unityTextAlign_m189359805CF935DB32D33D9C9E42887EBCA63A44(L_227, NULL);
+		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_228;
+		L_228 = ComputedStyle_get_unityTextOutlineColor_m9448FFDD299072EAB25D8B63BE072B8C91816D76(L_227, NULL);
 		ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C* L_229 = ___1_y;
-		int32_t L_230;
-		L_230 = ComputedStyle_get_unityTextAlign_m189359805CF935DB32D33D9C9E42887EBCA63A44(L_229, NULL);
-		if ((!(((uint32_t)L_228) == ((uint32_t)L_230))))
+		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_230;
+		L_230 = ComputedStyle_get_unityTextOutlineColor_m9448FFDD299072EAB25D8B63BE072B8C91816D76(L_229, NULL);
+		bool L_231;
+		L_231 = Color_op_Inequality_mF1C733BA10E60B086AB950A71143678AE76C4D92_inline(L_228, L_230, NULL);
+		G_B64_0 = ((int32_t)(L_231));
+		goto IL_03e7;
+	}
+
+IL_03e6:
+	{
+		G_B64_0 = 1;
+	}
+
+IL_03e7:
+	{
+		G_B66_0 = G_B64_0;
+		goto IL_03ea;
+	}
+
+IL_03e9:
+	{
+		G_B66_0 = 0;
+	}
+
+IL_03ea:
+	{
+		V_8 = (bool)G_B66_0;
+		bool L_232 = V_8;
+		if (!L_232)
 		{
-			goto IL_03f4;
+			goto IL_03fa;
 		}
 	}
 	{
-		ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C* L_231 = ___0_x;
-		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_232;
-		L_232 = ComputedStyle_get_unityTextOutlineColor_m9448FFDD299072EAB25D8B63BE072B8C91816D76(L_231, NULL);
-		ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C* L_233 = ___1_y;
-		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_234;
-		L_234 = ComputedStyle_get_unityTextOutlineColor_m9448FFDD299072EAB25D8B63BE072B8C91816D76(L_233, NULL);
-		bool L_235;
-		L_235 = Color_op_Inequality_mF1C733BA10E60B086AB950A71143678AE76C4D92_inline(L_232, L_234, NULL);
-		G_B65_0 = ((int32_t)(L_235));
-		goto IL_03f5;
+		int32_t L_233 = V_0;
+		V_0 = ((int32_t)((int32_t)L_233|((int32_t)2048)));
 	}
 
-IL_03f4:
+IL_03fa:
 	{
-		G_B65_0 = 1;
-	}
-
-IL_03f5:
-	{
-		G_B67_0 = G_B65_0;
-		goto IL_03f8;
-	}
-
-IL_03f7:
-	{
-		G_B67_0 = 0;
-	}
-
-IL_03f8:
-	{
-		V_8 = (bool)G_B67_0;
-		bool L_236 = V_8;
-		if (!L_236)
+		ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C* L_234 = ___0_x;
+		int32_t L_235;
+		L_235 = ComputedStyle_get_visibility_m44932DA0A90681EF2ECCB74678FCBDD7891B6835(L_234, NULL);
+		ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C* L_236 = ___1_y;
+		int32_t L_237;
+		L_237 = ComputedStyle_get_visibility_m44932DA0A90681EF2ECCB74678FCBDD7891B6835(L_236, NULL);
+		V_9 = (bool)((((int32_t)((((int32_t)L_235) == ((int32_t)L_237))? 1 : 0)) == ((int32_t)0))? 1 : 0);
+		bool L_238 = V_9;
+		if (!L_238)
 		{
-			goto IL_0408;
+			goto IL_041b;
 		}
 	}
 	{
-		int32_t L_237 = V_0;
-		V_0 = ((int32_t)((int32_t)L_237|((int32_t)2048)));
+		int32_t L_239 = V_0;
+		V_0 = ((int32_t)((int32_t)L_239|((int32_t)1050624)));
 	}
 
-IL_0408:
+IL_041b:
 	{
-		ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C* L_238 = ___0_x;
-		int32_t L_239;
-		L_239 = ComputedStyle_get_whiteSpace_m4A7A9F132EDFE87B9E119DC21A25FB0FAB4D2D2D(L_238, NULL);
-		ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C* L_240 = ___1_y;
+		ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C* L_240 = ___0_x;
 		int32_t L_241;
 		L_241 = ComputedStyle_get_whiteSpace_m4A7A9F132EDFE87B9E119DC21A25FB0FAB4D2D2D(L_240, NULL);
-		V_9 = (bool)((((int32_t)((((int32_t)L_239) == ((int32_t)L_241))? 1 : 0)) == ((int32_t)0))? 1 : 0);
-		bool L_242 = V_9;
-		if (!L_242)
+		ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C* L_242 = ___1_y;
+		int32_t L_243;
+		L_243 = ComputedStyle_get_whiteSpace_m4A7A9F132EDFE87B9E119DC21A25FB0FAB4D2D2D(L_242, NULL);
+		V_10 = (bool)((((int32_t)((((int32_t)L_241) == ((int32_t)L_243))? 1 : 0)) == ((int32_t)0))? 1 : 0);
+		bool L_244 = V_10;
+		if (!L_244)
 		{
-			goto IL_0425;
+			goto IL_0438;
 		}
 	}
 	{
-		int32_t L_243 = V_0;
-		V_0 = ((int32_t)((int32_t)L_243|8));
+		int32_t L_245 = V_0;
+		V_0 = ((int32_t)((int32_t)L_245|8));
 	}
 
-IL_0425:
+IL_0438:
 	{
 	}
 
-IL_0426:
+IL_0439:
 	{
-		ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C* L_244 = ___0_x;
-		StyleDataRef_1_t1D59CCAB740BE6B330D5B5FDA9F67391800200B3* L_245 = (StyleDataRef_1_t1D59CCAB740BE6B330D5B5FDA9F67391800200B3*)(&L_244->___transformData);
-		ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C* L_246 = ___1_y;
-		StyleDataRef_1_t1D59CCAB740BE6B330D5B5FDA9F67391800200B3 L_247 = L_246->___transformData;
-		bool L_248;
-		L_248 = StyleDataRef_1_ReferenceEquals_mCF3A4B2C3E3D2EA49EB839EC79F759C90E08B215(L_245, L_247, StyleDataRef_1_ReferenceEquals_mCF3A4B2C3E3D2EA49EB839EC79F759C90E08B215_RuntimeMethod_var);
-		V_10 = (bool)((((int32_t)L_248) == ((int32_t)0))? 1 : 0);
-		bool L_249 = V_10;
-		if (!L_249)
+		ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C* L_246 = ___0_x;
+		StyleDataRef_1_t1D59CCAB740BE6B330D5B5FDA9F67391800200B3* L_247 = (StyleDataRef_1_t1D59CCAB740BE6B330D5B5FDA9F67391800200B3*)(&L_246->___transformData);
+		ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C* L_248 = ___1_y;
+		StyleDataRef_1_t1D59CCAB740BE6B330D5B5FDA9F67391800200B3 L_249 = L_248->___transformData;
+		bool L_250;
+		L_250 = StyleDataRef_1_ReferenceEquals_mCF3A4B2C3E3D2EA49EB839EC79F759C90E08B215(L_247, L_249, StyleDataRef_1_ReferenceEquals_mCF3A4B2C3E3D2EA49EB839EC79F759C90E08B215_RuntimeMethod_var);
+		V_11 = (bool)((((int32_t)L_250) == ((int32_t)0))? 1 : 0);
+		bool L_251 = V_11;
+		if (!L_251)
 		{
-			goto IL_049f;
+			goto IL_04b2;
 		}
 	}
 	{
-		ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C* L_250 = ___0_x;
-		Scale_t5594C69C1AC9398B57ABF6C4FA0D4E791B7A4DC7 L_251;
-		L_251 = ComputedStyle_get_scale_mEC1F8811B1735AAA34B468166A0D9234B4BD13EA(L_250, NULL);
-		ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C* L_252 = ___1_y;
+		ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C* L_252 = ___0_x;
 		Scale_t5594C69C1AC9398B57ABF6C4FA0D4E791B7A4DC7 L_253;
 		L_253 = ComputedStyle_get_scale_mEC1F8811B1735AAA34B468166A0D9234B4BD13EA(L_252, NULL);
-		bool L_254;
-		L_254 = Scale_op_Inequality_m72BCD34C6F47E29657B00AA6B0D67EBD94ADAFFA(L_251, L_253, NULL);
-		if (L_254)
+		ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C* L_254 = ___1_y;
+		Scale_t5594C69C1AC9398B57ABF6C4FA0D4E791B7A4DC7 L_255;
+		L_255 = ComputedStyle_get_scale_mEC1F8811B1735AAA34B468166A0D9234B4BD13EA(L_254, NULL);
+		bool L_256;
+		L_256 = Scale_op_Inequality_m72BCD34C6F47E29657B00AA6B0D67EBD94ADAFFA(L_253, L_255, NULL);
+		if (L_256)
 		{
-			goto IL_048d;
+			goto IL_04a0;
 		}
 	}
 	{
-		ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C* L_255 = ___0_x;
-		Rotate_tE965CA0281A547AB38B881A3416FF97756D3F4D7 L_256;
-		L_256 = ComputedStyle_get_rotate_mD3DF8132D7C7131ED05CB9876F3CD4044D408512(L_255, NULL);
-		ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C* L_257 = ___1_y;
+		ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C* L_257 = ___0_x;
 		Rotate_tE965CA0281A547AB38B881A3416FF97756D3F4D7 L_258;
 		L_258 = ComputedStyle_get_rotate_mD3DF8132D7C7131ED05CB9876F3CD4044D408512(L_257, NULL);
-		bool L_259;
-		L_259 = Rotate_op_Inequality_mF1A43029E887CCFC9DE2D6D3AAB0BEE5EA1FEB7D(L_256, L_258, NULL);
-		if (L_259)
+		ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C* L_259 = ___1_y;
+		Rotate_tE965CA0281A547AB38B881A3416FF97756D3F4D7 L_260;
+		L_260 = ComputedStyle_get_rotate_mD3DF8132D7C7131ED05CB9876F3CD4044D408512(L_259, NULL);
+		bool L_261;
+		L_261 = Rotate_op_Inequality_mF1A43029E887CCFC9DE2D6D3AAB0BEE5EA1FEB7D(L_258, L_260, NULL);
+		if (L_261)
 		{
-			goto IL_048d;
+			goto IL_04a0;
 		}
 	}
 	{
-		ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C* L_260 = ___0_x;
-		Translate_t494F6E802F8A640D67819C9D26BE62DED1218A8E L_261;
-		L_261 = ComputedStyle_get_translate_m706A50211B46E3D73126FD7087D82FDCD7C5B244(L_260, NULL);
-		ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C* L_262 = ___1_y;
+		ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C* L_262 = ___0_x;
 		Translate_t494F6E802F8A640D67819C9D26BE62DED1218A8E L_263;
 		L_263 = ComputedStyle_get_translate_m706A50211B46E3D73126FD7087D82FDCD7C5B244(L_262, NULL);
-		bool L_264;
-		L_264 = Translate_op_Inequality_m22BC975D920C03F774F1F70D8527F9A042E90473(L_261, L_263, NULL);
-		if (L_264)
+		ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C* L_264 = ___1_y;
+		Translate_t494F6E802F8A640D67819C9D26BE62DED1218A8E L_265;
+		L_265 = ComputedStyle_get_translate_m706A50211B46E3D73126FD7087D82FDCD7C5B244(L_264, NULL);
+		bool L_266;
+		L_266 = Translate_op_Inequality_m22BC975D920C03F774F1F70D8527F9A042E90473(L_263, L_265, NULL);
+		if (L_266)
 		{
-			goto IL_048d;
+			goto IL_04a0;
 		}
 	}
 	{
-		ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C* L_265 = ___0_x;
-		TransformOrigin_tD11A368A96C0771398EBB4E6D435318AC0EF8502 L_266;
-		L_266 = ComputedStyle_get_transformOrigin_mE09A23096E644BF030DB6B1BE17503F76B7AD71B(L_265, NULL);
-		ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C* L_267 = ___1_y;
+		ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C* L_267 = ___0_x;
 		TransformOrigin_tD11A368A96C0771398EBB4E6D435318AC0EF8502 L_268;
 		L_268 = ComputedStyle_get_transformOrigin_mE09A23096E644BF030DB6B1BE17503F76B7AD71B(L_267, NULL);
-		bool L_269;
-		L_269 = TransformOrigin_op_Inequality_m7F1633A388F354647C8A4B5F9410CB5FFB032A5F(L_266, L_268, NULL);
-		G_B78_0 = ((int32_t)(L_269));
-		goto IL_048e;
+		ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C* L_269 = ___1_y;
+		TransformOrigin_tD11A368A96C0771398EBB4E6D435318AC0EF8502 L_270;
+		L_270 = ComputedStyle_get_transformOrigin_mE09A23096E644BF030DB6B1BE17503F76B7AD71B(L_269, NULL);
+		bool L_271;
+		L_271 = TransformOrigin_op_Inequality_m7F1633A388F354647C8A4B5F9410CB5FFB032A5F(L_268, L_270, NULL);
+		G_B79_0 = ((int32_t)(L_271));
+		goto IL_04a1;
 	}
 
-IL_048d:
+IL_04a0:
 	{
-		G_B78_0 = 1;
+		G_B79_0 = 1;
 	}
 
-IL_048e:
+IL_04a1:
 	{
-		V_11 = (bool)G_B78_0;
-		bool L_270 = V_11;
-		if (!L_270)
+		V_12 = (bool)G_B79_0;
+		bool L_272 = V_12;
+		if (!L_272)
 		{
-			goto IL_049e;
+			goto IL_04b1;
 		}
 	}
 	{
-		int32_t L_271 = V_0;
-		V_0 = ((int32_t)((int32_t)L_271|((int32_t)512)));
+		int32_t L_273 = V_0;
+		V_0 = ((int32_t)((int32_t)L_273|((int32_t)512)));
 	}
 
-IL_049e:
+IL_04b1:
 	{
 	}
 
-IL_049f:
+IL_04b2:
 	{
-		ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C* L_272 = ___0_x;
-		StyleDataRef_1_t6A7B146DD79EDF7F42CD8CCF3E411B40AA729B8E* L_273 = (StyleDataRef_1_t6A7B146DD79EDF7F42CD8CCF3E411B40AA729B8E*)(&L_272->___transitionData);
-		ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C* L_274 = ___1_y;
-		StyleDataRef_1_t6A7B146DD79EDF7F42CD8CCF3E411B40AA729B8E L_275 = L_274->___transitionData;
-		bool L_276;
-		L_276 = StyleDataRef_1_ReferenceEquals_m8698EEF15889468EAB39581FC9AABE5EA2E35E10(L_273, L_275, StyleDataRef_1_ReferenceEquals_m8698EEF15889468EAB39581FC9AABE5EA2E35E10_RuntimeMethod_var);
-		V_12 = (bool)((((int32_t)L_276) == ((int32_t)0))? 1 : 0);
-		bool L_277 = V_12;
-		if (!L_277)
+		ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C* L_274 = ___0_x;
+		StyleDataRef_1_t6A7B146DD79EDF7F42CD8CCF3E411B40AA729B8E* L_275 = (StyleDataRef_1_t6A7B146DD79EDF7F42CD8CCF3E411B40AA729B8E*)(&L_274->___transitionData);
+		ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C* L_276 = ___1_y;
+		StyleDataRef_1_t6A7B146DD79EDF7F42CD8CCF3E411B40AA729B8E L_277 = L_276->___transitionData;
+		bool L_278;
+		L_278 = StyleDataRef_1_ReferenceEquals_m8698EEF15889468EAB39581FC9AABE5EA2E35E10(L_275, L_277, StyleDataRef_1_ReferenceEquals_m8698EEF15889468EAB39581FC9AABE5EA2E35E10_RuntimeMethod_var);
+		V_13 = (bool)((((int32_t)L_278) == ((int32_t)0))? 1 : 0);
+		bool L_279 = V_13;
+		if (!L_279)
 		{
-			goto IL_04d5;
+			goto IL_04e8;
 		}
 	}
 	{
-		ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C* L_278 = ___0_x;
-		ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C* L_279 = ___1_y;
+		ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C* L_280 = ___0_x;
+		ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C* L_281 = ___1_y;
 		il2cpp_codegen_runtime_class_init_inline(ComputedTransitionUtils_tC9191F301DCE1CB02C3FFC174E651E14204F1C7A_il2cpp_TypeInfo_var);
-		bool L_280;
-		L_280 = ComputedTransitionUtils_SameTransitionProperty_m47422188DE003031F8D471AEA760DAE252DDF3A0(L_278, L_279, NULL);
-		V_13 = (bool)((((int32_t)L_280) == ((int32_t)0))? 1 : 0);
-		bool L_281 = V_13;
-		if (!L_281)
+		bool L_282;
+		L_282 = ComputedTransitionUtils_SameTransitionProperty_m47422188DE003031F8D471AEA760DAE252DDF3A0(L_280, L_281, NULL);
+		V_14 = (bool)((((int32_t)L_282) == ((int32_t)0))? 1 : 0);
+		bool L_283 = V_14;
+		if (!L_283)
 		{
-			goto IL_04d4;
+			goto IL_04e7;
 		}
 	}
 	{
-		int32_t L_282 = V_0;
-		V_0 = ((int32_t)((int32_t)L_282|((int32_t)32768)));
+		int32_t L_284 = V_0;
+		V_0 = ((int32_t)((int32_t)L_284|((int32_t)32768)));
 	}
 
-IL_04d4:
+IL_04e7:
 	{
 	}
 
-IL_04d5:
+IL_04e8:
 	{
-		ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C* L_283 = ___0_x;
-		StyleDataRef_1_t9CB834B90E638D92A3BE5123B0D3989697AA87FC* L_284 = (StyleDataRef_1_t9CB834B90E638D92A3BE5123B0D3989697AA87FC*)(&L_283->___visualData);
-		ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C* L_285 = ___1_y;
-		StyleDataRef_1_t9CB834B90E638D92A3BE5123B0D3989697AA87FC L_286 = L_285->___visualData;
-		bool L_287;
-		L_287 = StyleDataRef_1_ReferenceEquals_m030E5B1F33A715EC0D242FF369B66068F325EC42(L_284, L_286, StyleDataRef_1_ReferenceEquals_m030E5B1F33A715EC0D242FF369B66068F325EC42_RuntimeMethod_var);
-		V_14 = (bool)((((int32_t)L_287) == ((int32_t)0))? 1 : 0);
-		bool L_288 = V_14;
-		if (!L_288)
+		ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C* L_285 = ___0_x;
+		StyleDataRef_1_t9CB834B90E638D92A3BE5123B0D3989697AA87FC* L_286 = (StyleDataRef_1_t9CB834B90E638D92A3BE5123B0D3989697AA87FC*)(&L_285->___visualData);
+		ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C* L_287 = ___1_y;
+		StyleDataRef_1_t9CB834B90E638D92A3BE5123B0D3989697AA87FC L_288 = L_287->___visualData;
+		bool L_289;
+		L_289 = StyleDataRef_1_ReferenceEquals_m030E5B1F33A715EC0D242FF369B66068F325EC42(L_286, L_288, StyleDataRef_1_ReferenceEquals_m030E5B1F33A715EC0D242FF369B66068F325EC42_RuntimeMethod_var);
+		V_15 = (bool)((((int32_t)L_289) == ((int32_t)0))? 1 : 0);
+		bool L_290 = V_15;
+		if (!L_290)
 		{
-			goto IL_0688;
+			goto IL_069b;
 		}
 	}
 	{
-		int32_t L_289 = V_0;
-		if (((int32_t)((int32_t)L_289&((int32_t)8192))))
+		int32_t L_291 = V_0;
+		if (((int32_t)((int32_t)L_291&((int32_t)8192))))
 		{
-			goto IL_055e;
+			goto IL_0571;
 		}
 	}
 	{
-		ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C* L_290 = ___0_x;
-		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_291;
-		L_291 = ComputedStyle_get_backgroundColor_m504A3843A96727FD70B1ACA523F27EAD1BAF8A21(L_290, NULL);
-		ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C* L_292 = ___1_y;
+		ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C* L_292 = ___0_x;
 		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_293;
 		L_293 = ComputedStyle_get_backgroundColor_m504A3843A96727FD70B1ACA523F27EAD1BAF8A21(L_292, NULL);
-		bool L_294;
-		L_294 = Color_op_Inequality_mF1C733BA10E60B086AB950A71143678AE76C4D92_inline(L_291, L_293, NULL);
-		if (L_294)
+		ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C* L_294 = ___1_y;
+		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_295;
+		L_295 = ComputedStyle_get_backgroundColor_m504A3843A96727FD70B1ACA523F27EAD1BAF8A21(L_294, NULL);
+		bool L_296;
+		L_296 = Color_op_Inequality_mF1C733BA10E60B086AB950A71143678AE76C4D92_inline(L_293, L_295, NULL);
+		if (L_296)
 		{
-			goto IL_055b;
+			goto IL_056e;
 		}
 	}
 	{
-		ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C* L_295 = ___0_x;
-		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_296;
-		L_296 = ComputedStyle_get_borderBottomColor_m04D2C5AE203CA6FB3ACFC170A56FDA91B61BA151(L_295, NULL);
-		ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C* L_297 = ___1_y;
+		ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C* L_297 = ___0_x;
 		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_298;
 		L_298 = ComputedStyle_get_borderBottomColor_m04D2C5AE203CA6FB3ACFC170A56FDA91B61BA151(L_297, NULL);
-		bool L_299;
-		L_299 = Color_op_Inequality_mF1C733BA10E60B086AB950A71143678AE76C4D92_inline(L_296, L_298, NULL);
-		if (L_299)
+		ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C* L_299 = ___1_y;
+		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_300;
+		L_300 = ComputedStyle_get_borderBottomColor_m04D2C5AE203CA6FB3ACFC170A56FDA91B61BA151(L_299, NULL);
+		bool L_301;
+		L_301 = Color_op_Inequality_mF1C733BA10E60B086AB950A71143678AE76C4D92_inline(L_298, L_300, NULL);
+		if (L_301)
 		{
-			goto IL_055b;
+			goto IL_056e;
 		}
 	}
 	{
-		ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C* L_300 = ___0_x;
-		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_301;
-		L_301 = ComputedStyle_get_borderLeftColor_m680EC2A7939B25CF3EB0091A4E7B1A2A0A0F1911(L_300, NULL);
-		ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C* L_302 = ___1_y;
+		ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C* L_302 = ___0_x;
 		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_303;
 		L_303 = ComputedStyle_get_borderLeftColor_m680EC2A7939B25CF3EB0091A4E7B1A2A0A0F1911(L_302, NULL);
-		bool L_304;
-		L_304 = Color_op_Inequality_mF1C733BA10E60B086AB950A71143678AE76C4D92_inline(L_301, L_303, NULL);
-		if (L_304)
+		ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C* L_304 = ___1_y;
+		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_305;
+		L_305 = ComputedStyle_get_borderLeftColor_m680EC2A7939B25CF3EB0091A4E7B1A2A0A0F1911(L_304, NULL);
+		bool L_306;
+		L_306 = Color_op_Inequality_mF1C733BA10E60B086AB950A71143678AE76C4D92_inline(L_303, L_305, NULL);
+		if (L_306)
 		{
-			goto IL_055b;
+			goto IL_056e;
 		}
 	}
 	{
-		ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C* L_305 = ___0_x;
-		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_306;
-		L_306 = ComputedStyle_get_borderRightColor_m5A445BF6E930622205EB32B7D8B3CB0B76F79ACC(L_305, NULL);
-		ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C* L_307 = ___1_y;
+		ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C* L_307 = ___0_x;
 		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_308;
 		L_308 = ComputedStyle_get_borderRightColor_m5A445BF6E930622205EB32B7D8B3CB0B76F79ACC(L_307, NULL);
-		bool L_309;
-		L_309 = Color_op_Inequality_mF1C733BA10E60B086AB950A71143678AE76C4D92_inline(L_306, L_308, NULL);
-		if (L_309)
+		ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C* L_309 = ___1_y;
+		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_310;
+		L_310 = ComputedStyle_get_borderRightColor_m5A445BF6E930622205EB32B7D8B3CB0B76F79ACC(L_309, NULL);
+		bool L_311;
+		L_311 = Color_op_Inequality_mF1C733BA10E60B086AB950A71143678AE76C4D92_inline(L_308, L_310, NULL);
+		if (L_311)
 		{
-			goto IL_055b;
+			goto IL_056e;
 		}
 	}
 	{
-		ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C* L_310 = ___0_x;
-		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_311;
-		L_311 = ComputedStyle_get_borderTopColor_m701E83704839513697B869F5C29987A6DDB41738(L_310, NULL);
-		ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C* L_312 = ___1_y;
+		ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C* L_312 = ___0_x;
 		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_313;
 		L_313 = ComputedStyle_get_borderTopColor_m701E83704839513697B869F5C29987A6DDB41738(L_312, NULL);
-		bool L_314;
-		L_314 = Color_op_Inequality_mF1C733BA10E60B086AB950A71143678AE76C4D92_inline(L_311, L_313, NULL);
-		G_B93_0 = ((int32_t)(L_314));
-		goto IL_055c;
+		ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C* L_314 = ___1_y;
+		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_315;
+		L_315 = ComputedStyle_get_borderTopColor_m701E83704839513697B869F5C29987A6DDB41738(L_314, NULL);
+		bool L_316;
+		L_316 = Color_op_Inequality_mF1C733BA10E60B086AB950A71143678AE76C4D92_inline(L_313, L_315, NULL);
+		G_B94_0 = ((int32_t)(L_316));
+		goto IL_056f;
 	}
 
-IL_055b:
+IL_056e:
 	{
-		G_B93_0 = 1;
-	}
-
-IL_055c:
-	{
-		G_B95_0 = G_B93_0;
-		goto IL_055f;
-	}
-
-IL_055e:
-	{
-		G_B95_0 = 0;
-	}
-
-IL_055f:
-	{
-		V_15 = (bool)G_B95_0;
-		bool L_315 = V_15;
-		if (!L_315)
-		{
-			goto IL_056f;
-		}
-	}
-	{
-		int32_t L_316 = V_0;
-		V_0 = ((int32_t)((int32_t)L_316|((int32_t)8192)));
+		G_B94_0 = 1;
 	}
 
 IL_056f:
 	{
-		int32_t L_317 = V_0;
-		if (((int32_t)((int32_t)L_317&((int32_t)2048))))
+		G_B96_0 = G_B94_0;
+		goto IL_0572;
+	}
+
+IL_0571:
+	{
+		G_B96_0 = 0;
+	}
+
+IL_0572:
+	{
+		V_16 = (bool)G_B96_0;
+		bool L_317 = V_16;
+		if (!L_317)
 		{
-			goto IL_05da;
+			goto IL_0582;
 		}
 	}
 	{
-		ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C* L_318 = ___0_x;
-		Background_t3C720DED4FAF016332D29FB86C9BE8D5D0D8F0C8 L_319;
-		L_319 = ComputedStyle_get_backgroundImage_mDA7EAE73F023BAEC1831613F8AE8168E5065E68C(L_318, NULL);
-		ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C* L_320 = ___1_y;
+		int32_t L_318 = V_0;
+		V_0 = ((int32_t)((int32_t)L_318|((int32_t)8192)));
+	}
+
+IL_0582:
+	{
+		int32_t L_319 = V_0;
+		if (((int32_t)((int32_t)L_319&((int32_t)2048))))
+		{
+			goto IL_05ed;
+		}
+	}
+	{
+		ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C* L_320 = ___0_x;
 		Background_t3C720DED4FAF016332D29FB86C9BE8D5D0D8F0C8 L_321;
 		L_321 = ComputedStyle_get_backgroundImage_mDA7EAE73F023BAEC1831613F8AE8168E5065E68C(L_320, NULL);
-		bool L_322;
-		L_322 = Background_op_Inequality_m3F950C38EF31D8358EBE8DF03FC842E3CE14E1CF(L_319, L_321, NULL);
-		if (L_322)
+		ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C* L_322 = ___1_y;
+		Background_t3C720DED4FAF016332D29FB86C9BE8D5D0D8F0C8 L_323;
+		L_323 = ComputedStyle_get_backgroundImage_mDA7EAE73F023BAEC1831613F8AE8168E5065E68C(L_322, NULL);
+		bool L_324;
+		L_324 = Background_op_Inequality_m3F950C38EF31D8358EBE8DF03FC842E3CE14E1CF(L_321, L_323, NULL);
+		if (L_324)
 		{
-			goto IL_05d7;
+			goto IL_05ea;
 		}
 	}
 	{
-		ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C* L_323 = ___0_x;
-		BackgroundPosition_tF0822B29FC27A67205A9893EBE03D03B799B8B56 L_324;
-		L_324 = ComputedStyle_get_backgroundPositionX_m0C634D48C84E4BE9CD43B5F812C719CFEEF10DE2(L_323, NULL);
-		ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C* L_325 = ___1_y;
+		ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C* L_325 = ___0_x;
 		BackgroundPosition_tF0822B29FC27A67205A9893EBE03D03B799B8B56 L_326;
 		L_326 = ComputedStyle_get_backgroundPositionX_m0C634D48C84E4BE9CD43B5F812C719CFEEF10DE2(L_325, NULL);
-		bool L_327;
-		L_327 = BackgroundPosition_op_Inequality_m0AD06C7717D6C4D7597B5908397D15F749B54E1F(L_324, L_326, NULL);
-		if (L_327)
+		ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C* L_327 = ___1_y;
+		BackgroundPosition_tF0822B29FC27A67205A9893EBE03D03B799B8B56 L_328;
+		L_328 = ComputedStyle_get_backgroundPositionX_m0C634D48C84E4BE9CD43B5F812C719CFEEF10DE2(L_327, NULL);
+		bool L_329;
+		L_329 = BackgroundPosition_op_Inequality_m0AD06C7717D6C4D7597B5908397D15F749B54E1F(L_326, L_328, NULL);
+		if (L_329)
 		{
-			goto IL_05d7;
+			goto IL_05ea;
 		}
 	}
 	{
-		ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C* L_328 = ___0_x;
-		BackgroundPosition_tF0822B29FC27A67205A9893EBE03D03B799B8B56 L_329;
-		L_329 = ComputedStyle_get_backgroundPositionY_m6E2A4CA5944F68551BEC6D3371625F077EA80FEC(L_328, NULL);
-		ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C* L_330 = ___1_y;
+		ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C* L_330 = ___0_x;
 		BackgroundPosition_tF0822B29FC27A67205A9893EBE03D03B799B8B56 L_331;
 		L_331 = ComputedStyle_get_backgroundPositionY_m6E2A4CA5944F68551BEC6D3371625F077EA80FEC(L_330, NULL);
-		bool L_332;
-		L_332 = BackgroundPosition_op_Inequality_m0AD06C7717D6C4D7597B5908397D15F749B54E1F(L_329, L_331, NULL);
-		if (L_332)
+		ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C* L_332 = ___1_y;
+		BackgroundPosition_tF0822B29FC27A67205A9893EBE03D03B799B8B56 L_333;
+		L_333 = ComputedStyle_get_backgroundPositionY_m6E2A4CA5944F68551BEC6D3371625F077EA80FEC(L_332, NULL);
+		bool L_334;
+		L_334 = BackgroundPosition_op_Inequality_m0AD06C7717D6C4D7597B5908397D15F749B54E1F(L_331, L_333, NULL);
+		if (L_334)
 		{
-			goto IL_05d7;
+			goto IL_05ea;
 		}
 	}
 	{
-		ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C* L_333 = ___0_x;
-		BackgroundRepeat_t446EC7315DED2C6822F1047B7587C3018BFB277F L_334;
-		L_334 = ComputedStyle_get_backgroundRepeat_m65F461A96E6BAD07DF57530E1F7BD3B5E45756AF(L_333, NULL);
-		ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C* L_335 = ___1_y;
+		ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C* L_335 = ___0_x;
 		BackgroundRepeat_t446EC7315DED2C6822F1047B7587C3018BFB277F L_336;
 		L_336 = ComputedStyle_get_backgroundRepeat_m65F461A96E6BAD07DF57530E1F7BD3B5E45756AF(L_335, NULL);
-		bool L_337;
-		L_337 = BackgroundRepeat_op_Inequality_m40BB5AFBBA24AA51D1647FFFF70E5723D73D433B(L_334, L_336, NULL);
-		if (L_337)
+		ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C* L_337 = ___1_y;
+		BackgroundRepeat_t446EC7315DED2C6822F1047B7587C3018BFB277F L_338;
+		L_338 = ComputedStyle_get_backgroundRepeat_m65F461A96E6BAD07DF57530E1F7BD3B5E45756AF(L_337, NULL);
+		bool L_339;
+		L_339 = BackgroundRepeat_op_Inequality_m40BB5AFBBA24AA51D1647FFFF70E5723D73D433B(L_336, L_338, NULL);
+		if (L_339)
 		{
-			goto IL_05d7;
+			goto IL_05ea;
 		}
 	}
 	{
-		ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C* L_338 = ___0_x;
-		BackgroundSize_t809883E2D7BB1D8D85B4C3E1DBE189F187DB25E7 L_339;
-		L_339 = ComputedStyle_get_backgroundSize_mD90708BC43E054958E859DD0567F467304B4AC36(L_338, NULL);
-		ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C* L_340 = ___1_y;
+		ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C* L_340 = ___0_x;
 		BackgroundSize_t809883E2D7BB1D8D85B4C3E1DBE189F187DB25E7 L_341;
 		L_341 = ComputedStyle_get_backgroundSize_mD90708BC43E054958E859DD0567F467304B4AC36(L_340, NULL);
-		bool L_342;
-		L_342 = BackgroundSize_op_Inequality_m6C27B78741EEA8C0F25AD8925700A23CADC34F68(L_339, L_341, NULL);
-		G_B104_0 = ((int32_t)(L_342));
-		goto IL_05d8;
+		ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C* L_342 = ___1_y;
+		BackgroundSize_t809883E2D7BB1D8D85B4C3E1DBE189F187DB25E7 L_343;
+		L_343 = ComputedStyle_get_backgroundSize_mD90708BC43E054958E859DD0567F467304B4AC36(L_342, NULL);
+		bool L_344;
+		L_344 = BackgroundSize_op_Inequality_m6C27B78741EEA8C0F25AD8925700A23CADC34F68(L_341, L_343, NULL);
+		G_B105_0 = ((int32_t)(L_344));
+		goto IL_05eb;
 	}
 
-IL_05d7:
+IL_05ea:
 	{
-		G_B104_0 = 1;
-	}
-
-IL_05d8:
-	{
-		G_B106_0 = G_B104_0;
-		goto IL_05db;
-	}
-
-IL_05da:
-	{
-		G_B106_0 = 0;
-	}
-
-IL_05db:
-	{
-		V_16 = (bool)G_B106_0;
-		bool L_343 = V_16;
-		if (!L_343)
-		{
-			goto IL_05eb;
-		}
-	}
-	{
-		int32_t L_344 = V_0;
-		V_0 = ((int32_t)((int32_t)L_344|((int32_t)2048)));
+		G_B105_0 = 1;
 	}
 
 IL_05eb:
 	{
-		ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C* L_345 = ___0_x;
-		Length_t90BB06D47DD6DB461ED21BD3E3241FAB6C824256 L_346;
-		L_346 = ComputedStyle_get_borderBottomLeftRadius_m0591621DC5BDEF35B0F24C7791A9244BCC72D87E(L_345, NULL);
-		ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C* L_347 = ___1_y;
+		G_B107_0 = G_B105_0;
+		goto IL_05ee;
+	}
+
+IL_05ed:
+	{
+		G_B107_0 = 0;
+	}
+
+IL_05ee:
+	{
+		V_17 = (bool)G_B107_0;
+		bool L_345 = V_17;
+		if (!L_345)
+		{
+			goto IL_05fe;
+		}
+	}
+	{
+		int32_t L_346 = V_0;
+		V_0 = ((int32_t)((int32_t)L_346|((int32_t)2048)));
+	}
+
+IL_05fe:
+	{
+		ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C* L_347 = ___0_x;
 		Length_t90BB06D47DD6DB461ED21BD3E3241FAB6C824256 L_348;
 		L_348 = ComputedStyle_get_borderBottomLeftRadius_m0591621DC5BDEF35B0F24C7791A9244BCC72D87E(L_347, NULL);
-		bool L_349;
-		L_349 = Length_op_Inequality_mCF03BF210E28C70B6941AF5D78E896ED3A4D4E4C(L_346, L_348, NULL);
-		if (L_349)
+		ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C* L_349 = ___1_y;
+		Length_t90BB06D47DD6DB461ED21BD3E3241FAB6C824256 L_350;
+		L_350 = ComputedStyle_get_borderBottomLeftRadius_m0591621DC5BDEF35B0F24C7791A9244BCC72D87E(L_349, NULL);
+		bool L_351;
+		L_351 = Length_op_Inequality_mCF03BF210E28C70B6941AF5D78E896ED3A4D4E4C(L_348, L_350, NULL);
+		if (L_351)
 		{
-			goto IL_0637;
+			goto IL_064a;
 		}
 	}
 	{
-		ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C* L_350 = ___0_x;
-		Length_t90BB06D47DD6DB461ED21BD3E3241FAB6C824256 L_351;
-		L_351 = ComputedStyle_get_borderBottomRightRadius_m570211084F0CD1C730B7F7D3A6510394895CC980(L_350, NULL);
-		ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C* L_352 = ___1_y;
+		ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C* L_352 = ___0_x;
 		Length_t90BB06D47DD6DB461ED21BD3E3241FAB6C824256 L_353;
 		L_353 = ComputedStyle_get_borderBottomRightRadius_m570211084F0CD1C730B7F7D3A6510394895CC980(L_352, NULL);
-		bool L_354;
-		L_354 = Length_op_Inequality_mCF03BF210E28C70B6941AF5D78E896ED3A4D4E4C(L_351, L_353, NULL);
-		if (L_354)
+		ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C* L_354 = ___1_y;
+		Length_t90BB06D47DD6DB461ED21BD3E3241FAB6C824256 L_355;
+		L_355 = ComputedStyle_get_borderBottomRightRadius_m570211084F0CD1C730B7F7D3A6510394895CC980(L_354, NULL);
+		bool L_356;
+		L_356 = Length_op_Inequality_mCF03BF210E28C70B6941AF5D78E896ED3A4D4E4C(L_353, L_355, NULL);
+		if (L_356)
 		{
-			goto IL_0637;
+			goto IL_064a;
 		}
 	}
 	{
-		ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C* L_355 = ___0_x;
-		Length_t90BB06D47DD6DB461ED21BD3E3241FAB6C824256 L_356;
-		L_356 = ComputedStyle_get_borderTopLeftRadius_m67D177E6AF91CC1413FCA6EA2675FEC54AD84974(L_355, NULL);
-		ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C* L_357 = ___1_y;
+		ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C* L_357 = ___0_x;
 		Length_t90BB06D47DD6DB461ED21BD3E3241FAB6C824256 L_358;
 		L_358 = ComputedStyle_get_borderTopLeftRadius_m67D177E6AF91CC1413FCA6EA2675FEC54AD84974(L_357, NULL);
-		bool L_359;
-		L_359 = Length_op_Inequality_mCF03BF210E28C70B6941AF5D78E896ED3A4D4E4C(L_356, L_358, NULL);
-		if (L_359)
+		ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C* L_359 = ___1_y;
+		Length_t90BB06D47DD6DB461ED21BD3E3241FAB6C824256 L_360;
+		L_360 = ComputedStyle_get_borderTopLeftRadius_m67D177E6AF91CC1413FCA6EA2675FEC54AD84974(L_359, NULL);
+		bool L_361;
+		L_361 = Length_op_Inequality_mCF03BF210E28C70B6941AF5D78E896ED3A4D4E4C(L_358, L_360, NULL);
+		if (L_361)
 		{
-			goto IL_0637;
+			goto IL_064a;
 		}
 	}
 	{
-		ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C* L_360 = ___0_x;
-		Length_t90BB06D47DD6DB461ED21BD3E3241FAB6C824256 L_361;
-		L_361 = ComputedStyle_get_borderTopRightRadius_m65B3C6F4578C9512769A4CDBC59E15C8C840A588(L_360, NULL);
-		ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C* L_362 = ___1_y;
+		ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C* L_362 = ___0_x;
 		Length_t90BB06D47DD6DB461ED21BD3E3241FAB6C824256 L_363;
 		L_363 = ComputedStyle_get_borderTopRightRadius_m65B3C6F4578C9512769A4CDBC59E15C8C840A588(L_362, NULL);
-		bool L_364;
-		L_364 = Length_op_Inequality_mCF03BF210E28C70B6941AF5D78E896ED3A4D4E4C(L_361, L_363, NULL);
-		G_B113_0 = ((int32_t)(L_364));
-		goto IL_0638;
+		ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C* L_364 = ___1_y;
+		Length_t90BB06D47DD6DB461ED21BD3E3241FAB6C824256 L_365;
+		L_365 = ComputedStyle_get_borderTopRightRadius_m65B3C6F4578C9512769A4CDBC59E15C8C840A588(L_364, NULL);
+		bool L_366;
+		L_366 = Length_op_Inequality_mCF03BF210E28C70B6941AF5D78E896ED3A4D4E4C(L_363, L_365, NULL);
+		G_B114_0 = ((int32_t)(L_366));
+		goto IL_064b;
 	}
 
-IL_0637:
+IL_064a:
 	{
-		G_B113_0 = 1;
+		G_B114_0 = 1;
 	}
 
-IL_0638:
+IL_064b:
 	{
-		V_17 = (bool)G_B113_0;
-		bool L_365 = V_17;
-		if (!L_365)
+		V_18 = (bool)G_B114_0;
+		bool L_367 = V_18;
+		if (!L_367)
 		{
-			goto IL_0648;
+			goto IL_065b;
 		}
 	}
 	{
-		int32_t L_366 = V_0;
-		V_0 = ((int32_t)((int32_t)L_366|((int32_t)2176)));
+		int32_t L_368 = V_0;
+		V_0 = ((int32_t)((int32_t)L_368|((int32_t)2176)));
 	}
 
-IL_0648:
+IL_065b:
 	{
-		ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C* L_367 = ___0_x;
-		float L_368;
-		L_368 = ComputedStyle_get_opacity_m8E637C81F76041C964153BEA39F3F8B2D812303E(L_367, NULL);
-		ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C* L_369 = ___1_y;
+		ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C* L_369 = ___0_x;
 		float L_370;
 		L_370 = ComputedStyle_get_opacity_m8E637C81F76041C964153BEA39F3F8B2D812303E(L_369, NULL);
-		V_18 = (bool)((((int32_t)((((float)L_368) == ((float)L_370))? 1 : 0)) == ((int32_t)0))? 1 : 0);
-		bool L_371 = V_18;
-		if (!L_371)
+		ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C* L_371 = ___1_y;
+		float L_372;
+		L_372 = ComputedStyle_get_opacity_m8E637C81F76041C964153BEA39F3F8B2D812303E(L_371, NULL);
+		V_19 = (bool)((((int32_t)((((float)L_370) == ((float)L_372))? 1 : 0)) == ((int32_t)0))? 1 : 0);
+		bool L_373 = V_19;
+		if (!L_373)
 		{
-			goto IL_0669;
+			goto IL_067c;
 		}
 	}
 	{
-		int32_t L_372 = V_0;
-		V_0 = ((int32_t)((int32_t)L_372|((int32_t)4096)));
+		int32_t L_374 = V_0;
+		V_0 = ((int32_t)((int32_t)L_374|((int32_t)4096)));
 	}
 
-IL_0669:
+IL_067c:
 	{
-		ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C* L_373 = ___0_x;
-		int32_t L_374;
-		L_374 = ComputedStyle_get_overflow_m904B36CF971CBAD3B1B5D6239E1FB982FCF5548F(L_373, NULL);
-		ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C* L_375 = ___1_y;
+		ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C* L_375 = ___0_x;
 		int32_t L_376;
 		L_376 = ComputedStyle_get_overflow_m904B36CF971CBAD3B1B5D6239E1FB982FCF5548F(L_375, NULL);
-		V_19 = (bool)((((int32_t)((((int32_t)L_374) == ((int32_t)L_376))? 1 : 0)) == ((int32_t)0))? 1 : 0);
-		bool L_377 = V_19;
-		if (!L_377)
+		ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C* L_377 = ___1_y;
+		int32_t L_378;
+		L_378 = ComputedStyle_get_overflow_m904B36CF971CBAD3B1B5D6239E1FB982FCF5548F(L_377, NULL);
+		V_20 = (bool)((((int32_t)((((int32_t)L_376) == ((int32_t)L_378))? 1 : 0)) == ((int32_t)0))? 1 : 0);
+		bool L_379 = V_20;
+		if (!L_379)
 		{
-			goto IL_0687;
+			goto IL_069a;
 		}
 	}
 	{
-		int32_t L_378 = V_0;
-		V_0 = ((int32_t)((int32_t)L_378|((int32_t)72)));
+		int32_t L_380 = V_0;
+		V_0 = ((int32_t)((int32_t)L_380|((int32_t)72)));
 	}
 
-IL_0687:
+IL_069a:
 	{
 	}
 
-IL_0688:
+IL_069b:
 	{
-		ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C* L_379 = ___0_x;
-		StyleDataRef_1_tF773E9CBC6DC0FEB38DF95A6F3F47AC49AE045B3* L_380 = (StyleDataRef_1_tF773E9CBC6DC0FEB38DF95A6F3F47AC49AE045B3*)(&L_379->___rareData);
-		ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C* L_381 = ___1_y;
-		StyleDataRef_1_tF773E9CBC6DC0FEB38DF95A6F3F47AC49AE045B3 L_382 = L_381->___rareData;
-		bool L_383;
-		L_383 = StyleDataRef_1_ReferenceEquals_mFDF8F205984E2B9C3A2093781ED1356B2A9C5FB6(L_380, L_382, StyleDataRef_1_ReferenceEquals_mFDF8F205984E2B9C3A2093781ED1356B2A9C5FB6_RuntimeMethod_var);
-		V_20 = (bool)((((int32_t)L_383) == ((int32_t)0))? 1 : 0);
-		bool L_384 = V_20;
-		if (!L_384)
+		ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C* L_381 = ___0_x;
+		StyleDataRef_1_tF773E9CBC6DC0FEB38DF95A6F3F47AC49AE045B3* L_382 = (StyleDataRef_1_tF773E9CBC6DC0FEB38DF95A6F3F47AC49AE045B3*)(&L_381->___rareData);
+		ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C* L_383 = ___1_y;
+		StyleDataRef_1_tF773E9CBC6DC0FEB38DF95A6F3F47AC49AE045B3 L_384 = L_383->___rareData;
+		bool L_385;
+		L_385 = StyleDataRef_1_ReferenceEquals_mFDF8F205984E2B9C3A2093781ED1356B2A9C5FB6(L_382, L_384, StyleDataRef_1_ReferenceEquals_mFDF8F205984E2B9C3A2093781ED1356B2A9C5FB6_RuntimeMethod_var);
+		V_21 = (bool)((((int32_t)L_385) == ((int32_t)0))? 1 : 0);
+		bool L_386 = V_21;
+		if (!L_386)
 		{
-			goto IL_0770;
+			goto IL_0783;
 		}
 	}
 	{
-		ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C* L_385 = ___0_x;
-		int32_t L_386;
-		L_386 = ComputedStyle_get_textOverflow_m1D6D87744472BFD4F90C88C34E5601F79CD22A49(L_385, NULL);
-		ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C* L_387 = ___1_y;
+		ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C* L_387 = ___0_x;
 		int32_t L_388;
 		L_388 = ComputedStyle_get_textOverflow_m1D6D87744472BFD4F90C88C34E5601F79CD22A49(L_387, NULL);
-		if ((!(((uint32_t)L_386) == ((uint32_t)L_388))))
+		ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C* L_389 = ___1_y;
+		int32_t L_390;
+		L_390 = ComputedStyle_get_textOverflow_m1D6D87744472BFD4F90C88C34E5601F79CD22A49(L_389, NULL);
+		if ((!(((uint32_t)L_388) == ((uint32_t)L_390))))
 		{
-			goto IL_06c7;
+			goto IL_06da;
 		}
 	}
 	{
-		ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C* L_389 = ___0_x;
-		float L_390;
-		L_390 = ComputedStyle_get_unitySliceScale_m1A364F4A88DE227CFFDB11E8D7F23F61D1EF43E7(L_389, NULL);
-		ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C* L_391 = ___1_y;
+		ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C* L_391 = ___0_x;
 		float L_392;
 		L_392 = ComputedStyle_get_unitySliceScale_m1A364F4A88DE227CFFDB11E8D7F23F61D1EF43E7(L_391, NULL);
-		G_B124_0 = ((((int32_t)((((float)L_390) == ((float)L_392))? 1 : 0)) == ((int32_t)0))? 1 : 0);
-		goto IL_06c8;
+		ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C* L_393 = ___1_y;
+		float L_394;
+		L_394 = ComputedStyle_get_unitySliceScale_m1A364F4A88DE227CFFDB11E8D7F23F61D1EF43E7(L_393, NULL);
+		G_B125_0 = ((((int32_t)((((float)L_392) == ((float)L_394))? 1 : 0)) == ((int32_t)0))? 1 : 0);
+		goto IL_06db;
 	}
 
-IL_06c7:
+IL_06da:
 	{
-		G_B124_0 = 1;
+		G_B125_0 = 1;
 	}
 
-IL_06c8:
+IL_06db:
 	{
-		V_21 = (bool)G_B124_0;
-		bool L_393 = V_21;
-		if (!L_393)
+		V_22 = (bool)G_B125_0;
+		bool L_395 = V_22;
+		if (!L_395)
 		{
-			goto IL_06d8;
+			goto IL_06eb;
 		}
 	}
 	{
-		int32_t L_394 = V_0;
-		V_0 = ((int32_t)((int32_t)L_394|((int32_t)2056)));
+		int32_t L_396 = V_0;
+		V_0 = ((int32_t)((int32_t)L_396|((int32_t)2056)));
 	}
 
-IL_06d8:
+IL_06eb:
 	{
-		ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C* L_395 = ___0_x;
-		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_396;
-		L_396 = ComputedStyle_get_unityBackgroundImageTintColor_mA6C8A9BCBC7585D3DD68B1E3EEC7FD3238DD016A(L_395, NULL);
-		ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C* L_397 = ___1_y;
+		ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C* L_397 = ___0_x;
 		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_398;
 		L_398 = ComputedStyle_get_unityBackgroundImageTintColor_mA6C8A9BCBC7585D3DD68B1E3EEC7FD3238DD016A(L_397, NULL);
-		bool L_399;
-		L_399 = Color_op_Inequality_mF1C733BA10E60B086AB950A71143678AE76C4D92_inline(L_396, L_398, NULL);
-		V_22 = L_399;
-		bool L_400 = V_22;
-		if (!L_400)
+		ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C* L_399 = ___1_y;
+		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_400;
+		L_400 = ComputedStyle_get_unityBackgroundImageTintColor_mA6C8A9BCBC7585D3DD68B1E3EEC7FD3238DD016A(L_399, NULL);
+		bool L_401;
+		L_401 = Color_op_Inequality_mF1C733BA10E60B086AB950A71143678AE76C4D92_inline(L_398, L_400, NULL);
+		V_23 = L_401;
+		bool L_402 = V_23;
+		if (!L_402)
 		{
-			goto IL_06f9;
+			goto IL_070c;
 		}
 	}
 	{
-		int32_t L_401 = V_0;
-		V_0 = ((int32_t)((int32_t)L_401|((int32_t)8192)));
+		int32_t L_403 = V_0;
+		V_0 = ((int32_t)((int32_t)L_403|((int32_t)8192)));
 	}
 
-IL_06f9:
+IL_070c:
 	{
-		int32_t L_402 = V_0;
-		if (((int32_t)((int32_t)L_402&((int32_t)2048))))
+		int32_t L_404 = V_0;
+		if (((int32_t)((int32_t)L_404&((int32_t)2048))))
 		{
-			goto IL_075e;
+			goto IL_0771;
 		}
 	}
 	{
-		ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C* L_403 = ___0_x;
-		int32_t L_404;
-		L_404 = ComputedStyle_get_unityOverflowClipBox_m7AB0AE71E270B55E37AB90856EC2797F99780AF1(L_403, NULL);
-		ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C* L_405 = ___1_y;
+		ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C* L_405 = ___0_x;
 		int32_t L_406;
 		L_406 = ComputedStyle_get_unityOverflowClipBox_m7AB0AE71E270B55E37AB90856EC2797F99780AF1(L_405, NULL);
-		if ((!(((uint32_t)L_404) == ((uint32_t)L_406))))
+		ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C* L_407 = ___1_y;
+		int32_t L_408;
+		L_408 = ComputedStyle_get_unityOverflowClipBox_m7AB0AE71E270B55E37AB90856EC2797F99780AF1(L_407, NULL);
+		if ((!(((uint32_t)L_406) == ((uint32_t)L_408))))
 		{
-			goto IL_075b;
+			goto IL_076e;
 		}
 	}
 	{
-		ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C* L_407 = ___0_x;
-		int32_t L_408;
-		L_408 = ComputedStyle_get_unitySliceBottom_m8C7E80317111D45183392C3C28974D1462D45032(L_407, NULL);
-		ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C* L_409 = ___1_y;
+		ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C* L_409 = ___0_x;
 		int32_t L_410;
 		L_410 = ComputedStyle_get_unitySliceBottom_m8C7E80317111D45183392C3C28974D1462D45032(L_409, NULL);
-		if ((!(((uint32_t)L_408) == ((uint32_t)L_410))))
+		ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C* L_411 = ___1_y;
+		int32_t L_412;
+		L_412 = ComputedStyle_get_unitySliceBottom_m8C7E80317111D45183392C3C28974D1462D45032(L_411, NULL);
+		if ((!(((uint32_t)L_410) == ((uint32_t)L_412))))
 		{
-			goto IL_075b;
+			goto IL_076e;
 		}
 	}
 	{
-		ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C* L_411 = ___0_x;
-		int32_t L_412;
-		L_412 = ComputedStyle_get_unitySliceLeft_mAF9F39984C608FE1F1FEBCE6779EE1BE77C5D72F(L_411, NULL);
-		ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C* L_413 = ___1_y;
+		ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C* L_413 = ___0_x;
 		int32_t L_414;
 		L_414 = ComputedStyle_get_unitySliceLeft_mAF9F39984C608FE1F1FEBCE6779EE1BE77C5D72F(L_413, NULL);
-		if ((!(((uint32_t)L_412) == ((uint32_t)L_414))))
+		ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C* L_415 = ___1_y;
+		int32_t L_416;
+		L_416 = ComputedStyle_get_unitySliceLeft_mAF9F39984C608FE1F1FEBCE6779EE1BE77C5D72F(L_415, NULL);
+		if ((!(((uint32_t)L_414) == ((uint32_t)L_416))))
 		{
-			goto IL_075b;
+			goto IL_076e;
 		}
 	}
 	{
-		ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C* L_415 = ___0_x;
-		int32_t L_416;
-		L_416 = ComputedStyle_get_unitySliceRight_m69474B745D3F01D9D77F262ADF24EF7E1D31AB66(L_415, NULL);
-		ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C* L_417 = ___1_y;
+		ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C* L_417 = ___0_x;
 		int32_t L_418;
 		L_418 = ComputedStyle_get_unitySliceRight_m69474B745D3F01D9D77F262ADF24EF7E1D31AB66(L_417, NULL);
-		if ((!(((uint32_t)L_416) == ((uint32_t)L_418))))
+		ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C* L_419 = ___1_y;
+		int32_t L_420;
+		L_420 = ComputedStyle_get_unitySliceRight_m69474B745D3F01D9D77F262ADF24EF7E1D31AB66(L_419, NULL);
+		if ((!(((uint32_t)L_418) == ((uint32_t)L_420))))
 		{
-			goto IL_075b;
+			goto IL_076e;
 		}
 	}
 	{
-		ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C* L_419 = ___0_x;
-		int32_t L_420;
-		L_420 = ComputedStyle_get_unitySliceTop_m976A8262A1C8933B052D2311372A2393A59F5A6D(L_419, NULL);
-		ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C* L_421 = ___1_y;
+		ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C* L_421 = ___0_x;
 		int32_t L_422;
 		L_422 = ComputedStyle_get_unitySliceTop_m976A8262A1C8933B052D2311372A2393A59F5A6D(L_421, NULL);
-		if ((!(((uint32_t)L_420) == ((uint32_t)L_422))))
+		ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C* L_423 = ___1_y;
+		int32_t L_424;
+		L_424 = ComputedStyle_get_unitySliceTop_m976A8262A1C8933B052D2311372A2393A59F5A6D(L_423, NULL);
+		if ((!(((uint32_t)L_422) == ((uint32_t)L_424))))
 		{
-			goto IL_075b;
+			goto IL_076e;
 		}
 	}
 	{
-		ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C* L_423 = ___0_x;
-		int32_t L_424;
-		L_424 = ComputedStyle_get_unityTextOverflowPosition_mD2AE8FE735F17A68CA9E83BC7542A87C5D72AFE1(L_423, NULL);
-		ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C* L_425 = ___1_y;
+		ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C* L_425 = ___0_x;
 		int32_t L_426;
 		L_426 = ComputedStyle_get_unityTextOverflowPosition_mD2AE8FE735F17A68CA9E83BC7542A87C5D72AFE1(L_425, NULL);
-		G_B136_0 = ((((int32_t)((((int32_t)L_424) == ((int32_t)L_426))? 1 : 0)) == ((int32_t)0))? 1 : 0);
-		goto IL_075c;
+		ComputedStyle_t8B08CCCEE20525528B3FFDAC6D3F58F101AAF54C* L_427 = ___1_y;
+		int32_t L_428;
+		L_428 = ComputedStyle_get_unityTextOverflowPosition_mD2AE8FE735F17A68CA9E83BC7542A87C5D72AFE1(L_427, NULL);
+		G_B137_0 = ((((int32_t)((((int32_t)L_426) == ((int32_t)L_428))? 1 : 0)) == ((int32_t)0))? 1 : 0);
+		goto IL_076f;
 	}
 
-IL_075b:
+IL_076e:
 	{
-		G_B136_0 = 1;
-	}
-
-IL_075c:
-	{
-		G_B138_0 = G_B136_0;
-		goto IL_075f;
-	}
-
-IL_075e:
-	{
-		G_B138_0 = 0;
-	}
-
-IL_075f:
-	{
-		V_23 = (bool)G_B138_0;
-		bool L_427 = V_23;
-		if (!L_427)
-		{
-			goto IL_076f;
-		}
-	}
-	{
-		int32_t L_428 = V_0;
-		V_0 = ((int32_t)((int32_t)L_428|((int32_t)2048)));
+		G_B137_0 = 1;
 	}
 
 IL_076f:
 	{
+		G_B139_0 = G_B137_0;
+		goto IL_0772;
 	}
 
-IL_0770:
+IL_0771:
 	{
-		int32_t L_429 = V_0;
-		V_24 = L_429;
-		goto IL_0775;
+		G_B139_0 = 0;
 	}
 
-IL_0775:
+IL_0772:
 	{
-		int32_t L_430 = V_24;
-		return L_430;
+		V_24 = (bool)G_B139_0;
+		bool L_429 = V_24;
+		if (!L_429)
+		{
+			goto IL_0782;
+		}
+	}
+	{
+		int32_t L_430 = V_0;
+		V_0 = ((int32_t)((int32_t)L_430|((int32_t)2048)));
+	}
+
+IL_0782:
+	{
+	}
+
+IL_0783:
+	{
+		int32_t L_431 = V_0;
+		V_25 = L_431;
+		goto IL_0788;
+	}
+
+IL_0788:
+	{
+		int32_t L_432 = V_25;
+		return L_432;
 	}
 }
 #ifdef __clang__

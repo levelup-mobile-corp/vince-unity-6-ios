@@ -192,6 +192,7 @@ struct Int64U5BU5D_tAEDFCBDB5414E2A140A6F34C0538BF97FCF67A1D;
 struct IntPtrU5BU5D_tFD177F8C806A6921AD7150264CCC62FA00CAD832;
 struct InteriorNodeU5BU5D_tAFAE5412A76B6FDAC35F626D72595018BCF37787;
 struct LocatedActiveAxisU5BU5D_t03F9B2AA4E703CD06373BE448AAF236770E1C5B7;
+struct MemberInfoU5BU5D_t4CB6970BB166E8E1CFB06152B2A2284971873053;
 struct ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918;
 struct ParameterModifierU5BU5D_t685261AD991B1E6582A0E53243DEE3B745E13364;
 struct StackTraceU5BU5D_t32FBCB20930EAF5BAE3F450FF75228E5450DA0DF;
@@ -199,6 +200,7 @@ struct StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248;
 struct TypeU5BU5D_t97234E1129B564EB38B8D85CAC2AD8B5B9522FFB;
 struct TypedObjectU5BU5D_t0C14A869BE50E088B8980DA43984B87BA08BBC8A;
 struct UInt32U5BU5D_t02FBD658AD156A17574ECE6106CF1FBFCC9807FA;
+struct XmlAtomicValueU5BU5D_t4551012B10612E9BE1319B781AA566174038F409;
 struct XmlAttributeU5BU5D_tFC0CF817A6D2131D94AB6387E4EAE7D97B3FFC40;
 struct XmlMemberMappingU5BU5D_t98364948854B71F146515DCCD516FFA9900EE7CF;
 struct XmlQualifiedNameU5BU5D_t95C376ACDEA9261B842F45A4C4DF9ABEE0FB35D1;
@@ -255,6 +257,7 @@ struct ICollection_t37E7B9DC5B4EF41D190D607F92835BF1171C0E8E;
 struct ICredentials_t8FDA6AF64B852DA0631D4BE66962B20E51E230F0;
 struct IDictionary_t6D03155AF1FA9083817AA5B6AD7DEEACC26AB220;
 struct IDictionaryEnumerator_tE129D608FCDB7207E0F0ECE33473CC950A83AD16;
+struct IDisposable_t030E0496B4E0E4E4F086825007979AF51F7248C5;
 struct IDtdInfo_tD6983F7C3E35C4997BE28F42ED50EF866DAE14F8;
 struct IEnumerator_t7B609C2FFA6EB5167D9C62A0C32A21DE2F666DAA;
 struct IEqualityComparer_tEF8F1EC76B9C8E76695BE848D41E6B147928D1C1;
@@ -588,6 +591,8 @@ IL2CPP_EXTERN_C RuntimeClass* XmlTypeMapping_tF9D5A0ADAF6340AEC2DB840127EAB75094
 IL2CPP_EXTERN_C RuntimeClass* XmlTypeSerializationSource_tE995CC9E60F76C0EDAC4CFAA7808ACCEF4225984_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* XmlUrlResolver_tD1DCA07B66A58F98930187AF17C9B31258C1008E_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* XsdValidator_tB19DA1D1C5635D0E92D22A2F152363C05AED13F6_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeField* SequenceConstructPosContext_tDEC4FB1B8F19EFD1AC27C150D561C2D4F6090BA7____this__FieldInfo_var;
+IL2CPP_EXTERN_C RuntimeField* StringConcat_t8995382764BCE27EF906F99F1235E172D02C6FB9____strList_FieldInfo_var;
 IL2CPP_EXTERN_C String_t* _stringLiteral0EF227EC443ED37BE0A6CC19B319601791FD2393;
 IL2CPP_EXTERN_C String_t* _stringLiteral10843A43CD4C64637831AF0FF399A1ED2FB29D7D;
 IL2CPP_EXTERN_C String_t* _stringLiteral10FBC704FF089D38147AC13DCAB988BD089953A5;
@@ -712,6 +717,8 @@ IL2CPP_EXTERN_C const RuntimeMethod* XmlTypeMapElementInfo_set_IsUnnamedAnyEleme
 IL2CPP_EXTERN_C const RuntimeType* Boolean_t09A6377A54BE2F9E6985A8149F19234FD7DDFE22_0_0_0_var;
 IL2CPP_EXTERN_C const RuntimeType* Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C_0_0_0_var;
 IL2CPP_EXTERN_C const RuntimeType* RuntimeObject_0_0_0_var;
+IL2CPP_EXTERN_C const RuntimeType* SequenceConstructPosContext_tDEC4FB1B8F19EFD1AC27C150D561C2D4F6090BA7_0_0_0_var;
+IL2CPP_EXTERN_C const RuntimeType* StringConcat_t8995382764BCE27EF906F99F1235E172D02C6FB9_0_0_0_var;
 IL2CPP_EXTERN_C const RuntimeType* XmlElement_t9A08B533E9A6B3548A1DE35476186F7ECCDF6FF1_0_0_0_var;
 IL2CPP_EXTERN_C const RuntimeType* XmlNode_t3180B9B3D5C36CD58F5327D9F13458E3B3F030AF_0_0_0_var;
 IL2CPP_EXTERN_C const RuntimeType* XmlQualifiedName_t2794880B373257E4108CC3F36D7373A343ACC5B9_0_0_0_var;
@@ -15865,12 +15872,26 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool XmlReaderSection_get_CollapseWhiteSpaceI
 #endif
 IL2CPP_EXTERN_C void StringConcat_t8995382764BCE27EF906F99F1235E172D02C6FB9_marshal_pinvoke(const StringConcat_t8995382764BCE27EF906F99F1235E172D02C6FB9& unmarshaled, StringConcat_t8995382764BCE27EF906F99F1235E172D02C6FB9_marshaled_pinvoke& marshaled)
 {
-	Exception_t* ___strListException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'strList' of type 'StringConcat'.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&StringConcat_t8995382764BCE27EF906F99F1235E172D02C6FB9_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&StringConcat_t8995382764BCE27EF906F99F1235E172D02C6FB9____strList_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___strListException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s'.", StringConcat_t8995382764BCE27EF906F99F1235E172D02C6FB9____strList_FieldInfo_var, StringConcat_t8995382764BCE27EF906F99F1235E172D02C6FB9_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___strListException, NULL);
 }
 IL2CPP_EXTERN_C void StringConcat_t8995382764BCE27EF906F99F1235E172D02C6FB9_marshal_pinvoke_back(const StringConcat_t8995382764BCE27EF906F99F1235E172D02C6FB9_marshaled_pinvoke& marshaled, StringConcat_t8995382764BCE27EF906F99F1235E172D02C6FB9& unmarshaled)
 {
-	Exception_t* ___strListException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'strList' of type 'StringConcat'.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&StringConcat_t8995382764BCE27EF906F99F1235E172D02C6FB9_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&StringConcat_t8995382764BCE27EF906F99F1235E172D02C6FB9____strList_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___strListException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s'.", StringConcat_t8995382764BCE27EF906F99F1235E172D02C6FB9____strList_FieldInfo_var, StringConcat_t8995382764BCE27EF906F99F1235E172D02C6FB9_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___strListException, NULL);
 }
 IL2CPP_EXTERN_C void StringConcat_t8995382764BCE27EF906F99F1235E172D02C6FB9_marshal_pinvoke_cleanup(StringConcat_t8995382764BCE27EF906F99F1235E172D02C6FB9_marshaled_pinvoke& marshaled)
@@ -15878,12 +15899,26 @@ IL2CPP_EXTERN_C void StringConcat_t8995382764BCE27EF906F99F1235E172D02C6FB9_mars
 }
 IL2CPP_EXTERN_C void StringConcat_t8995382764BCE27EF906F99F1235E172D02C6FB9_marshal_com(const StringConcat_t8995382764BCE27EF906F99F1235E172D02C6FB9& unmarshaled, StringConcat_t8995382764BCE27EF906F99F1235E172D02C6FB9_marshaled_com& marshaled)
 {
-	Exception_t* ___strListException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'strList' of type 'StringConcat'.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&StringConcat_t8995382764BCE27EF906F99F1235E172D02C6FB9_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&StringConcat_t8995382764BCE27EF906F99F1235E172D02C6FB9____strList_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___strListException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s'.", StringConcat_t8995382764BCE27EF906F99F1235E172D02C6FB9____strList_FieldInfo_var, StringConcat_t8995382764BCE27EF906F99F1235E172D02C6FB9_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___strListException, NULL);
 }
 IL2CPP_EXTERN_C void StringConcat_t8995382764BCE27EF906F99F1235E172D02C6FB9_marshal_com_back(const StringConcat_t8995382764BCE27EF906F99F1235E172D02C6FB9_marshaled_com& marshaled, StringConcat_t8995382764BCE27EF906F99F1235E172D02C6FB9& unmarshaled)
 {
-	Exception_t* ___strListException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'strList' of type 'StringConcat'.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&StringConcat_t8995382764BCE27EF906F99F1235E172D02C6FB9_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&StringConcat_t8995382764BCE27EF906F99F1235E172D02C6FB9____strList_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___strListException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s'.", StringConcat_t8995382764BCE27EF906F99F1235E172D02C6FB9____strList_FieldInfo_var, StringConcat_t8995382764BCE27EF906F99F1235E172D02C6FB9_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___strListException, NULL);
 }
 IL2CPP_EXTERN_C void StringConcat_t8995382764BCE27EF906F99F1235E172D02C6FB9_marshal_com_cleanup(StringConcat_t8995382764BCE27EF906F99F1235E172D02C6FB9_marshaled_com& marshaled)
@@ -25804,12 +25839,26 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SequenceNode__ctor_mD4441BDD885F42BAD338
 #endif
 IL2CPP_EXTERN_C void SequenceConstructPosContext_tDEC4FB1B8F19EFD1AC27C150D561C2D4F6090BA7_marshal_pinvoke(const SequenceConstructPosContext_tDEC4FB1B8F19EFD1AC27C150D561C2D4F6090BA7& unmarshaled, SequenceConstructPosContext_tDEC4FB1B8F19EFD1AC27C150D561C2D4F6090BA7_marshaled_pinvoke& marshaled)
 {
-	Exception_t* ___this_Exception = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'this_' of type 'SequenceConstructPosContext': Reference type field marshaling is not supported.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&SequenceConstructPosContext_tDEC4FB1B8F19EFD1AC27C150D561C2D4F6090BA7_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&SequenceConstructPosContext_tDEC4FB1B8F19EFD1AC27C150D561C2D4F6090BA7____this__FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___this_Exception = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s': Reference type field marshaling is not supported.", SequenceConstructPosContext_tDEC4FB1B8F19EFD1AC27C150D561C2D4F6090BA7____this__FieldInfo_var, SequenceConstructPosContext_tDEC4FB1B8F19EFD1AC27C150D561C2D4F6090BA7_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___this_Exception, NULL);
 }
 IL2CPP_EXTERN_C void SequenceConstructPosContext_tDEC4FB1B8F19EFD1AC27C150D561C2D4F6090BA7_marshal_pinvoke_back(const SequenceConstructPosContext_tDEC4FB1B8F19EFD1AC27C150D561C2D4F6090BA7_marshaled_pinvoke& marshaled, SequenceConstructPosContext_tDEC4FB1B8F19EFD1AC27C150D561C2D4F6090BA7& unmarshaled)
 {
-	Exception_t* ___this_Exception = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'this_' of type 'SequenceConstructPosContext': Reference type field marshaling is not supported.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&SequenceConstructPosContext_tDEC4FB1B8F19EFD1AC27C150D561C2D4F6090BA7_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&SequenceConstructPosContext_tDEC4FB1B8F19EFD1AC27C150D561C2D4F6090BA7____this__FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___this_Exception = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s': Reference type field marshaling is not supported.", SequenceConstructPosContext_tDEC4FB1B8F19EFD1AC27C150D561C2D4F6090BA7____this__FieldInfo_var, SequenceConstructPosContext_tDEC4FB1B8F19EFD1AC27C150D561C2D4F6090BA7_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___this_Exception, NULL);
 }
 IL2CPP_EXTERN_C void SequenceConstructPosContext_tDEC4FB1B8F19EFD1AC27C150D561C2D4F6090BA7_marshal_pinvoke_cleanup(SequenceConstructPosContext_tDEC4FB1B8F19EFD1AC27C150D561C2D4F6090BA7_marshaled_pinvoke& marshaled)
@@ -25817,12 +25866,26 @@ IL2CPP_EXTERN_C void SequenceConstructPosContext_tDEC4FB1B8F19EFD1AC27C150D561C2
 }
 IL2CPP_EXTERN_C void SequenceConstructPosContext_tDEC4FB1B8F19EFD1AC27C150D561C2D4F6090BA7_marshal_com(const SequenceConstructPosContext_tDEC4FB1B8F19EFD1AC27C150D561C2D4F6090BA7& unmarshaled, SequenceConstructPosContext_tDEC4FB1B8F19EFD1AC27C150D561C2D4F6090BA7_marshaled_com& marshaled)
 {
-	Exception_t* ___this_Exception = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'this_' of type 'SequenceConstructPosContext': Reference type field marshaling is not supported.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&SequenceConstructPosContext_tDEC4FB1B8F19EFD1AC27C150D561C2D4F6090BA7_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&SequenceConstructPosContext_tDEC4FB1B8F19EFD1AC27C150D561C2D4F6090BA7____this__FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___this_Exception = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s': Reference type field marshaling is not supported.", SequenceConstructPosContext_tDEC4FB1B8F19EFD1AC27C150D561C2D4F6090BA7____this__FieldInfo_var, SequenceConstructPosContext_tDEC4FB1B8F19EFD1AC27C150D561C2D4F6090BA7_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___this_Exception, NULL);
 }
 IL2CPP_EXTERN_C void SequenceConstructPosContext_tDEC4FB1B8F19EFD1AC27C150D561C2D4F6090BA7_marshal_com_back(const SequenceConstructPosContext_tDEC4FB1B8F19EFD1AC27C150D561C2D4F6090BA7_marshaled_com& marshaled, SequenceConstructPosContext_tDEC4FB1B8F19EFD1AC27C150D561C2D4F6090BA7& unmarshaled)
 {
-	Exception_t* ___this_Exception = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'this_' of type 'SequenceConstructPosContext': Reference type field marshaling is not supported.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&SequenceConstructPosContext_tDEC4FB1B8F19EFD1AC27C150D561C2D4F6090BA7_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&SequenceConstructPosContext_tDEC4FB1B8F19EFD1AC27C150D561C2D4F6090BA7____this__FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___this_Exception = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s': Reference type field marshaling is not supported.", SequenceConstructPosContext_tDEC4FB1B8F19EFD1AC27C150D561C2D4F6090BA7____this__FieldInfo_var, SequenceConstructPosContext_tDEC4FB1B8F19EFD1AC27C150D561C2D4F6090BA7_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___this_Exception, NULL);
 }
 IL2CPP_EXTERN_C void SequenceConstructPosContext_tDEC4FB1B8F19EFD1AC27C150D561C2D4F6090BA7_marshal_com_cleanup(SequenceConstructPosContext_tDEC4FB1B8F19EFD1AC27C150D561C2D4F6090BA7_marshaled_com& marshaled)

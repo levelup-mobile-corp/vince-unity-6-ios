@@ -438,7 +438,7 @@ static NSMutableArray<CameraCaptureDevice*> *videoCaptureDevices = nil;
         if ([type isEqualToString: AVCaptureDeviceTypeBuiltInDualWideCamera])
             return kWebCamWideAngle;
         if ([type isEqualToString: AVCaptureDeviceTypeBuiltInTripleCamera])
-            return kWebCamColorAndDepth;
+            return kWebCamUltraWideAngle;
     }
     else
     {

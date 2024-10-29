@@ -296,7 +296,9 @@ struct ConstrainedFuncInvoker2
 
 struct U3CU3Ec__DisplayClass32_0_tD93A3ED75732985A236C024569D8C97D4A5B6249;
 struct U3CU3Ec__DisplayClass32_0_tBCA43D653E423EB415660CD6F47434DACFA171B2;
+struct U3CU3Ec__DisplayClass32_0_t2BA4A81159E63B56EDBBBC3D260C657E4F62BCE7;
 struct U3CU3Ec__DisplayClass32_0_t38E93B1FE4E5DF4ABA17F30016C0FBEA17614553;
+struct U3CU3Ec__DisplayClass35_0_tB0FB6F714149BCD9FD12B2D2744BC2B10779BC1C;
 struct U3CGetEnumeratorU3Ed__10_tC2CCC09794715D3A40FB005ED4800D913E46029A;
 struct U3CGetEnumeratorU3Ed__46_t20FC2A1ECE38773FDEF6C8B8F35293D3CBC5DE4A;
 struct U3CGetEnumeratorU3Ed__46_t5A2636A2C410BE54A8AC8F1BE5E7E59294B26EE5;
@@ -3665,7 +3667,7 @@ inline float SplineSlice_1_GetCurveLength_m3651139D51A064D4D38F47481AF6ED0830380
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E float3_op_Implicit_m495864276F56A9757CE235005D9908DBB47D8031_inline (float ___0_v, const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E math_up_m0BE1699606608A1C5B2F4996F2D550938DB736C1_inline (const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E math_rotate_m68CD27B1D0643EA356D0AB41ECB004CE094FDA3F_inline (quaternion_tD6BCBECAF088B9EBAE2345EC8534C7A1A4C910D4 ___0_q, float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E ___1_v, const RuntimeMethod* method) ;
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E CurveUtility_EvaluateUpVector_m92C26089EBD04417106F9A28992569FD03C62FE9 (BezierCurve_t9D2CC33508284289953A8A3A881F91ED39502988 ___0_curve, float ___1_t, float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E ___2_startUp, float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E ___3_endUp, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E CurveUtility_EvaluateUpVector_m753E63BA7C6C982AAE1CFC9D3C239BA485EEBBB6 (BezierCurve_t9D2CC33508284289953A8A3A881F91ED39502988 ___0_curve, float ___1_t, float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E ___2_startUp, float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E ___3_endUp, bool ___4_fixEndUpMismatch, const RuntimeMethod* method) ;
 inline float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E SplineSlice_1_GetCurveUpVector_m89703F7A868F228D533B9BD07FB7E1918A1376D0 (SplineSlice_1_t11281F34A00C6D5212DE9E4D85BED17D2705BB32* __this, int32_t ___0_index, float ___1_t, const RuntimeMethod* method)
 {
 	return ((  float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E (*) (SplineSlice_1_t11281F34A00C6D5212DE9E4D85BED17D2705BB32*, int32_t, float, const RuntimeMethod*))SplineSlice_1_GetCurveUpVector_m89703F7A868F228D533B9BD07FB7E1918A1376D0_gshared)(__this, ___0_index, ___1_t, method);
@@ -12899,7 +12901,7 @@ IL_0014:
 		NullCheck(L_12);
 		if ((((int32_t)L_11) < ((int32_t)((int32_t)il2cpp_codegen_subtract(((int32_t)(((RuntimeArray*)L_12)->max_length)), 1)))))
 		{
-			goto IL_009d;
+			goto IL_009e;
 		}
 	}
 	{
@@ -12909,7 +12911,7 @@ IL_0014:
 		L_15 = SplineSlice_1_get_Count_m6C005BBCD990DD546887B9B855D8F9A81C96AD7B((&V_1), il2cpp_rgctx_method(method->klass->rgctx_data, 7));
 		if ((((int32_t)L_14) < ((int32_t)((int32_t)il2cpp_codegen_subtract(L_15, 1)))))
 		{
-			goto IL_009d;
+			goto IL_009e;
 		}
 	}
 	{
@@ -12945,11 +12947,11 @@ IL_0014:
 		float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E L_33 = V_5;
 		il2cpp_codegen_runtime_class_init_inline(CurveUtility_t0BA1C50D3315A5FEDCE480D56CE3B882A9E0640C_il2cpp_TypeInfo_var);
 		float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E L_34;
-		L_34 = CurveUtility_EvaluateUpVector_m92C26089EBD04417106F9A28992569FD03C62FE9(L_22, L_31, L_32, L_33, NULL);
+		L_34 = CurveUtility_EvaluateUpVector_m753E63BA7C6C982AAE1CFC9D3C239BA485EEBBB6(L_22, L_31, L_32, L_33, (bool)1, NULL);
 		return L_34;
 	}
 
-IL_009d:
+IL_009e:
 	{
 		SplineKnotIndex_t534896C5AC577CB9B0E1D694808A2491D2EEE38F L_35 = V_0;
 		int32_t L_36 = L_35.___Knot;
@@ -13739,7 +13741,7 @@ IL_0014:
 		NullCheck(L_12);
 		if ((((int32_t)L_11) < ((int32_t)((int32_t)il2cpp_codegen_subtract(((int32_t)(((RuntimeArray*)L_12)->max_length)), 1)))))
 		{
-			goto IL_009d;
+			goto IL_009e;
 		}
 	}
 	{
@@ -13750,7 +13752,7 @@ IL_0014:
 		L_15 = InterfaceFuncInvoker0< int32_t >::Invoke(0, IReadOnlyCollection_1_t34FD8A2CF6BF8250FCDE7B471A2A92C52B8CD06C_il2cpp_TypeInfo_var, (RuntimeObject*)(V_1));
 		if ((((int32_t)L_14) < ((int32_t)((int32_t)il2cpp_codegen_subtract(L_15, 1)))))
 		{
-			goto IL_009d;
+			goto IL_009e;
 		}
 	}
 	{
@@ -13786,11 +13788,11 @@ IL_0014:
 		float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E L_33 = V_5;
 		il2cpp_codegen_runtime_class_init_inline(CurveUtility_t0BA1C50D3315A5FEDCE480D56CE3B882A9E0640C_il2cpp_TypeInfo_var);
 		float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E L_34;
-		L_34 = CurveUtility_EvaluateUpVector_m92C26089EBD04417106F9A28992569FD03C62FE9(L_22, L_31, L_32, L_33, NULL);
+		L_34 = CurveUtility_EvaluateUpVector_m753E63BA7C6C982AAE1CFC9D3C239BA485EEBBB6(L_22, L_31, L_32, L_33, (bool)1, NULL);
 		return L_34;
 	}
 
-IL_009d:
+IL_009e:
 	{
 		SplineKnotIndex_t534896C5AC577CB9B0E1D694808A2491D2EEE38F L_35 = V_0;
 		int32_t L_36 = L_35.___Knot;
@@ -14576,7 +14578,7 @@ IL_0014:
 		NullCheck(L_12);
 		if ((((int32_t)L_11) < ((int32_t)((int32_t)il2cpp_codegen_subtract(((int32_t)(((RuntimeArray*)L_12)->max_length)), 1)))))
 		{
-			goto IL_009d;
+			goto IL_009e;
 		}
 	}
 	{
@@ -14586,7 +14588,7 @@ IL_0014:
 		L_16 = ConstrainedFuncInvoker0< int32_t >::Invoke(il2cpp_rgctx_data(method->klass->rgctx_data, 6), il2cpp_rgctx_method(method->klass->rgctx_data, 7), L_15, (void*)(Il2CppFullySharedGenericAny*)V_1);
 		if ((((int32_t)L_14) < ((int32_t)((int32_t)il2cpp_codegen_subtract(L_16, 1)))))
 		{
-			goto IL_009d;
+			goto IL_009e;
 		}
 	}
 	{
@@ -14622,11 +14624,11 @@ IL_0014:
 		float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E L_34 = V_5;
 		il2cpp_codegen_runtime_class_init_inline(CurveUtility_t0BA1C50D3315A5FEDCE480D56CE3B882A9E0640C_il2cpp_TypeInfo_var);
 		float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E L_35;
-		L_35 = CurveUtility_EvaluateUpVector_m92C26089EBD04417106F9A28992569FD03C62FE9(L_23, L_32, L_33, L_34, NULL);
+		L_35 = CurveUtility_EvaluateUpVector_m753E63BA7C6C982AAE1CFC9D3C239BA485EEBBB6(L_23, L_32, L_33, L_34, (bool)1, NULL);
 		return L_35;
 	}
 
-IL_009d:
+IL_009e:
 	{
 		SplineKnotIndex_t534896C5AC577CB9B0E1D694808A2491D2EEE38F L_36 = V_0;
 		int32_t L_37 = L_36.___Knot;

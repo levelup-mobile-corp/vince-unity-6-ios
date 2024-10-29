@@ -386,6 +386,10 @@ IL2CPP_EXTERN_C RuntimeClass* Vector2Int_t69B2886EBAB732D9B880565E18E7568F3DE0CE
 IL2CPP_EXTERN_C RuntimeClass* Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeField* PerScenarioData_t550076045279B9168297EFAEC12D729EB36C67CC____cellDataAsset_FieldInfo_var;
+IL2CPP_EXTERN_C RuntimeField* ProbeVolumeSystemParameters_t0654F2626ACA367E00C375BEB6FEA5B86CB0A58B____probeDebugMesh_FieldInfo_var;
+IL2CPP_EXTERN_C RuntimeField* SerializablePVProfile_t5A21743AE68601F4B203BC9CE6A6B9A94B114D5C____profile_FieldInfo_var;
+IL2CPP_EXTERN_C RuntimeField* SerializablePerScenarioDataItem_t8ECC5ABF9BA05017D9B44DB66430D5946393AC92____data_FieldInfo_var;
 IL2CPP_EXTERN_C RuntimeField* U3CPrivateImplementationDetailsU3E_tC0CFE0E72EA6AEB9FDCA54EF2234CE64CE60C772____45AC882BD91FEBD5A58E67471A0EF32BFC485447A8A18D61DBA335FDA5A2C097_FieldInfo_var;
 IL2CPP_EXTERN_C RuntimeField* U3CPrivateImplementationDetailsU3E_tC0CFE0E72EA6AEB9FDCA54EF2234CE64CE60C772____4A1D5C231BB4DDB64A57CFF5FC45592F845DB22D8DE0DCCA7BB59D822908C39A_FieldInfo_var;
 IL2CPP_EXTERN_C RuntimeField* U3CPrivateImplementationDetailsU3E_tC0CFE0E72EA6AEB9FDCA54EF2234CE64CE60C772____90C2D148CDB931199C77ADD692B92324CDFC328EDD1D0AB7FA24830C177A4FF4_FieldInfo_var;
@@ -621,7 +625,11 @@ IL2CPP_EXTERN_C const RuntimeMethod* U3CU3Ec__DisplayClass21_0_U3CAddDataU3Eb__0
 IL2CPP_EXTERN_C const RuntimeMethod* U3CU3Ec__DisplayClass22_0_U3CRemoveDataU3Eb__0_m09A9E5553F3E01E22CCAE66C5393CC9AC78F6177_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* ValueTuple_2__ctor_m962EA662F3474234F5EAD48C6B015CB033607C5A_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* ValueTuple_2__ctor_mBC854B906321EBCBD5B8B90F1075808CD316F9C6_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeType* PerScenarioData_t550076045279B9168297EFAEC12D729EB36C67CC_0_0_0_var;
+IL2CPP_EXTERN_C const RuntimeType* ProbeVolumeSystemParameters_t0654F2626ACA367E00C375BEB6FEA5B86CB0A58B_0_0_0_var;
 IL2CPP_EXTERN_C const RuntimeType* Scene_tA1DC762B79745EB5140F054C884855B922318356_0_0_0_var;
+IL2CPP_EXTERN_C const RuntimeType* SerializablePVProfile_t5A21743AE68601F4B203BC9CE6A6B9A94B114D5C_0_0_0_var;
+IL2CPP_EXTERN_C const RuntimeType* SerializablePerScenarioDataItem_t8ECC5ABF9BA05017D9B44DB66430D5946393AC92_0_0_0_var;
 struct Delegate_t_marshaled_com;
 struct Delegate_t_marshaled_pinvoke;
 struct Exception_t_marshaled_com;
@@ -2192,6 +2200,8 @@ struct GlobalDynamicResolutionSettings_t2BF29E3CFADCD55F6AC2D35D728817B79264A9A0
 	float ___forcedPercentage;
 	float ___lowResTransparencyMinimumThreshold;
 	float ___rayTracingHalfResThreshold;
+	float ___lowResSSGIMinimumThreshold;
+	float ___lowResVolumetricCloudsMinimumThreshold;
 };
 struct GlobalDynamicResolutionSettings_t2BF29E3CFADCD55F6AC2D35D728817B79264A9A0_marshaled_pinvoke
 {
@@ -2212,6 +2222,8 @@ struct GlobalDynamicResolutionSettings_t2BF29E3CFADCD55F6AC2D35D728817B79264A9A0
 	float ___forcedPercentage;
 	float ___lowResTransparencyMinimumThreshold;
 	float ___rayTracingHalfResThreshold;
+	float ___lowResSSGIMinimumThreshold;
+	float ___lowResVolumetricCloudsMinimumThreshold;
 };
 struct GlobalDynamicResolutionSettings_t2BF29E3CFADCD55F6AC2D35D728817B79264A9A0_marshaled_com
 {
@@ -2232,6 +2244,8 @@ struct GlobalDynamicResolutionSettings_t2BF29E3CFADCD55F6AC2D35D728817B79264A9A0
 	float ___forcedPercentage;
 	float ___lowResTransparencyMinimumThreshold;
 	float ___rayTracingHalfResThreshold;
+	float ___lowResSSGIMinimumThreshold;
+	float ___lowResVolumetricCloudsMinimumThreshold;
 };
 struct LensFlareDataElementSRP_tE7E76E59BC723196507D4E63BFEAD65480EF6140  : public RuntimeObject
 {
@@ -4660,7 +4674,7 @@ inline void List_1__ctor_m17F501B5A5C289ECE1B4F3D6EBF05DFA421433F8 (List_1_t0591
 {
 	((  void (*) (List_1_t05915E9237850A58106982B7FE4BC5DA4E872E73*, const RuntimeMethod*))List_1__ctor_m17F501B5A5C289ECE1B4F3D6EBF05DFA421433F8_gshared)(__this, method);
 }
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool SystemInfo_SupportsRenderTextureFormat_mCCC3C69578A2C5B7367F73999E6938C315A98201 (int32_t ___0_format, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool SystemInfo_IsFormatSupported_m412D2A8B391BDBCD1EDB5C17ADAB724CDB123499 (int32_t ___0_format, int32_t ___1_usage, const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_op_Multiply_m7F3B0FA9256CE368D7636558EFEFC4AB0E1A0F41_inline (float ___0_d, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_a, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float LensFlareCommonSRP_U3CShapeAttenuationAreaTubeLightU3Eg__FpoU7C28_0_m6FB01E3B47672368F4ED72D6E5A31038D2B10C53 (float ___0_d, float ___1_l, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float LensFlareCommonSRP_U3CShapeAttenuationAreaTubeLightU3Eg__FwtU7C28_1_m9E86CE93B694CE3F67E8777823E3E1C556EC1C6C (float ___0_d, float ___1_l, const RuntimeMethod* method) ;
@@ -4947,6 +4961,7 @@ inline bool Enumerator_MoveNext_m2B7D9D0947E45850874A0C4B606557EFC0DC7F5C (Enume
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* String_Format_mA8DBB4C2516B9723C5A41E6CB1E2FAF4BBE96DD8 (String_t* ___0_format, RuntimeObject* ___1_arg0, const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR DynamicResolutionHandler_t4D0ED3CF6D7BE856065759A87B44AC0FF5D8FAEE* DynamicResolutionHandler_get_instance_m8342EE11F735097586D623F150DB8379C50B388D_inline (const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool DynamicResolutionHandler_RequestsHardwareDynamicResolution_mE007D198D273487DD581E1D3C675218D9EC082CC (DynamicResolutionHandler_t4D0ED3CF6D7BE856065759A87B44AC0FF5D8FAEE* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RTHandleSystem_Initialize_mA4B41213ACE5EABD7C8397780BFDCEA8847BE466 (RTHandleSystem_tAE496B31B56A77B4896E34576C961C3CA073998F* __this, int32_t ___0_width, int32_t ___1_height, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RTHandle_Release_m743C2A22FD95D177D2D425E9DF1F3088161F387B (RTHandle_t135537761C47BC929F032B3C8F4D55EA1111B07B* __this, const RuntimeMethod* method) ;
 inline bool HashSet_1_Remove_m1631FD8258270F69D88FD69948375CE0B8D048C4 (HashSet_1_t26796BF4011CBFA30FF5AA4EAD424A60B28827B3* __this, RTHandle_t135537761C47BC929F032B3C8F4D55EA1111B07B* ___0_item, const RuntimeMethod* method)
 {
@@ -4997,7 +5012,6 @@ inline void HashSet_1_Clear_m7F4E9A8CFE06328CD0E3494DB9966B2112EBC112 (HashSet_1
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Math_Max_m530EBA549AFD98CFC2BD29FE86C6376E67DF11CF (int32_t ___0_val1, int32_t ___1_val2, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RTHandle_t135537761C47BC929F032B3C8F4D55EA1111B07B* RTHandleSystem_Alloc_m81787EAC78AA4C81975EBC1B71F21D15D8AA5DE7 (RTHandleSystem_tAE496B31B56A77B4896E34576C961C3CA073998F* __this, int32_t ___0_width, int32_t ___1_height, int32_t ___2_wrapModeU, int32_t ___3_wrapModeV, int32_t ___4_wrapModeW, int32_t ___5_slices, int32_t ___6_depthBufferBits, int32_t ___7_colorFormat, int32_t ___8_filterMode, int32_t ___9_dimension, bool ___10_enableRandomWrite, bool ___11_useMipMap, bool ___12_autoGenerateMips, bool ___13_isShadowMap, int32_t ___14_anisoLevel, float ___15_mipMapBias, int32_t ___16_msaaSamples, bool ___17_bindTextureMS, bool ___18_useDynamicScale, int32_t ___19_memoryless, int32_t ___20_vrUsage, String_t* ___21_name, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Debug_LogWarning_m33EF1B897E0C7C6FF538989610BFAFFEF4628CA9 (RuntimeObject* ___0_message, const RuntimeMethod* method) ;
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool SystemInfo_IsFormatSupported_m412D2A8B391BDBCD1EDB5C17ADAB724CDB123499 (int32_t ___0_format, int32_t ___1_usage, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RenderTexture__ctor_m68A1B9CAA1BE0B597C5F4895C296E21502D0C962 (RenderTexture_tBA90C4C3AD9EECCFDDCC632D97C29FAB80D60D27* __this, int32_t ___0_width, int32_t ___1_height, int32_t ___2_depth, int32_t ___3_format, int32_t ___4_readWrite, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Object_set_hideFlags_mACB8BFC903FB3B01BBD427753E791BF28B5E33D4 (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* __this, int32_t ___0_value, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RenderTexture_set_volumeDepth_mD9B1E6BA4BE6B1741427B34A23B9D48BA9493633 (RenderTexture_tBA90C4C3AD9EECCFDDCC632D97C29FAB80D60D27* __this, int32_t ___0_value, const RuntimeMethod* method) ;
@@ -5185,12 +5199,26 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D
 #endif
 IL2CPP_EXTERN_C void ProbeVolumeSystemParameters_t0654F2626ACA367E00C375BEB6FEA5B86CB0A58B_marshal_pinvoke(const ProbeVolumeSystemParameters_t0654F2626ACA367E00C375BEB6FEA5B86CB0A58B& unmarshaled, ProbeVolumeSystemParameters_t0654F2626ACA367E00C375BEB6FEA5B86CB0A58B_marshaled_pinvoke& marshaled)
 {
-	Exception_t* ___probeDebugMeshException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'probeDebugMesh' of type 'ProbeVolumeSystemParameters': Reference type field marshaling is not supported.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ProbeVolumeSystemParameters_t0654F2626ACA367E00C375BEB6FEA5B86CB0A58B_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ProbeVolumeSystemParameters_t0654F2626ACA367E00C375BEB6FEA5B86CB0A58B____probeDebugMesh_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___probeDebugMeshException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s': Reference type field marshaling is not supported.", ProbeVolumeSystemParameters_t0654F2626ACA367E00C375BEB6FEA5B86CB0A58B____probeDebugMesh_FieldInfo_var, ProbeVolumeSystemParameters_t0654F2626ACA367E00C375BEB6FEA5B86CB0A58B_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___probeDebugMeshException, NULL);
 }
 IL2CPP_EXTERN_C void ProbeVolumeSystemParameters_t0654F2626ACA367E00C375BEB6FEA5B86CB0A58B_marshal_pinvoke_back(const ProbeVolumeSystemParameters_t0654F2626ACA367E00C375BEB6FEA5B86CB0A58B_marshaled_pinvoke& marshaled, ProbeVolumeSystemParameters_t0654F2626ACA367E00C375BEB6FEA5B86CB0A58B& unmarshaled)
 {
-	Exception_t* ___probeDebugMeshException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'probeDebugMesh' of type 'ProbeVolumeSystemParameters': Reference type field marshaling is not supported.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ProbeVolumeSystemParameters_t0654F2626ACA367E00C375BEB6FEA5B86CB0A58B_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ProbeVolumeSystemParameters_t0654F2626ACA367E00C375BEB6FEA5B86CB0A58B____probeDebugMesh_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___probeDebugMeshException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s': Reference type field marshaling is not supported.", ProbeVolumeSystemParameters_t0654F2626ACA367E00C375BEB6FEA5B86CB0A58B____probeDebugMesh_FieldInfo_var, ProbeVolumeSystemParameters_t0654F2626ACA367E00C375BEB6FEA5B86CB0A58B_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___probeDebugMeshException, NULL);
 }
 IL2CPP_EXTERN_C void ProbeVolumeSystemParameters_t0654F2626ACA367E00C375BEB6FEA5B86CB0A58B_marshal_pinvoke_cleanup(ProbeVolumeSystemParameters_t0654F2626ACA367E00C375BEB6FEA5B86CB0A58B_marshaled_pinvoke& marshaled)
@@ -5198,12 +5226,26 @@ IL2CPP_EXTERN_C void ProbeVolumeSystemParameters_t0654F2626ACA367E00C375BEB6FEA5
 }
 IL2CPP_EXTERN_C void ProbeVolumeSystemParameters_t0654F2626ACA367E00C375BEB6FEA5B86CB0A58B_marshal_com(const ProbeVolumeSystemParameters_t0654F2626ACA367E00C375BEB6FEA5B86CB0A58B& unmarshaled, ProbeVolumeSystemParameters_t0654F2626ACA367E00C375BEB6FEA5B86CB0A58B_marshaled_com& marshaled)
 {
-	Exception_t* ___probeDebugMeshException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'probeDebugMesh' of type 'ProbeVolumeSystemParameters': Reference type field marshaling is not supported.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ProbeVolumeSystemParameters_t0654F2626ACA367E00C375BEB6FEA5B86CB0A58B_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ProbeVolumeSystemParameters_t0654F2626ACA367E00C375BEB6FEA5B86CB0A58B____probeDebugMesh_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___probeDebugMeshException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s': Reference type field marshaling is not supported.", ProbeVolumeSystemParameters_t0654F2626ACA367E00C375BEB6FEA5B86CB0A58B____probeDebugMesh_FieldInfo_var, ProbeVolumeSystemParameters_t0654F2626ACA367E00C375BEB6FEA5B86CB0A58B_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___probeDebugMeshException, NULL);
 }
 IL2CPP_EXTERN_C void ProbeVolumeSystemParameters_t0654F2626ACA367E00C375BEB6FEA5B86CB0A58B_marshal_com_back(const ProbeVolumeSystemParameters_t0654F2626ACA367E00C375BEB6FEA5B86CB0A58B_marshaled_com& marshaled, ProbeVolumeSystemParameters_t0654F2626ACA367E00C375BEB6FEA5B86CB0A58B& unmarshaled)
 {
-	Exception_t* ___probeDebugMeshException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'probeDebugMesh' of type 'ProbeVolumeSystemParameters': Reference type field marshaling is not supported.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ProbeVolumeSystemParameters_t0654F2626ACA367E00C375BEB6FEA5B86CB0A58B_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ProbeVolumeSystemParameters_t0654F2626ACA367E00C375BEB6FEA5B86CB0A58B____probeDebugMesh_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___probeDebugMeshException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s': Reference type field marshaling is not supported.", ProbeVolumeSystemParameters_t0654F2626ACA367E00C375BEB6FEA5B86CB0A58B____probeDebugMesh_FieldInfo_var, ProbeVolumeSystemParameters_t0654F2626ACA367E00C375BEB6FEA5B86CB0A58B_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___probeDebugMeshException, NULL);
 }
 IL2CPP_EXTERN_C void ProbeVolumeSystemParameters_t0654F2626ACA367E00C375BEB6FEA5B86CB0A58B_marshal_com_cleanup(ProbeVolumeSystemParameters_t0654F2626ACA367E00C375BEB6FEA5B86CB0A58B_marshaled_com& marshaled)
@@ -7642,12 +7684,26 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ProbeVolumePerSceneData__ctor_m9A456CCF3
 #endif
 IL2CPP_EXTERN_C void PerScenarioData_t550076045279B9168297EFAEC12D729EB36C67CC_marshal_pinvoke(const PerScenarioData_t550076045279B9168297EFAEC12D729EB36C67CC& unmarshaled, PerScenarioData_t550076045279B9168297EFAEC12D729EB36C67CC_marshaled_pinvoke& marshaled)
 {
-	Exception_t* ___cellDataAssetException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'cellDataAsset' of type 'PerScenarioData': Reference type field marshaling is not supported.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&PerScenarioData_t550076045279B9168297EFAEC12D729EB36C67CC_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&PerScenarioData_t550076045279B9168297EFAEC12D729EB36C67CC____cellDataAsset_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___cellDataAssetException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s': Reference type field marshaling is not supported.", PerScenarioData_t550076045279B9168297EFAEC12D729EB36C67CC____cellDataAsset_FieldInfo_var, PerScenarioData_t550076045279B9168297EFAEC12D729EB36C67CC_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___cellDataAssetException, NULL);
 }
 IL2CPP_EXTERN_C void PerScenarioData_t550076045279B9168297EFAEC12D729EB36C67CC_marshal_pinvoke_back(const PerScenarioData_t550076045279B9168297EFAEC12D729EB36C67CC_marshaled_pinvoke& marshaled, PerScenarioData_t550076045279B9168297EFAEC12D729EB36C67CC& unmarshaled)
 {
-	Exception_t* ___cellDataAssetException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'cellDataAsset' of type 'PerScenarioData': Reference type field marshaling is not supported.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&PerScenarioData_t550076045279B9168297EFAEC12D729EB36C67CC_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&PerScenarioData_t550076045279B9168297EFAEC12D729EB36C67CC____cellDataAsset_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___cellDataAssetException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s': Reference type field marshaling is not supported.", PerScenarioData_t550076045279B9168297EFAEC12D729EB36C67CC____cellDataAsset_FieldInfo_var, PerScenarioData_t550076045279B9168297EFAEC12D729EB36C67CC_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___cellDataAssetException, NULL);
 }
 IL2CPP_EXTERN_C void PerScenarioData_t550076045279B9168297EFAEC12D729EB36C67CC_marshal_pinvoke_cleanup(PerScenarioData_t550076045279B9168297EFAEC12D729EB36C67CC_marshaled_pinvoke& marshaled)
@@ -7655,12 +7711,26 @@ IL2CPP_EXTERN_C void PerScenarioData_t550076045279B9168297EFAEC12D729EB36C67CC_m
 }
 IL2CPP_EXTERN_C void PerScenarioData_t550076045279B9168297EFAEC12D729EB36C67CC_marshal_com(const PerScenarioData_t550076045279B9168297EFAEC12D729EB36C67CC& unmarshaled, PerScenarioData_t550076045279B9168297EFAEC12D729EB36C67CC_marshaled_com& marshaled)
 {
-	Exception_t* ___cellDataAssetException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'cellDataAsset' of type 'PerScenarioData': Reference type field marshaling is not supported.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&PerScenarioData_t550076045279B9168297EFAEC12D729EB36C67CC_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&PerScenarioData_t550076045279B9168297EFAEC12D729EB36C67CC____cellDataAsset_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___cellDataAssetException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s': Reference type field marshaling is not supported.", PerScenarioData_t550076045279B9168297EFAEC12D729EB36C67CC____cellDataAsset_FieldInfo_var, PerScenarioData_t550076045279B9168297EFAEC12D729EB36C67CC_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___cellDataAssetException, NULL);
 }
 IL2CPP_EXTERN_C void PerScenarioData_t550076045279B9168297EFAEC12D729EB36C67CC_marshal_com_back(const PerScenarioData_t550076045279B9168297EFAEC12D729EB36C67CC_marshaled_com& marshaled, PerScenarioData_t550076045279B9168297EFAEC12D729EB36C67CC& unmarshaled)
 {
-	Exception_t* ___cellDataAssetException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'cellDataAsset' of type 'PerScenarioData': Reference type field marshaling is not supported.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&PerScenarioData_t550076045279B9168297EFAEC12D729EB36C67CC_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&PerScenarioData_t550076045279B9168297EFAEC12D729EB36C67CC____cellDataAsset_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___cellDataAssetException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s': Reference type field marshaling is not supported.", PerScenarioData_t550076045279B9168297EFAEC12D729EB36C67CC____cellDataAsset_FieldInfo_var, PerScenarioData_t550076045279B9168297EFAEC12D729EB36C67CC_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___cellDataAssetException, NULL);
 }
 IL2CPP_EXTERN_C void PerScenarioData_t550076045279B9168297EFAEC12D729EB36C67CC_marshal_com_cleanup(PerScenarioData_t550076045279B9168297EFAEC12D729EB36C67CC_marshaled_com& marshaled)
@@ -7678,12 +7748,26 @@ IL2CPP_EXTERN_C void PerScenarioData_t550076045279B9168297EFAEC12D729EB36C67CC_m
 
 IL2CPP_EXTERN_C void SerializablePerScenarioDataItem_t8ECC5ABF9BA05017D9B44DB66430D5946393AC92_marshal_pinvoke(const SerializablePerScenarioDataItem_t8ECC5ABF9BA05017D9B44DB66430D5946393AC92& unmarshaled, SerializablePerScenarioDataItem_t8ECC5ABF9BA05017D9B44DB66430D5946393AC92_marshaled_pinvoke& marshaled)
 {
-	Exception_t* ___dataException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'data' of type 'SerializablePerScenarioDataItem'.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&SerializablePerScenarioDataItem_t8ECC5ABF9BA05017D9B44DB66430D5946393AC92_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&SerializablePerScenarioDataItem_t8ECC5ABF9BA05017D9B44DB66430D5946393AC92____data_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___dataException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s'.", SerializablePerScenarioDataItem_t8ECC5ABF9BA05017D9B44DB66430D5946393AC92____data_FieldInfo_var, SerializablePerScenarioDataItem_t8ECC5ABF9BA05017D9B44DB66430D5946393AC92_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___dataException, NULL);
 }
 IL2CPP_EXTERN_C void SerializablePerScenarioDataItem_t8ECC5ABF9BA05017D9B44DB66430D5946393AC92_marshal_pinvoke_back(const SerializablePerScenarioDataItem_t8ECC5ABF9BA05017D9B44DB66430D5946393AC92_marshaled_pinvoke& marshaled, SerializablePerScenarioDataItem_t8ECC5ABF9BA05017D9B44DB66430D5946393AC92& unmarshaled)
 {
-	Exception_t* ___dataException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'data' of type 'SerializablePerScenarioDataItem'.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&SerializablePerScenarioDataItem_t8ECC5ABF9BA05017D9B44DB66430D5946393AC92_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&SerializablePerScenarioDataItem_t8ECC5ABF9BA05017D9B44DB66430D5946393AC92____data_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___dataException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s'.", SerializablePerScenarioDataItem_t8ECC5ABF9BA05017D9B44DB66430D5946393AC92____data_FieldInfo_var, SerializablePerScenarioDataItem_t8ECC5ABF9BA05017D9B44DB66430D5946393AC92_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___dataException, NULL);
 }
 IL2CPP_EXTERN_C void SerializablePerScenarioDataItem_t8ECC5ABF9BA05017D9B44DB66430D5946393AC92_marshal_pinvoke_cleanup(SerializablePerScenarioDataItem_t8ECC5ABF9BA05017D9B44DB66430D5946393AC92_marshaled_pinvoke& marshaled)
@@ -7693,12 +7777,26 @@ IL2CPP_EXTERN_C void SerializablePerScenarioDataItem_t8ECC5ABF9BA05017D9B44DB664
 
 IL2CPP_EXTERN_C void SerializablePerScenarioDataItem_t8ECC5ABF9BA05017D9B44DB66430D5946393AC92_marshal_com(const SerializablePerScenarioDataItem_t8ECC5ABF9BA05017D9B44DB66430D5946393AC92& unmarshaled, SerializablePerScenarioDataItem_t8ECC5ABF9BA05017D9B44DB66430D5946393AC92_marshaled_com& marshaled)
 {
-	Exception_t* ___dataException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'data' of type 'SerializablePerScenarioDataItem'.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&SerializablePerScenarioDataItem_t8ECC5ABF9BA05017D9B44DB66430D5946393AC92_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&SerializablePerScenarioDataItem_t8ECC5ABF9BA05017D9B44DB66430D5946393AC92____data_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___dataException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s'.", SerializablePerScenarioDataItem_t8ECC5ABF9BA05017D9B44DB66430D5946393AC92____data_FieldInfo_var, SerializablePerScenarioDataItem_t8ECC5ABF9BA05017D9B44DB66430D5946393AC92_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___dataException, NULL);
 }
 IL2CPP_EXTERN_C void SerializablePerScenarioDataItem_t8ECC5ABF9BA05017D9B44DB66430D5946393AC92_marshal_com_back(const SerializablePerScenarioDataItem_t8ECC5ABF9BA05017D9B44DB66430D5946393AC92_marshaled_com& marshaled, SerializablePerScenarioDataItem_t8ECC5ABF9BA05017D9B44DB66430D5946393AC92& unmarshaled)
 {
-	Exception_t* ___dataException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'data' of type 'SerializablePerScenarioDataItem'.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&SerializablePerScenarioDataItem_t8ECC5ABF9BA05017D9B44DB66430D5946393AC92_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&SerializablePerScenarioDataItem_t8ECC5ABF9BA05017D9B44DB66430D5946393AC92____data_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___dataException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s'.", SerializablePerScenarioDataItem_t8ECC5ABF9BA05017D9B44DB66430D5946393AC92____data_FieldInfo_var, SerializablePerScenarioDataItem_t8ECC5ABF9BA05017D9B44DB66430D5946393AC92_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___dataException, NULL);
 }
 IL2CPP_EXTERN_C void SerializablePerScenarioDataItem_t8ECC5ABF9BA05017D9B44DB66430D5946393AC92_marshal_com_cleanup(SerializablePerScenarioDataItem_t8ECC5ABF9BA05017D9B44DB66430D5946393AC92_marshaled_com& marshaled)
@@ -9555,12 +9653,26 @@ IL2CPP_EXTERN_C void SerializableHasPVItem_t061E2CE4D8B201F280D06ABD0246C7AD8FD9
 #endif
 IL2CPP_EXTERN_C void SerializablePVProfile_t5A21743AE68601F4B203BC9CE6A6B9A94B114D5C_marshal_pinvoke(const SerializablePVProfile_t5A21743AE68601F4B203BC9CE6A6B9A94B114D5C& unmarshaled, SerializablePVProfile_t5A21743AE68601F4B203BC9CE6A6B9A94B114D5C_marshaled_pinvoke& marshaled)
 {
-	Exception_t* ___profileException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'profile' of type 'SerializablePVProfile': Reference type field marshaling is not supported.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&SerializablePVProfile_t5A21743AE68601F4B203BC9CE6A6B9A94B114D5C_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&SerializablePVProfile_t5A21743AE68601F4B203BC9CE6A6B9A94B114D5C____profile_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___profileException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s': Reference type field marshaling is not supported.", SerializablePVProfile_t5A21743AE68601F4B203BC9CE6A6B9A94B114D5C____profile_FieldInfo_var, SerializablePVProfile_t5A21743AE68601F4B203BC9CE6A6B9A94B114D5C_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___profileException, NULL);
 }
 IL2CPP_EXTERN_C void SerializablePVProfile_t5A21743AE68601F4B203BC9CE6A6B9A94B114D5C_marshal_pinvoke_back(const SerializablePVProfile_t5A21743AE68601F4B203BC9CE6A6B9A94B114D5C_marshaled_pinvoke& marshaled, SerializablePVProfile_t5A21743AE68601F4B203BC9CE6A6B9A94B114D5C& unmarshaled)
 {
-	Exception_t* ___profileException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'profile' of type 'SerializablePVProfile': Reference type field marshaling is not supported.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&SerializablePVProfile_t5A21743AE68601F4B203BC9CE6A6B9A94B114D5C_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&SerializablePVProfile_t5A21743AE68601F4B203BC9CE6A6B9A94B114D5C____profile_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___profileException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s': Reference type field marshaling is not supported.", SerializablePVProfile_t5A21743AE68601F4B203BC9CE6A6B9A94B114D5C____profile_FieldInfo_var, SerializablePVProfile_t5A21743AE68601F4B203BC9CE6A6B9A94B114D5C_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___profileException, NULL);
 }
 IL2CPP_EXTERN_C void SerializablePVProfile_t5A21743AE68601F4B203BC9CE6A6B9A94B114D5C_marshal_pinvoke_cleanup(SerializablePVProfile_t5A21743AE68601F4B203BC9CE6A6B9A94B114D5C_marshaled_pinvoke& marshaled)
@@ -9568,12 +9680,26 @@ IL2CPP_EXTERN_C void SerializablePVProfile_t5A21743AE68601F4B203BC9CE6A6B9A94B11
 }
 IL2CPP_EXTERN_C void SerializablePVProfile_t5A21743AE68601F4B203BC9CE6A6B9A94B114D5C_marshal_com(const SerializablePVProfile_t5A21743AE68601F4B203BC9CE6A6B9A94B114D5C& unmarshaled, SerializablePVProfile_t5A21743AE68601F4B203BC9CE6A6B9A94B114D5C_marshaled_com& marshaled)
 {
-	Exception_t* ___profileException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'profile' of type 'SerializablePVProfile': Reference type field marshaling is not supported.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&SerializablePVProfile_t5A21743AE68601F4B203BC9CE6A6B9A94B114D5C_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&SerializablePVProfile_t5A21743AE68601F4B203BC9CE6A6B9A94B114D5C____profile_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___profileException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s': Reference type field marshaling is not supported.", SerializablePVProfile_t5A21743AE68601F4B203BC9CE6A6B9A94B114D5C____profile_FieldInfo_var, SerializablePVProfile_t5A21743AE68601F4B203BC9CE6A6B9A94B114D5C_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___profileException, NULL);
 }
 IL2CPP_EXTERN_C void SerializablePVProfile_t5A21743AE68601F4B203BC9CE6A6B9A94B114D5C_marshal_com_back(const SerializablePVProfile_t5A21743AE68601F4B203BC9CE6A6B9A94B114D5C_marshaled_com& marshaled, SerializablePVProfile_t5A21743AE68601F4B203BC9CE6A6B9A94B114D5C& unmarshaled)
 {
-	Exception_t* ___profileException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'profile' of type 'SerializablePVProfile': Reference type field marshaling is not supported.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&SerializablePVProfile_t5A21743AE68601F4B203BC9CE6A6B9A94B114D5C_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&SerializablePVProfile_t5A21743AE68601F4B203BC9CE6A6B9A94B114D5C____profile_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___profileException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s': Reference type field marshaling is not supported.", SerializablePVProfile_t5A21743AE68601F4B203BC9CE6A6B9A94B114D5C____profile_FieldInfo_var, SerializablePVProfile_t5A21743AE68601F4B203BC9CE6A6B9A94B114D5C_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___profileException, NULL);
 }
 IL2CPP_EXTERN_C void SerializablePVProfile_t5A21743AE68601F4B203BC9CE6A6B9A94B114D5C_marshal_com_cleanup(SerializablePVProfile_t5A21743AE68601F4B203BC9CE6A6B9A94B114D5C_marshaled_com& marshaled)
@@ -15389,7 +15515,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LensFlareCommonSRP__cctor_m2A0A34E15A146
 		Il2CppCodeGenWriteBarrier((void**)(&((LensFlareCommonSRP_t216404EC3242B43B3A8486A9D03A70302E79C135_StaticFields*)il2cpp_codegen_static_fields_for(LensFlareCommonSRP_t216404EC3242B43B3A8486A9D03A70302E79C135_il2cpp_TypeInfo_var))->___occlusionRT), (void*)(RTHandle_t135537761C47BC929F032B3C8F4D55EA1111B07B*)NULL);
 		((LensFlareCommonSRP_t216404EC3242B43B3A8486A9D03A70302E79C135_StaticFields*)il2cpp_codegen_static_fields_for(LensFlareCommonSRP_t216404EC3242B43B3A8486A9D03A70302E79C135_il2cpp_TypeInfo_var))->___frameIdx = 0;
 		bool L_3;
-		L_3 = SystemInfo_SupportsRenderTextureFormat_mCCC3C69578A2C5B7367F73999E6938C315A98201(((int32_t)14), NULL);
+		L_3 = SystemInfo_IsFormatSupported_m412D2A8B391BDBCD1EDB5C17ADAB724CDB123499(((int32_t)49), 4, NULL);
 		((LensFlareCommonSRP_t216404EC3242B43B3A8486A9D03A70302E79C135_StaticFields*)il2cpp_codegen_static_fields_for(LensFlareCommonSRP_t216404EC3242B43B3A8486A9D03A70302E79C135_il2cpp_TypeInfo_var))->___s_SupportsLensFlareTexFormat = L_3;
 		return;
 	}
@@ -19722,7 +19848,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RTHandleSystem_Dispose_mB2E8DC8BB5B7BEAD
 		return;
 	}
 }
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RTHandleSystem_Initialize_m00DD4C4DFAAC473BC05282E5B291477D636C585E (RTHandleSystem_tAE496B31B56A77B4896E34576C961C3CA073998F* __this, int32_t ___0_width, int32_t ___1_height, bool ___2_useLegacyDynamicResControl, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RTHandleSystem_Initialize_mA4B41213ACE5EABD7C8397780BFDCEA8847BE466 (RTHandleSystem_tAE496B31B56A77B4896E34576C961C3CA073998F* __this, int32_t ___0_width, int32_t ___1_height, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -19826,26 +19952,34 @@ IL_0064:
 		__this->___m_MaxWidths = L_12;
 		int32_t L_13 = ___1_height;
 		__this->___m_MaxHeights = L_13;
-		bool L_14 = ___2_useLegacyDynamicResControl;
-		if (!L_14)
+		il2cpp_codegen_runtime_class_init_inline(DynamicResolutionHandler_t4D0ED3CF6D7BE856065759A87B44AC0FF5D8FAEE_il2cpp_TypeInfo_var);
+		DynamicResolutionHandler_t4D0ED3CF6D7BE856065759A87B44AC0FF5D8FAEE* L_14;
+		L_14 = DynamicResolutionHandler_get_instance_m8342EE11F735097586D623F150DB8379C50B388D_inline(NULL);
+		NullCheck(L_14);
+		bool L_15;
+		L_15 = DynamicResolutionHandler_RequestsHardwareDynamicResolution_mE007D198D273487DD581E1D3C675218D9EC082CC(L_14, NULL);
+		__this->___m_HardwareDynamicResRequested = L_15;
+		return;
+	}
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RTHandleSystem_Initialize_m00DD4C4DFAAC473BC05282E5B291477D636C585E (RTHandleSystem_tAE496B31B56A77B4896E34576C961C3CA073998F* __this, int32_t ___0_width, int32_t ___1_height, bool ___2_useLegacyDynamicResControl, const RuntimeMethod* method) 
+{
+	{
+		int32_t L_0 = ___0_width;
+		int32_t L_1 = ___1_height;
+		RTHandleSystem_Initialize_mA4B41213ACE5EABD7C8397780BFDCEA8847BE466(__this, L_0, L_1, NULL);
+		bool L_2 = ___2_useLegacyDynamicResControl;
+		if (!L_2)
 		{
-			goto IL_007d;
+			goto IL_0012;
 		}
 	}
 	{
 		__this->___m_HardwareDynamicResRequested = (bool)1;
-		return;
 	}
 
-IL_007d:
+IL_0012:
 	{
-		il2cpp_codegen_runtime_class_init_inline(DynamicResolutionHandler_t4D0ED3CF6D7BE856065759A87B44AC0FF5D8FAEE_il2cpp_TypeInfo_var);
-		DynamicResolutionHandler_t4D0ED3CF6D7BE856065759A87B44AC0FF5D8FAEE* L_15;
-		L_15 = DynamicResolutionHandler_get_instance_m8342EE11F735097586D623F150DB8379C50B388D_inline(NULL);
-		NullCheck(L_15);
-		bool L_16;
-		L_16 = DynamicResolutionHandler_RequestsHardwareDynamicResolution_mE007D198D273487DD581E1D3C675218D9EC082CC(L_15, NULL);
-		__this->___m_HardwareDynamicResRequested = L_16;
 		return;
 	}
 }
@@ -22492,6 +22626,24 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RTHandle_t135537761C47BC929F032B3C8F4D55EA111
 		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
 		Debug_LogError_mB00B2B4468EF3CAF041B038D840820FB84C924B2(_stringLiteral96E86D994C542E8C3CFF4703CB8A80754EECBAE6, NULL);
 		return (RTHandle_t135537761C47BC929F032B3C8F4D55EA1111B07B*)NULL;
+	}
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RTHandles_Initialize_mE71BD324055DFD03EA5C48BD35420ACA7E7FE2CE (int32_t ___0_width, int32_t ___1_height, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&RTHandles_t84D932A74064E591F31E9813FBED5D64F5CC888C_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		il2cpp_codegen_runtime_class_init_inline(RTHandles_t84D932A74064E591F31E9813FBED5D64F5CC888C_il2cpp_TypeInfo_var);
+		RTHandleSystem_tAE496B31B56A77B4896E34576C961C3CA073998F* L_0 = ((RTHandles_t84D932A74064E591F31E9813FBED5D64F5CC888C_StaticFields*)il2cpp_codegen_static_fields_for(RTHandles_t84D932A74064E591F31E9813FBED5D64F5CC888C_il2cpp_TypeInfo_var))->___s_DefaultInstance;
+		int32_t L_1 = ___0_width;
+		int32_t L_2 = ___1_height;
+		NullCheck(L_0);
+		RTHandleSystem_Initialize_mA4B41213ACE5EABD7C8397780BFDCEA8847BE466(L_0, L_1, L_2, NULL);
+		return;
 	}
 }
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RTHandles_Initialize_mF1FE57B75EF8F7EBB7B3A63FEA617EA89EE4E3B6 (int32_t ___0_width, int32_t ___1_height, bool ___2_useLegacyDynamicResControl, const RuntimeMethod* method) 

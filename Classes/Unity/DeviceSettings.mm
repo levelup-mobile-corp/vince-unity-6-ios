@@ -1,6 +1,8 @@
 #include <sys/types.h>
 #include <sys/sysctl.h>
 
+#include "UnityAppController.h"
+#include "UnityView.h"
 #include "DisplayManager.h"
 
 // ad/vendor ids
@@ -252,6 +254,10 @@ DeviceTableEntry DeviceTable[] =
     { iPhone, 15, 5, 5, deviceiPhone15Plus },
     { iPhone, 16, 1, 1, deviceiPhone15Pro },
     { iPhone, 16, 2, 2, deviceiPhone15ProMax },
+    { iPhone, 17, 3, 3, deviceiPhone16 },
+    { iPhone, 17, 4, 4, deviceiPhone16Plus },
+    { iPhone, 17, 1, 1, deviceiPhone16Pro },
+    { iPhone, 17, 2, 2, deviceiPhone16ProMax },
 
     { iPod, 4, 1, 1, deviceiPodTouch4Gen },
     { iPod, 5, 1, 1, deviceiPodTouch5Gen },
@@ -374,6 +380,7 @@ extern "C" int UnityDeviceHasCutout()
         case deviceiPhone13: case deviceiPhone13Mini: case deviceiPhone13Pro: case deviceiPhone13ProMax:
         case deviceiPhone14: case deviceiPhone14Plus: case deviceiPhone14Pro: case deviceiPhone14ProMax:
         case deviceiPhone15: case deviceiPhone15Plus: case deviceiPhone15Pro: case deviceiPhone15ProMax:
+        case deviceiPhone16: case deviceiPhone16Plus: case deviceiPhone16Pro: case deviceiPhone16ProMax:
             return 1;
         default:
             return 0;
@@ -395,6 +402,11 @@ extern "C" int UnityDeviceSupportedOrientations()
     return orientations;
 }
 
+extern "C" int UnityDeviceIsForceTouchSupported()
+{
+    return UnityGetUnityView().traitCollection.forceTouchCapability == UIForceTouchCapabilityAvailable;
+}
+
 extern "C" int UnityDeviceIsStylusTouchSupported()
 {
     const int deviceGen = UnityDeviceGeneration();
@@ -409,11 +421,7 @@ extern "C" int UnityDeviceIsStylusTouchSupported()
 
 extern "C" int UnityDeviceCanShowWideColor()
 {
-#if !PLATFORM_VISIONOS
-    return [UIScreen mainScreen].traitCollection.displayGamut == UIDisplayGamutP3;
-#else
-    return YES;
-#endif
+    return UnityGetUnityView().traitCollection.displayGamut == UIDisplayGamutP3;
 }
 
 extern "C" float UnityDeviceDPI()
@@ -467,6 +475,10 @@ extern "C" float UnityDeviceDPI()
             case deviceiPhone15Plus:
             case deviceiPhone15Pro:
             case deviceiPhone15ProMax:
+            case deviceiPhone16:
+            case deviceiPhone16Plus:
+            case deviceiPhone16Pro:
+            case deviceiPhone16ProMax:
                 _DeviceDPI = 460.0f; break;
             case deviceiPhone12Mini:
             case deviceiPhone13Mini:

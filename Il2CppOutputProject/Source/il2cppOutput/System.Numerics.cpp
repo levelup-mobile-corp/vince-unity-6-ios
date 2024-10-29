@@ -3216,7 +3216,7 @@ IL_0049:
 		NullCheck(L_19);
 		int32_t L_20 = 0;
 		uint32_t L_21 = (L_19)->GetAt(static_cast<il2cpp_array_size_t>(L_20));
-		G_B13_0 = ((int32_t)(((-((int32_t)L_21)))));
+		G_B13_0 = ((-((int32_t)L_21)));
 		G_B13_1 = G_B12_0;
 	}
 
@@ -4299,7 +4299,7 @@ IL_0081:
 		NullCheck(L_23);
 		int32_t L_25 = ((int32_t)il2cpp_codegen_subtract(((int32_t)(((RuntimeArray*)L_24)->max_length)), 1));
 		uint32_t L_26 = (L_23)->GetAt(static_cast<il2cpp_array_size_t>(L_25));
-		V_3 = ((~L_26));
+		V_3 = ((~((int32_t)L_26)));
 		UInt32U5BU5D_t02FBD658AD156A17574ECE6106CF1FBFCC9807FA* L_27 = V_4;
 		NullCheck(L_27);
 		int32_t L_28 = V_2;
@@ -4578,7 +4578,7 @@ IL_017c:
 	}
 	{
 		uint32_t L_74 = V_13;
-		V_13 = ((~L_74));
+		V_13 = ((~((int32_t)L_74)));
 		int32_t L_75 = V_12;
 		int32_t L_76 = V_2;
 		if ((((int32_t)L_75) > ((int32_t)L_76)))
@@ -5454,7 +5454,7 @@ IL_004c:
 	}
 	{
 		uint64_t L_23 = V_0;
-		G_B10_0 = ((-((int64_t)L_23)));
+		G_B10_0 = ((uint64_t)(((-((int64_t)L_23)))));
 		goto IL_005a;
 	}
 
@@ -11968,7 +11968,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NumericsHelpers_DangerousMakeTwosComplem
 		int32_t L_4 = 0;
 		uint32_t L_5 = (L_3)->GetAt(static_cast<il2cpp_array_size_t>(L_4));
 		NullCheck(L_2);
-		(L_2)->SetAt(static_cast<il2cpp_array_size_t>(0), (uint32_t)((int32_t)il2cpp_codegen_add((int32_t)((~L_5)), 1)));
+		(L_2)->SetAt(static_cast<il2cpp_array_size_t>(0), (uint32_t)((int32_t)il2cpp_codegen_add(((~((int32_t)L_5))), 1)));
 		V_0 = 1;
 		goto IL_0021;
 	}
@@ -11983,7 +11983,7 @@ IL_0014:
 		int32_t L_10 = L_9;
 		uint32_t L_11 = (L_8)->GetAt(static_cast<il2cpp_array_size_t>(L_10));
 		NullCheck(L_6);
-		(L_6)->SetAt(static_cast<il2cpp_array_size_t>(L_7), (uint32_t)((int32_t)il2cpp_codegen_add((int32_t)((~L_11)), 1)));
+		(L_6)->SetAt(static_cast<il2cpp_array_size_t>(L_7), (uint32_t)((int32_t)il2cpp_codegen_add(((~((int32_t)L_11))), 1)));
 		int32_t L_12 = V_0;
 		V_0 = ((int32_t)il2cpp_codegen_add(L_12, 1));
 	}
@@ -12023,7 +12023,7 @@ IL_0030:
 		int32_t L_23 = L_22;
 		uint32_t L_24 = (L_21)->GetAt(static_cast<il2cpp_array_size_t>(L_23));
 		NullCheck(L_19);
-		(L_19)->SetAt(static_cast<il2cpp_array_size_t>(L_20), (uint32_t)((~L_24)));
+		(L_19)->SetAt(static_cast<il2cpp_array_size_t>(L_20), (uint32_t)((~((int32_t)L_24))));
 		int32_t L_25 = V_0;
 		V_0 = ((int32_t)il2cpp_codegen_add(L_25, 1));
 	}

@@ -148,6 +148,7 @@ struct Dictionary_2_t129029582481E96143BD747690E92DB7E444261E;
 struct Dictionary_2_t8E385BAD05584AB244D10E6FAAA2C60FB9BA5F64;
 struct IEnumerable_1_t050727EE9B5FD6928EC3150BA3707011771273FE;
 struct IEnumerable_1_tF95C9E01A913DD50575531C8305932628663D9E9;
+struct IEnumerator_1_t73FD060C436E3C4264A734C8F8DCC01DFF6046B8;
 struct IEqualityComparer_1_tAE94C8F24AD5B94D4EE85CA9FC59E3409D41CAF7;
 struct IEqualityComparer_1_t34D541B5FA7B648B0BA88CB13474D1CE66138B8D;
 struct IList_1_t2325C3E126E016518919B8C9FE6B529ACBA2E2E8;
@@ -226,6 +227,8 @@ struct HWStack_tD40EE1D12E709BECF016469F161DC3071C020CC5;
 struct Hashtable_tEFC3B6496E6747787D8BB761B51F2AE3A8CFFE2D;
 struct ICollection_t37E7B9DC5B4EF41D190D607F92835BF1171C0E8E;
 struct IDictionary_t6D03155AF1FA9083817AA5B6AD7DEEACC26AB220;
+struct IDisposable_t030E0496B4E0E4E4F086825007979AF51F7248C5;
+struct IEnumerator_t7B609C2FFA6EB5167D9C62A0C32A21DE2F666DAA;
 struct IEqualityComparer_tEF8F1EC76B9C8E76695BE848D41E6B147928D1C1;
 struct IFormatProvider_tC202922D43BFF3525109ABF3FB79625F5646AB52;
 struct IValidationEventHandling_t5929D7539D965D446556F7740F36A2BF7C6CC57E;
@@ -434,6 +437,9 @@ IL2CPP_EXTERN_C RuntimeField* U3CPrivateImplementationDetailsU3E_tBAB6DC40B1709E
 IL2CPP_EXTERN_C RuntimeField* U3CPrivateImplementationDetailsU3E_tBAB6DC40B1709E21296656960228A17F1BE57FD7____2D902EC9D8EA71E1193C1C8315B1553D5154744F651BD366F1E1F437F6594A94_FieldInfo_var;
 IL2CPP_EXTERN_C RuntimeField* U3CPrivateImplementationDetailsU3E_tBAB6DC40B1709E21296656960228A17F1BE57FD7____499E4F5C84E20C7347E10100E0EC90C1945EA21C7C80809E4F7F474179B39DF6_FieldInfo_var;
 IL2CPP_EXTERN_C RuntimeField* U3CPrivateImplementationDetailsU3E_tBAB6DC40B1709E21296656960228A17F1BE57FD7____9DA6B2C4638D1DC7611B7F458BBFE7FD49FE1B36B67239B00B8A051F4E49558F_FieldInfo_var;
+IL2CPP_EXTERN_C RuntimeField* XPathNodeRef_tF695A4CACB9D70FDCBCC9EE7F3AE77D1CAF06470_____page_FieldInfo_var;
+IL2CPP_EXTERN_C RuntimeField* XPathNode_t4A9DCD8092B3B7DBA0A6DA09C03DB5274D43C3CA_____info_FieldInfo_var;
+IL2CPP_EXTERN_C RuntimeField* XsdDateTime_t232255D69CF1B25B380F0C9D87D0002844A1E8BB____dt_FieldInfo_var;
 IL2CPP_EXTERN_C String_t* _stringLiteral02E0591C874C7B96268DF9DC6FA19AC2E41C9980;
 IL2CPP_EXTERN_C String_t* _stringLiteral06F74C6DAF114664BF1BD452596A0DBDCCED259A;
 IL2CPP_EXTERN_C String_t* _stringLiteral07624473F417C06C74D59C64840A1532FCE2C626;
@@ -591,6 +597,9 @@ IL2CPP_EXTERN_C const RuntimeMethod* XsdDuration_TryToTimeSpan_mD2D18571E29C257F
 IL2CPP_EXTERN_C const RuntimeMethod* XsdDuration__ctor_m34337885047100969A6121F7CFAE5530C40E9B48_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* XsdDuration__ctor_m38DC4CBC4227909F4B1AF6A15D90026E3EDA2E8A_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* XsdValidator_LoadSchema_m285D8FAB9A88F0E964E58363378F3F0935DBC78F_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeType* XPathNodeRef_tF695A4CACB9D70FDCBCC9EE7F3AE77D1CAF06470_0_0_0_var;
+IL2CPP_EXTERN_C const RuntimeType* XPathNode_t4A9DCD8092B3B7DBA0A6DA09C03DB5274D43C3CA_0_0_0_var;
+IL2CPP_EXTERN_C const RuntimeType* XsdDateTime_t232255D69CF1B25B380F0C9D87D0002844A1E8BB_0_0_0_var;
 struct CultureData_tEEFDCF4ECA1BBF6C0C8C94EB3541657245598F9D_marshaled_com;
 struct CultureData_tEEFDCF4ECA1BBF6C0C8C94EB3541657245598F9D_marshaled_pinvoke;
 struct CultureInfo_t9BA817D41AD55AC8BD07480DD8AC22F8FFA378E0_marshaled_com;
@@ -4166,12 +4175,26 @@ IL_001d:
 #endif
 IL2CPP_EXTERN_C void XsdDateTime_t232255D69CF1B25B380F0C9D87D0002844A1E8BB_marshal_pinvoke(const XsdDateTime_t232255D69CF1B25B380F0C9D87D0002844A1E8BB& unmarshaled, XsdDateTime_t232255D69CF1B25B380F0C9D87D0002844A1E8BB_marshaled_pinvoke& marshaled)
 {
-	Exception_t* ___dtException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'dt' of type 'XsdDateTime'.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&XsdDateTime_t232255D69CF1B25B380F0C9D87D0002844A1E8BB_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&XsdDateTime_t232255D69CF1B25B380F0C9D87D0002844A1E8BB____dt_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___dtException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s'.", XsdDateTime_t232255D69CF1B25B380F0C9D87D0002844A1E8BB____dt_FieldInfo_var, XsdDateTime_t232255D69CF1B25B380F0C9D87D0002844A1E8BB_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___dtException, NULL);
 }
 IL2CPP_EXTERN_C void XsdDateTime_t232255D69CF1B25B380F0C9D87D0002844A1E8BB_marshal_pinvoke_back(const XsdDateTime_t232255D69CF1B25B380F0C9D87D0002844A1E8BB_marshaled_pinvoke& marshaled, XsdDateTime_t232255D69CF1B25B380F0C9D87D0002844A1E8BB& unmarshaled)
 {
-	Exception_t* ___dtException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'dt' of type 'XsdDateTime'.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&XsdDateTime_t232255D69CF1B25B380F0C9D87D0002844A1E8BB_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&XsdDateTime_t232255D69CF1B25B380F0C9D87D0002844A1E8BB____dt_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___dtException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s'.", XsdDateTime_t232255D69CF1B25B380F0C9D87D0002844A1E8BB____dt_FieldInfo_var, XsdDateTime_t232255D69CF1B25B380F0C9D87D0002844A1E8BB_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___dtException, NULL);
 }
 IL2CPP_EXTERN_C void XsdDateTime_t232255D69CF1B25B380F0C9D87D0002844A1E8BB_marshal_pinvoke_cleanup(XsdDateTime_t232255D69CF1B25B380F0C9D87D0002844A1E8BB_marshaled_pinvoke& marshaled)
@@ -4179,12 +4202,26 @@ IL2CPP_EXTERN_C void XsdDateTime_t232255D69CF1B25B380F0C9D87D0002844A1E8BB_marsh
 }
 IL2CPP_EXTERN_C void XsdDateTime_t232255D69CF1B25B380F0C9D87D0002844A1E8BB_marshal_com(const XsdDateTime_t232255D69CF1B25B380F0C9D87D0002844A1E8BB& unmarshaled, XsdDateTime_t232255D69CF1B25B380F0C9D87D0002844A1E8BB_marshaled_com& marshaled)
 {
-	Exception_t* ___dtException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'dt' of type 'XsdDateTime'.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&XsdDateTime_t232255D69CF1B25B380F0C9D87D0002844A1E8BB_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&XsdDateTime_t232255D69CF1B25B380F0C9D87D0002844A1E8BB____dt_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___dtException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s'.", XsdDateTime_t232255D69CF1B25B380F0C9D87D0002844A1E8BB____dt_FieldInfo_var, XsdDateTime_t232255D69CF1B25B380F0C9D87D0002844A1E8BB_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___dtException, NULL);
 }
 IL2CPP_EXTERN_C void XsdDateTime_t232255D69CF1B25B380F0C9D87D0002844A1E8BB_marshal_com_back(const XsdDateTime_t232255D69CF1B25B380F0C9D87D0002844A1E8BB_marshaled_com& marshaled, XsdDateTime_t232255D69CF1B25B380F0C9D87D0002844A1E8BB& unmarshaled)
 {
-	Exception_t* ___dtException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'dt' of type 'XsdDateTime'.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&XsdDateTime_t232255D69CF1B25B380F0C9D87D0002844A1E8BB_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&XsdDateTime_t232255D69CF1B25B380F0C9D87D0002844A1E8BB____dt_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___dtException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s'.", XsdDateTime_t232255D69CF1B25B380F0C9D87D0002844A1E8BB____dt_FieldInfo_var, XsdDateTime_t232255D69CF1B25B380F0C9D87D0002844A1E8BB_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___dtException, NULL);
 }
 IL2CPP_EXTERN_C void XsdDateTime_t232255D69CF1B25B380F0C9D87D0002844A1E8BB_marshal_com_cleanup(XsdDateTime_t232255D69CF1B25B380F0C9D87D0002844A1E8BB_marshaled_com& marshaled)
@@ -20089,12 +20126,26 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t XPathDocumentNavigator_GetPositionHas
 #endif
 IL2CPP_EXTERN_C void XPathNode_t4A9DCD8092B3B7DBA0A6DA09C03DB5274D43C3CA_marshal_pinvoke(const XPathNode_t4A9DCD8092B3B7DBA0A6DA09C03DB5274D43C3CA& unmarshaled, XPathNode_t4A9DCD8092B3B7DBA0A6DA09C03DB5274D43C3CA_marshaled_pinvoke& marshaled)
 {
-	Exception_t* ____infoException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '_info' of type 'XPathNode': Reference type field marshaling is not supported.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&XPathNode_t4A9DCD8092B3B7DBA0A6DA09C03DB5274D43C3CA_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&XPathNode_t4A9DCD8092B3B7DBA0A6DA09C03DB5274D43C3CA_____info_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ____infoException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s': Reference type field marshaling is not supported.", XPathNode_t4A9DCD8092B3B7DBA0A6DA09C03DB5274D43C3CA_____info_FieldInfo_var, XPathNode_t4A9DCD8092B3B7DBA0A6DA09C03DB5274D43C3CA_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(____infoException, NULL);
 }
 IL2CPP_EXTERN_C void XPathNode_t4A9DCD8092B3B7DBA0A6DA09C03DB5274D43C3CA_marshal_pinvoke_back(const XPathNode_t4A9DCD8092B3B7DBA0A6DA09C03DB5274D43C3CA_marshaled_pinvoke& marshaled, XPathNode_t4A9DCD8092B3B7DBA0A6DA09C03DB5274D43C3CA& unmarshaled)
 {
-	Exception_t* ____infoException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '_info' of type 'XPathNode': Reference type field marshaling is not supported.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&XPathNode_t4A9DCD8092B3B7DBA0A6DA09C03DB5274D43C3CA_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&XPathNode_t4A9DCD8092B3B7DBA0A6DA09C03DB5274D43C3CA_____info_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ____infoException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s': Reference type field marshaling is not supported.", XPathNode_t4A9DCD8092B3B7DBA0A6DA09C03DB5274D43C3CA_____info_FieldInfo_var, XPathNode_t4A9DCD8092B3B7DBA0A6DA09C03DB5274D43C3CA_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(____infoException, NULL);
 }
 IL2CPP_EXTERN_C void XPathNode_t4A9DCD8092B3B7DBA0A6DA09C03DB5274D43C3CA_marshal_pinvoke_cleanup(XPathNode_t4A9DCD8092B3B7DBA0A6DA09C03DB5274D43C3CA_marshaled_pinvoke& marshaled)
@@ -20102,12 +20153,26 @@ IL2CPP_EXTERN_C void XPathNode_t4A9DCD8092B3B7DBA0A6DA09C03DB5274D43C3CA_marshal
 }
 IL2CPP_EXTERN_C void XPathNode_t4A9DCD8092B3B7DBA0A6DA09C03DB5274D43C3CA_marshal_com(const XPathNode_t4A9DCD8092B3B7DBA0A6DA09C03DB5274D43C3CA& unmarshaled, XPathNode_t4A9DCD8092B3B7DBA0A6DA09C03DB5274D43C3CA_marshaled_com& marshaled)
 {
-	Exception_t* ____infoException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '_info' of type 'XPathNode': Reference type field marshaling is not supported.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&XPathNode_t4A9DCD8092B3B7DBA0A6DA09C03DB5274D43C3CA_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&XPathNode_t4A9DCD8092B3B7DBA0A6DA09C03DB5274D43C3CA_____info_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ____infoException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s': Reference type field marshaling is not supported.", XPathNode_t4A9DCD8092B3B7DBA0A6DA09C03DB5274D43C3CA_____info_FieldInfo_var, XPathNode_t4A9DCD8092B3B7DBA0A6DA09C03DB5274D43C3CA_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(____infoException, NULL);
 }
 IL2CPP_EXTERN_C void XPathNode_t4A9DCD8092B3B7DBA0A6DA09C03DB5274D43C3CA_marshal_com_back(const XPathNode_t4A9DCD8092B3B7DBA0A6DA09C03DB5274D43C3CA_marshaled_com& marshaled, XPathNode_t4A9DCD8092B3B7DBA0A6DA09C03DB5274D43C3CA& unmarshaled)
 {
-	Exception_t* ____infoException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '_info' of type 'XPathNode': Reference type field marshaling is not supported.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&XPathNode_t4A9DCD8092B3B7DBA0A6DA09C03DB5274D43C3CA_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&XPathNode_t4A9DCD8092B3B7DBA0A6DA09C03DB5274D43C3CA_____info_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ____infoException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s': Reference type field marshaling is not supported.", XPathNode_t4A9DCD8092B3B7DBA0A6DA09C03DB5274D43C3CA_____info_FieldInfo_var, XPathNode_t4A9DCD8092B3B7DBA0A6DA09C03DB5274D43C3CA_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(____infoException, NULL);
 }
 IL2CPP_EXTERN_C void XPathNode_t4A9DCD8092B3B7DBA0A6DA09C03DB5274D43C3CA_marshal_com_cleanup(XPathNode_t4A9DCD8092B3B7DBA0A6DA09C03DB5274D43C3CA_marshaled_com& marshaled)
@@ -20483,12 +20548,26 @@ IL2CPP_EXTERN_C  String_t* XPathNode_get_Value_mC18CEAE4371BD37328FA857F57ACEE9D
 
 IL2CPP_EXTERN_C void XPathNodeRef_tF695A4CACB9D70FDCBCC9EE7F3AE77D1CAF06470_marshal_pinvoke(const XPathNodeRef_tF695A4CACB9D70FDCBCC9EE7F3AE77D1CAF06470& unmarshaled, XPathNodeRef_tF695A4CACB9D70FDCBCC9EE7F3AE77D1CAF06470_marshaled_pinvoke& marshaled)
 {
-	Exception_t* ____pageException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '_page' of type 'XPathNodeRef'.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&XPathNodeRef_tF695A4CACB9D70FDCBCC9EE7F3AE77D1CAF06470_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&XPathNodeRef_tF695A4CACB9D70FDCBCC9EE7F3AE77D1CAF06470_____page_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ____pageException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s'.", XPathNodeRef_tF695A4CACB9D70FDCBCC9EE7F3AE77D1CAF06470_____page_FieldInfo_var, XPathNodeRef_tF695A4CACB9D70FDCBCC9EE7F3AE77D1CAF06470_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(____pageException, NULL);
 }
 IL2CPP_EXTERN_C void XPathNodeRef_tF695A4CACB9D70FDCBCC9EE7F3AE77D1CAF06470_marshal_pinvoke_back(const XPathNodeRef_tF695A4CACB9D70FDCBCC9EE7F3AE77D1CAF06470_marshaled_pinvoke& marshaled, XPathNodeRef_tF695A4CACB9D70FDCBCC9EE7F3AE77D1CAF06470& unmarshaled)
 {
-	Exception_t* ____pageException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '_page' of type 'XPathNodeRef'.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&XPathNodeRef_tF695A4CACB9D70FDCBCC9EE7F3AE77D1CAF06470_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&XPathNodeRef_tF695A4CACB9D70FDCBCC9EE7F3AE77D1CAF06470_____page_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ____pageException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s'.", XPathNodeRef_tF695A4CACB9D70FDCBCC9EE7F3AE77D1CAF06470_____page_FieldInfo_var, XPathNodeRef_tF695A4CACB9D70FDCBCC9EE7F3AE77D1CAF06470_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(____pageException, NULL);
 }
 IL2CPP_EXTERN_C void XPathNodeRef_tF695A4CACB9D70FDCBCC9EE7F3AE77D1CAF06470_marshal_pinvoke_cleanup(XPathNodeRef_tF695A4CACB9D70FDCBCC9EE7F3AE77D1CAF06470_marshaled_pinvoke& marshaled)
@@ -20498,12 +20577,26 @@ IL2CPP_EXTERN_C void XPathNodeRef_tF695A4CACB9D70FDCBCC9EE7F3AE77D1CAF06470_mars
 
 IL2CPP_EXTERN_C void XPathNodeRef_tF695A4CACB9D70FDCBCC9EE7F3AE77D1CAF06470_marshal_com(const XPathNodeRef_tF695A4CACB9D70FDCBCC9EE7F3AE77D1CAF06470& unmarshaled, XPathNodeRef_tF695A4CACB9D70FDCBCC9EE7F3AE77D1CAF06470_marshaled_com& marshaled)
 {
-	Exception_t* ____pageException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '_page' of type 'XPathNodeRef'.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&XPathNodeRef_tF695A4CACB9D70FDCBCC9EE7F3AE77D1CAF06470_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&XPathNodeRef_tF695A4CACB9D70FDCBCC9EE7F3AE77D1CAF06470_____page_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ____pageException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s'.", XPathNodeRef_tF695A4CACB9D70FDCBCC9EE7F3AE77D1CAF06470_____page_FieldInfo_var, XPathNodeRef_tF695A4CACB9D70FDCBCC9EE7F3AE77D1CAF06470_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(____pageException, NULL);
 }
 IL2CPP_EXTERN_C void XPathNodeRef_tF695A4CACB9D70FDCBCC9EE7F3AE77D1CAF06470_marshal_com_back(const XPathNodeRef_tF695A4CACB9D70FDCBCC9EE7F3AE77D1CAF06470_marshaled_com& marshaled, XPathNodeRef_tF695A4CACB9D70FDCBCC9EE7F3AE77D1CAF06470& unmarshaled)
 {
-	Exception_t* ____pageException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '_page' of type 'XPathNodeRef'.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&XPathNodeRef_tF695A4CACB9D70FDCBCC9EE7F3AE77D1CAF06470_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&XPathNodeRef_tF695A4CACB9D70FDCBCC9EE7F3AE77D1CAF06470_____page_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ____pageException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s'.", XPathNodeRef_tF695A4CACB9D70FDCBCC9EE7F3AE77D1CAF06470_____page_FieldInfo_var, XPathNodeRef_tF695A4CACB9D70FDCBCC9EE7F3AE77D1CAF06470_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(____pageException, NULL);
 }
 IL2CPP_EXTERN_C void XPathNodeRef_tF695A4CACB9D70FDCBCC9EE7F3AE77D1CAF06470_marshal_com_cleanup(XPathNodeRef_tF695A4CACB9D70FDCBCC9EE7F3AE77D1CAF06470_marshaled_com& marshaled)

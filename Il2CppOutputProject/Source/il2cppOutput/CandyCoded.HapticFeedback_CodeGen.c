@@ -31,13 +31,13 @@ static Il2CppMethodPointer s_methodPointers[7] =
 };
 static const int32_t s_InvokerIndices[7] = 
 {
-	12893,
-	12893,
-	12893,
-	8250,
-	8250,
-	8250,
-	8250,
+	12936,
+	12936,
+	12936,
+	8278,
+	8278,
+	8278,
+	8278,
 };
 IL2CPP_EXTERN_C const Il2CppCodeGenModule g_CandyCoded_HapticFeedback_CodeGenModule;
 const Il2CppCodeGenModule g_CandyCoded_HapticFeedback_CodeGenModule = 

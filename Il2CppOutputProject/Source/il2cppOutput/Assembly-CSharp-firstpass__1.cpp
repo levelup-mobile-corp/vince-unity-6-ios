@@ -543,6 +543,7 @@ IL2CPP_EXTERN_C RuntimeClass* WaitForPosition_t302B4F4C6FC89426E08DDC65543F45785
 IL2CPP_EXTERN_C RuntimeClass* WaitForRewind_t2ABB006386A81D361C36B476044786442726743D_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* WaitForStart_t4448F8E46F59EE599CA8DCEF52FC706221093F30_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* YieldAwaiter_t5F0A81DC85227C01FFC38D53139B5C19D920B52A_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeField* CharTransform_t261A12D563F1399A48E5924D39CAB027B9023BE3_____meshInfo_FieldInfo_var;
 IL2CPP_EXTERN_C String_t* _stringLiteral0D1BA8C0E521925077224DB11A6C93FB8E930E14;
 IL2CPP_EXTERN_C String_t* _stringLiteral40E222F25BCA4559884A50A00854C58F04B4E215;
 IL2CPP_EXTERN_C String_t* _stringLiteral47E67CD511E58C83C728D9C45827610F8F518027;
@@ -813,6 +814,7 @@ IL2CPP_EXTERN_C const RuntimeMethod* U3CU3Ec__DisplayClass9_0_U3CDOPreferredSize
 IL2CPP_EXTERN_C const RuntimeMethod* U3CU3Ec__DisplayClass9_0_U3CDOTilingU3Eb__0_m049884D699FDEDD9B8CE44EC9104A8055F7E4DD8_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* U3CU3Ec__DisplayClass9_0_U3CDOTilingU3Eb__1_m5C1495C9398445575DA1139EF2967F0C6535992D_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* UnityEvent_Invoke_mFBF80D59B03C30C5FE6A06F897D954ACADE061D2_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeType* CharTransform_t261A12D563F1399A48E5924D39CAB027B9023BE3_0_0_0_var;
 IL2CPP_EXTERN_C const RuntimeType* MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71_0_0_0_var;
 IL2CPP_EXTERN_C const RuntimeType* TargetType_t2657DCDB4CC1ADC1973E89DF76ED40441B97E161_0_0_0_var;
 struct Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B;
@@ -22263,12 +22265,26 @@ IL2CPP_EXTERN_C  void CharVertices__ctor_mCBBF285612E5301C4CA25ADFEA1FB7B8C0CC25
 
 IL2CPP_EXTERN_C void CharTransform_t261A12D563F1399A48E5924D39CAB027B9023BE3_marshal_pinvoke(const CharTransform_t261A12D563F1399A48E5924D39CAB027B9023BE3& unmarshaled, CharTransform_t261A12D563F1399A48E5924D39CAB027B9023BE3_marshaled_pinvoke& marshaled)
 {
-	Exception_t* ____meshInfoException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '_meshInfo' of type 'CharTransform'.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&CharTransform_t261A12D563F1399A48E5924D39CAB027B9023BE3_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&CharTransform_t261A12D563F1399A48E5924D39CAB027B9023BE3_____meshInfo_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ____meshInfoException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s'.", CharTransform_t261A12D563F1399A48E5924D39CAB027B9023BE3_____meshInfo_FieldInfo_var, CharTransform_t261A12D563F1399A48E5924D39CAB027B9023BE3_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(____meshInfoException, NULL);
 }
 IL2CPP_EXTERN_C void CharTransform_t261A12D563F1399A48E5924D39CAB027B9023BE3_marshal_pinvoke_back(const CharTransform_t261A12D563F1399A48E5924D39CAB027B9023BE3_marshaled_pinvoke& marshaled, CharTransform_t261A12D563F1399A48E5924D39CAB027B9023BE3& unmarshaled)
 {
-	Exception_t* ____meshInfoException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '_meshInfo' of type 'CharTransform'.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&CharTransform_t261A12D563F1399A48E5924D39CAB027B9023BE3_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&CharTransform_t261A12D563F1399A48E5924D39CAB027B9023BE3_____meshInfo_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ____meshInfoException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s'.", CharTransform_t261A12D563F1399A48E5924D39CAB027B9023BE3_____meshInfo_FieldInfo_var, CharTransform_t261A12D563F1399A48E5924D39CAB027B9023BE3_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(____meshInfoException, NULL);
 }
 IL2CPP_EXTERN_C void CharTransform_t261A12D563F1399A48E5924D39CAB027B9023BE3_marshal_pinvoke_cleanup(CharTransform_t261A12D563F1399A48E5924D39CAB027B9023BE3_marshaled_pinvoke& marshaled)
@@ -22278,12 +22294,26 @@ IL2CPP_EXTERN_C void CharTransform_t261A12D563F1399A48E5924D39CAB027B9023BE3_mar
 
 IL2CPP_EXTERN_C void CharTransform_t261A12D563F1399A48E5924D39CAB027B9023BE3_marshal_com(const CharTransform_t261A12D563F1399A48E5924D39CAB027B9023BE3& unmarshaled, CharTransform_t261A12D563F1399A48E5924D39CAB027B9023BE3_marshaled_com& marshaled)
 {
-	Exception_t* ____meshInfoException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '_meshInfo' of type 'CharTransform'.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&CharTransform_t261A12D563F1399A48E5924D39CAB027B9023BE3_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&CharTransform_t261A12D563F1399A48E5924D39CAB027B9023BE3_____meshInfo_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ____meshInfoException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s'.", CharTransform_t261A12D563F1399A48E5924D39CAB027B9023BE3_____meshInfo_FieldInfo_var, CharTransform_t261A12D563F1399A48E5924D39CAB027B9023BE3_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(____meshInfoException, NULL);
 }
 IL2CPP_EXTERN_C void CharTransform_t261A12D563F1399A48E5924D39CAB027B9023BE3_marshal_com_back(const CharTransform_t261A12D563F1399A48E5924D39CAB027B9023BE3_marshaled_com& marshaled, CharTransform_t261A12D563F1399A48E5924D39CAB027B9023BE3& unmarshaled)
 {
-	Exception_t* ____meshInfoException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '_meshInfo' of type 'CharTransform'.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&CharTransform_t261A12D563F1399A48E5924D39CAB027B9023BE3_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&CharTransform_t261A12D563F1399A48E5924D39CAB027B9023BE3_____meshInfo_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ____meshInfoException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s'.", CharTransform_t261A12D563F1399A48E5924D39CAB027B9023BE3_____meshInfo_FieldInfo_var, CharTransform_t261A12D563F1399A48E5924D39CAB027B9023BE3_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(____meshInfoException, NULL);
 }
 IL2CPP_EXTERN_C void CharTransform_t261A12D563F1399A48E5924D39CAB027B9023BE3_marshal_com_cleanup(CharTransform_t261A12D563F1399A48E5924D39CAB027B9023BE3_marshaled_com& marshaled)

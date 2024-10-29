@@ -340,6 +340,7 @@ struct UniversalRenderPipelineDebugDisplaySettings_t8E70DD217918DB0E7BD8BCCD9958
 struct UniversalRenderPipelineEditorResources_tA2D76E72E741785876F957F94E7C7489F807B1ED;
 struct UniversalRenderPipelineGlobalSettings_t895E975CCCA62A6DE4F820C0109953EF6D83B9F0;
 struct UniversalRenderPipelineVolumeDebugSettings_tE346B18CA392E7714012DD632D4D4641B1EF9D67;
+struct UniversalRendererData_t57D400CEB38765F55EB74FDBD786B9A73C293CA6;
 struct UpscalePass_tB1CC04CFA1FB2D3997D4697EE57D6AC45D97DBA0;
 struct Void_t4861ACF8F4594C3437BB48B6E56783494B843915;
 struct VolumeManager_tC1135CDD73B47230FE58646CB8242E6B324DA621;
@@ -455,6 +456,7 @@ IL2CPP_EXTERN_C RuntimeClass* DebugPostProcessingMode_t10836A037369A3E02166D9380
 IL2CPP_EXTERN_C RuntimeClass* DebugRenderPassEnumerable_tBFD0D15D8A1DC20008B3BC96CA258CFFC61DF5ED_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* DebugRenderSetup_tCA23E2AAC2F1C3969434481D750A9ABF6DF4FDFD_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* DecalDrawSystem_t87ECA1A8D2D9C3A73A12F81D8CCA0F79029C0BFE_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* DecalProjectorAction_tDFCBDEE542B3D640BD121E036275AA51A003CF5C_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* DecalProjector_tE7CEBAABFEF36162FD325321C1F94173CEFEDF64_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Dictionary_2_t96A940D78E875DD4E24C2F48746D6A7CBE9AC441_il2cpp_TypeInfo_var;
@@ -2952,12 +2954,12 @@ struct Widget_tE8D6AF1D7525CC84E8F2C3B73162016736A6A2FF  : public RuntimeObject
 };
 struct Settings_t3BEFDFF2C1A3D3A215DAF7B76E735B1BFB946C92 
 {
-	int32_t ___quality;
-	float ___frameInfluence;
-	float ___jitterScale;
-	float ___mipBias;
-	float ___varianceClampScale;
-	float ___contrastAdaptiveSharpening;
+	int32_t ___m_Quality;
+	float ___m_FrameInfluence;
+	float ___m_JitterScale;
+	float ___m_MipBias;
+	float ___m_VarianceClampScale;
+	float ___m_ContrastAdaptiveSharpening;
 	int32_t ___resetHistoryFrames;
 	int32_t ___jitterFrameCountOffset;
 };
@@ -3871,6 +3873,7 @@ struct UniversalAdditionalLightData_t64155D8CEDD90D83B10153DF9473AEE7E39EF107  :
 {
 	int32_t ___m_Version;
 	bool ___m_UsePipelineSettings;
+	Light_t1E68479B7782AF2050FAA02A5DC612FD034F18F3* ___m_Light;
 	int32_t ___m_AdditionalLightsShadowResolutionTier;
 	int32_t ___m_LightLayerMask;
 	uint32_t ___m_RenderingLayers;
@@ -4031,6 +4034,10 @@ struct VolumeDebugSettings_1_t97AEE85D8F5B529A32EE1E655E2C818AF1FE3061_StaticFie
 	List_1_t7914A60037E52C4BCACDEAA85272BE39302B7E6C* ___s_ComponentPathAndType;
 	List_1_t4B77DB8D00EC6CC4705EB5F2FCC506472734EA72* ___s_ComponentTypes;
 	List_1_tE710023A42AD62626C8D9C84905469A4ADF8D62D* ___U3CadditionalCameraDatasU3Ek__BackingField;
+};
+struct DecalDrawSystem_t87ECA1A8D2D9C3A73A12F81D8CCA0F79029C0BFE_StaticFields
+{
+	uint32_t ___MaxBatchSize;
 };
 struct ShadowCasterGroup2DManager_t1C957B195895E66B058B87D8D741D609EF653777_StaticFields
 {
@@ -5705,7 +5712,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UniversalRenderPipelineAsset_CreateRende
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Blitter_Initialize_mE83DB0C36CCD18E0A168800311A7849967E279F4 (Shader_tADC867D36B7876EE22427FAA2CE485105F4EE692* ___0_blitPS, Shader_tADC867D36B7876EE22427FAA2CE485105F4EE692* ___1_blitColorAndDepthPS, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UniversalRenderPipelineAsset_DestroyRenderer_m2E752BE514F3A4178E1CC3777AA2A6C6F7045EA8 (UniversalRenderPipelineAsset_tE8A9AA6F030CC3B558CEA2EB54FFF4FC58CA6232* __this, ScriptableRenderer_tF15B95BB85F26BE4B4719901D909831B89DC8892** ___0_renderer, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ScriptableRenderer_Dispose_m2E02F5A4E8461E37B6EB866748FC1C0ECE1CC371 (ScriptableRenderer_tF15B95BB85F26BE4B4719901D909831B89DC8892* __this, const RuntimeMethod* method) ;
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RenderPipelineAsset_OnValidate_mD160C7BDEA559BAF3DDA48B4819307E07B377F52 (RenderPipelineAsset_t5F9BF815BF931E1314B184E7F9070FB649C7054E* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RenderPipelineAsset_OnDisable_mE99CEED707BDC901AD37DC976FA3A3A313E7E00C (RenderPipelineAsset_t5F9BF815BF931E1314B184E7F9070FB649C7054E* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Debug_LogError_mB00B2B4468EF3CAF041B038D840820FB84C924B2 (RuntimeObject* ___0_message, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ScriptableRenderer_tF15B95BB85F26BE4B4719901D909831B89DC8892* ScriptableRendererData_InternalCreateRenderer_m62C6C78E44ECCF910F58866666C842D5A0142500 (ScriptableRendererData_t9005CE645D4881FA4431E52EDC7678203632CAA7* __this, const RuntimeMethod* method) ;
@@ -12075,14 +12081,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UniversalRenderPipelineAsset_DestroyRend
 
 IL_000e:
 	{
-		return;
-	}
-}
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UniversalRenderPipelineAsset_OnValidate_mCB1874C30312A3844DC1B714D3A46661D3FB352B (UniversalRenderPipelineAsset_tE8A9AA6F030CC3B558CEA2EB54FFF4FC58CA6232* __this, const RuntimeMethod* method) 
-{
-	{
-		UniversalRenderPipelineAsset_DestroyRenderers_m9678D28196680961A2BCA7F570939553C7C2A358(__this, NULL);
-		RenderPipelineAsset_OnValidate_mD160C7BDEA559BAF3DDA48B4819307E07B377F52(__this, NULL);
 		return;
 	}
 }
@@ -24753,11 +24751,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DecalDrawDBufferSystem__ctor_mD1019124C6
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&DecalDrawSystem_t87ECA1A8D2D9C3A73A12F81D8CCA0F79029C0BFE_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral95B1AA90146002060A2A377AB6AED10DFE0A8CC5);
 		s_Il2CppMethodInitialized = true;
 	}
 	{
 		DecalEntityManager_tDA689202786946588782A67EF3F0B0D9121C294A* L_0 = ___0_entityManager;
+		il2cpp_codegen_runtime_class_init_inline(DecalDrawSystem_t87ECA1A8D2D9C3A73A12F81D8CCA0F79029C0BFE_il2cpp_TypeInfo_var);
 		DecalDrawSystem__ctor_m2F13DA6696D08715AC3C3BE7B73AA680945620A5(__this, _stringLiteral95B1AA90146002060A2A377AB6AED10DFE0A8CC5, L_0, NULL);
 		return;
 	}
@@ -25485,11 +25485,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DecalDrawFowardEmissiveSystem__ctor_m8E4
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&DecalDrawSystem_t87ECA1A8D2D9C3A73A12F81D8CCA0F79029C0BFE_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralC801C024F9D148EC38CF3E9136502901A5CB991C);
 		s_Il2CppMethodInitialized = true;
 	}
 	{
 		DecalEntityManager_tDA689202786946588782A67EF3F0B0D9121C294A* L_0 = ___0_entityManager;
+		il2cpp_codegen_runtime_class_init_inline(DecalDrawSystem_t87ECA1A8D2D9C3A73A12F81D8CCA0F79029C0BFE_il2cpp_TypeInfo_var);
 		DecalDrawSystem__ctor_m2F13DA6696D08715AC3C3BE7B73AA680945620A5(__this, _stringLiteralC801C024F9D148EC38CF3E9136502901A5CB991C, L_0, NULL);
 		return;
 	}
@@ -25646,11 +25648,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DecalDrawErrorSystem__ctor_m015484F442DE
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&DecalDrawSystem_t87ECA1A8D2D9C3A73A12F81D8CCA0F79029C0BFE_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral73147A0ACD9AA81543CFD75A19414ADBC0877E35);
 		s_Il2CppMethodInitialized = true;
 	}
 	{
 		DecalEntityManager_tDA689202786946588782A67EF3F0B0D9121C294A* L_0 = ___0_entityManager;
+		il2cpp_codegen_runtime_class_init_inline(DecalDrawSystem_t87ECA1A8D2D9C3A73A12F81D8CCA0F79029C0BFE_il2cpp_TypeInfo_var);
 		DecalDrawSystem__ctor_m2F13DA6696D08715AC3C3BE7B73AA680945620A5(__this, _stringLiteral73147A0ACD9AA81543CFD75A19414ADBC0877E35, L_0, NULL);
 		int32_t L_1 = ___1_technique;
 		__this->___m_Technique = L_1;

@@ -728,6 +728,11 @@ extern "C" void UnityKeyboard_LayoutChanged(NSString* layout);
         return _heightOfKeyboard < 160.0f;
 }
 
+- (UITextField*)getTextField
+{
+    return textField;
+}
+
 static bool StringContainsEmoji(NSString *string);
 - (BOOL)textField:(UITextField*)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString*)string_
 {

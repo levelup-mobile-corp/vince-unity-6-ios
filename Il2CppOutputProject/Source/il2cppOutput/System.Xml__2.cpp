@@ -442,6 +442,7 @@ IL2CPP_EXTERN_C RuntimeClass* XmlValidatingReaderImpl_t5E1938148F73C4871F4B28C23
 IL2CPP_EXTERN_C RuntimeClass* XmlValidatingReader_tC22B0C99C972133DC954BB9906B62835330FB3F9_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* XmlWellFormedWriter_t15CF95499DCBB82CD642D36B9B9F83BAA18AA645_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* XsdValidatingReader_tC7C9B4A5D46184E4A548F7A12177D50D22CC361E_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeField* ParsingState_tF0FABA16483FCC2DB710460D11CD79D35C4E2886____encoding_FieldInfo_var;
 IL2CPP_EXTERN_C String_t* _stringLiteral010415DFD810DA785E5CD8173EA9688EDA5E73FE;
 IL2CPP_EXTERN_C String_t* _stringLiteral025C1ECF21AD54C7CC6639C629602C3F7FE62FAA;
 IL2CPP_EXTERN_C String_t* _stringLiteral03122A403A679966DEF28BDE4E3CA2CDC2A2390A;
@@ -575,6 +576,7 @@ IL2CPP_EXTERN_C const RuntimeMethod* XmlTextEncoder_WriteSurrogateChar_m81A912C3
 IL2CPP_EXTERN_C const RuntimeMethod* XmlTextEncoder_Write_m50A8B7FD9B3EA8856AE8EA6EEE4FFD02E06726A4_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* XmlTextEncoder_Write_mB5FB6D7AE2A11AD7D8BD3A1923CEE6FA96448131_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeType* HashCodeOfStringDelegate_t9AB4FF441166EF88D20657805C4FA187C4FF5046_0_0_0_var;
+IL2CPP_EXTERN_C const RuntimeType* ParsingState_tF0FABA16483FCC2DB710460D11CD79D35C4E2886_0_0_0_var;
 IL2CPP_EXTERN_C const RuntimeType* String_t_0_0_0_var;
 struct CultureData_tEEFDCF4ECA1BBF6C0C8C94EB3541657245598F9D_marshaled_com;
 struct CultureData_tEEFDCF4ECA1BBF6C0C8C94EB3541657245598F9D_marshaled_pinvoke;
@@ -3055,10 +3057,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Uri_op_Equality_mD7D7AAB7023C0873B37D8B8
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XmlTextReaderImpl__ctor_m285CC96B7C323DF9216D243E3353C9091CC5B288 (XmlTextReaderImpl_t5F48FDC8E88C9E27593266F6C660B3973AE2167B* __this, TextReader_tB8D43017CB6BE1633E5A86D64E7757366507C1F7* ___0_input, XmlReaderSettings_t8D51BA3ED2A013EE1F44525C9861326CAFB44AEA* ___1_settings, String_t* ___2_baseUriStr, XmlParserContext_t843976A0319F7334808DCCAAA4F36EAB41A92F3B* ___3_context, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Type_t* Object_GetType_mE10A8FC1E57F3DF29972CCBC026C2DC3942263B3 (RuntimeObject* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XmlReaderSettings_Initialize_m06C6F113289807FBE5B5E248DC1E1C9B199CD477 (XmlReaderSettings_t8D51BA3ED2A013EE1F44525C9861326CAFB44AEA* __this, XmlResolver_tE25A33DFCB87A939D11BC8543970F6857AEC3DCF* ___0_resolver, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool XmlReaderSettings_EnableLegacyXmlSettings_mE04ABCDC86EA268BDAC1BC8F29C15F958150F424 (const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR XmlResolver_tE25A33DFCB87A939D11BC8543970F6857AEC3DCF* XmlReaderSettings_CreateDefaultResolver_m0D158301CF988E9310F894C9C74F1404DDE5B44E (const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XmlUrlResolver__ctor_m2BF23C41038D2825C0854A4C01DCE078E171A7BB (XmlUrlResolver_tD1DCA07B66A58F98930187AF17C9B31258C1008E* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR XmlResolver_tE25A33DFCB87A939D11BC8543970F6857AEC3DCF* XmlReaderSettings_GetXmlResolver_CheckConfig_mADD7B22F1880EB692D45CED946E9BF39D42034DB (XmlReaderSettings_t8D51BA3ED2A013EE1F44525C9861326CAFB44AEA* __this, const RuntimeMethod* method) ;
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool XmlReaderSettings_EnableLegacyXmlSettings_mE04ABCDC86EA268BDAC1BC8F29C15F958150F424 (const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XsdValidatingReader__ctor_mEFDFB844E2E2199663E2DD8906B0B4A74B3EF5F0 (XsdValidatingReader_tC7C9B4A5D46184E4A548F7A12177D50D22CC361E* __this, XmlReader_t4C709DEF5F01606ECB60B638F1BD6F6E0A9116FD* ___0_reader, XmlResolver_tE25A33DFCB87A939D11BC8543970F6857AEC3DCF* ___1_xmlResolver, XmlReaderSettings_t8D51BA3ED2A013EE1F44525C9861326CAFB44AEA* ___2_readerSettings, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR XmlValidatingReaderImpl_t5E1938148F73C4871F4B28C234B1EEF586998EA8* XmlReaderSettings_CreateDtdValidatingReader_mDFB0D648AD00CA7B1B027BFA1FBA9E0464B70971 (XmlReaderSettings_t8D51BA3ED2A013EE1F44525C9861326CAFB44AEA* __this, XmlReader_t4C709DEF5F01606ECB60B638F1BD6F6E0A9116FD* ___0_baseReader, const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ValidationEventHandler_t400B20AD482B62613818392D3E5588426332560A* XmlReaderSettings_GetEventHandler_m846EA87D263A6804F452088315D63F5FA898AC64_inline (XmlReaderSettings_t8D51BA3ED2A013EE1F44525C9861326CAFB44AEA* __this, const RuntimeMethod* method) ;
@@ -19704,42 +19706,63 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XmlReaderSettings_Initialize_mC0DBEC15D6
 }
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XmlReaderSettings_Initialize_m06C6F113289807FBE5B5E248DC1E1C9B199CD477 (XmlReaderSettings_t8D51BA3ED2A013EE1F44525C9861326CAFB44AEA* __this, XmlResolver_tE25A33DFCB87A939D11BC8543970F6857AEC3DCF* ___0_resolver, const RuntimeMethod* method) 
 {
-	XmlReaderSettings_t8D51BA3ED2A013EE1F44525C9861326CAFB44AEA* G_B2_0 = NULL;
-	XmlReaderSettings_t8D51BA3ED2A013EE1F44525C9861326CAFB44AEA* G_B1_0 = NULL;
-	XmlResolver_tE25A33DFCB87A939D11BC8543970F6857AEC3DCF* G_B3_0 = NULL;
-	XmlReaderSettings_t8D51BA3ED2A013EE1F44525C9861326CAFB44AEA* G_B3_1 = NULL;
+	XmlReaderSettings_t8D51BA3ED2A013EE1F44525C9861326CAFB44AEA* G_B4_0 = NULL;
+	XmlReaderSettings_t8D51BA3ED2A013EE1F44525C9861326CAFB44AEA* G_B3_0 = NULL;
+	XmlResolver_tE25A33DFCB87A939D11BC8543970F6857AEC3DCF* G_B5_0 = NULL;
+	XmlReaderSettings_t8D51BA3ED2A013EE1F44525C9861326CAFB44AEA* G_B5_1 = NULL;
 	{
 		__this->___nameTable = (XmlNameTable_tBDBAACFF3DB40A8E6AF3BDC11F0FF166CF11ABB8*)NULL;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___nameTable), (void*)(XmlNameTable_tBDBAACFF3DB40A8E6AF3BDC11F0FF166CF11ABB8*)NULL);
-		XmlResolver_tE25A33DFCB87A939D11BC8543970F6857AEC3DCF* L_0 = ___0_resolver;
-		if (!L_0)
+		bool L_0;
+		L_0 = XmlReaderSettings_EnableLegacyXmlSettings_mE04ABCDC86EA268BDAC1BC8F29C15F958150F424(NULL);
+		if (L_0)
 		{
-			G_B2_0 = __this;
-			goto IL_000e;
+			goto IL_0023;
 		}
-		G_B1_0 = __this;
 	}
 	{
 		XmlResolver_tE25A33DFCB87A939D11BC8543970F6857AEC3DCF* L_1 = ___0_resolver;
-		G_B3_0 = L_1;
-		G_B3_1 = G_B1_0;
-		goto IL_0013;
+		__this->___xmlResolver = L_1;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___xmlResolver), (void*)L_1);
+		__this->___maxCharactersFromEntities = ((int64_t)((int32_t)10000000));
+		goto IL_003c;
 	}
 
-IL_000e:
+IL_0023:
 	{
-		XmlResolver_tE25A33DFCB87A939D11BC8543970F6857AEC3DCF* L_2;
-		L_2 = XmlReaderSettings_CreateDefaultResolver_m0D158301CF988E9310F894C9C74F1404DDE5B44E(NULL);
-		G_B3_0 = L_2;
-		G_B3_1 = G_B2_0;
+		XmlResolver_tE25A33DFCB87A939D11BC8543970F6857AEC3DCF* L_2 = ___0_resolver;
+		if (!L_2)
+		{
+			G_B4_0 = __this;
+			goto IL_002a;
+		}
+		G_B3_0 = __this;
+	}
+	{
+		XmlResolver_tE25A33DFCB87A939D11BC8543970F6857AEC3DCF* L_3 = ___0_resolver;
+		G_B5_0 = L_3;
+		G_B5_1 = G_B3_0;
+		goto IL_002f;
 	}
 
-IL_0013:
+IL_002a:
 	{
-		NullCheck(G_B3_1);
-		G_B3_1->___xmlResolver = G_B3_0;
-		Il2CppCodeGenWriteBarrier((void**)(&G_B3_1->___xmlResolver), (void*)G_B3_0);
+		XmlResolver_tE25A33DFCB87A939D11BC8543970F6857AEC3DCF* L_4;
+		L_4 = XmlReaderSettings_CreateDefaultResolver_m0D158301CF988E9310F894C9C74F1404DDE5B44E(NULL);
+		G_B5_0 = L_4;
+		G_B5_1 = G_B4_0;
+	}
+
+IL_002f:
+	{
+		NullCheck(G_B5_1);
+		G_B5_1->___xmlResolver = G_B5_0;
+		Il2CppCodeGenWriteBarrier((void**)(&G_B5_1->___xmlResolver), (void*)G_B5_0);
 		__this->___maxCharactersFromEntities = ((int64_t)0);
+	}
+
+IL_003c:
+	{
 		__this->___lineNumberOffset = 0;
 		__this->___linePositionOffset = 0;
 		__this->___checkCharacters = (bool)1;
@@ -19754,8 +19777,8 @@ IL_0013:
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___schemas), (void*)(XmlSchemaSet_t048A12CE7D00EF330EF32A388B69A240899F88D1*)NULL);
 		__this->___validationType = 0;
 		__this->___validationFlags = 8;
-		int32_t L_3 = __this->___validationFlags;
-		__this->___validationFlags = ((int32_t)((int32_t)L_3|((int32_t)16)));
+		int32_t L_5 = __this->___validationFlags;
+		__this->___validationFlags = ((int32_t)((int32_t)L_5|((int32_t)16)));
 		__this->___useAsync = (bool)0;
 		__this->___isReadOnly = (bool)0;
 		XmlReaderSettings_set_IsXmlResolverSet_m871B57224C2E3918C193D03425F0F409E4A44A03_inline(__this, (bool)0, NULL);
@@ -22321,12 +22344,26 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LaterInitParam__ctor_m633EE8735226C0AFAB
 #endif
 IL2CPP_EXTERN_C void ParsingState_tF0FABA16483FCC2DB710460D11CD79D35C4E2886_marshal_pinvoke(const ParsingState_tF0FABA16483FCC2DB710460D11CD79D35C4E2886& unmarshaled, ParsingState_tF0FABA16483FCC2DB710460D11CD79D35C4E2886_marshaled_pinvoke& marshaled)
 {
-	Exception_t* ___encodingException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'encoding' of type 'ParsingState': Reference type field marshaling is not supported.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ParsingState_tF0FABA16483FCC2DB710460D11CD79D35C4E2886_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ParsingState_tF0FABA16483FCC2DB710460D11CD79D35C4E2886____encoding_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___encodingException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s': Reference type field marshaling is not supported.", ParsingState_tF0FABA16483FCC2DB710460D11CD79D35C4E2886____encoding_FieldInfo_var, ParsingState_tF0FABA16483FCC2DB710460D11CD79D35C4E2886_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___encodingException, NULL);
 }
 IL2CPP_EXTERN_C void ParsingState_tF0FABA16483FCC2DB710460D11CD79D35C4E2886_marshal_pinvoke_back(const ParsingState_tF0FABA16483FCC2DB710460D11CD79D35C4E2886_marshaled_pinvoke& marshaled, ParsingState_tF0FABA16483FCC2DB710460D11CD79D35C4E2886& unmarshaled)
 {
-	Exception_t* ___encodingException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'encoding' of type 'ParsingState': Reference type field marshaling is not supported.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ParsingState_tF0FABA16483FCC2DB710460D11CD79D35C4E2886_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ParsingState_tF0FABA16483FCC2DB710460D11CD79D35C4E2886____encoding_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___encodingException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s': Reference type field marshaling is not supported.", ParsingState_tF0FABA16483FCC2DB710460D11CD79D35C4E2886____encoding_FieldInfo_var, ParsingState_tF0FABA16483FCC2DB710460D11CD79D35C4E2886_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___encodingException, NULL);
 }
 IL2CPP_EXTERN_C void ParsingState_tF0FABA16483FCC2DB710460D11CD79D35C4E2886_marshal_pinvoke_cleanup(ParsingState_tF0FABA16483FCC2DB710460D11CD79D35C4E2886_marshaled_pinvoke& marshaled)
@@ -22334,12 +22371,26 @@ IL2CPP_EXTERN_C void ParsingState_tF0FABA16483FCC2DB710460D11CD79D35C4E2886_mars
 }
 IL2CPP_EXTERN_C void ParsingState_tF0FABA16483FCC2DB710460D11CD79D35C4E2886_marshal_com(const ParsingState_tF0FABA16483FCC2DB710460D11CD79D35C4E2886& unmarshaled, ParsingState_tF0FABA16483FCC2DB710460D11CD79D35C4E2886_marshaled_com& marshaled)
 {
-	Exception_t* ___encodingException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'encoding' of type 'ParsingState': Reference type field marshaling is not supported.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ParsingState_tF0FABA16483FCC2DB710460D11CD79D35C4E2886_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ParsingState_tF0FABA16483FCC2DB710460D11CD79D35C4E2886____encoding_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___encodingException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s': Reference type field marshaling is not supported.", ParsingState_tF0FABA16483FCC2DB710460D11CD79D35C4E2886____encoding_FieldInfo_var, ParsingState_tF0FABA16483FCC2DB710460D11CD79D35C4E2886_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___encodingException, NULL);
 }
 IL2CPP_EXTERN_C void ParsingState_tF0FABA16483FCC2DB710460D11CD79D35C4E2886_marshal_com_back(const ParsingState_tF0FABA16483FCC2DB710460D11CD79D35C4E2886_marshaled_com& marshaled, ParsingState_tF0FABA16483FCC2DB710460D11CD79D35C4E2886& unmarshaled)
 {
-	Exception_t* ___encodingException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field 'encoding' of type 'ParsingState': Reference type field marshaling is not supported.");
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ParsingState_tF0FABA16483FCC2DB710460D11CD79D35C4E2886_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ParsingState_tF0FABA16483FCC2DB710460D11CD79D35C4E2886____encoding_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___encodingException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s': Reference type field marshaling is not supported.", ParsingState_tF0FABA16483FCC2DB710460D11CD79D35C4E2886____encoding_FieldInfo_var, ParsingState_tF0FABA16483FCC2DB710460D11CD79D35C4E2886_0_0_0_var);
 	IL2CPP_RAISE_MANAGED_EXCEPTION(___encodingException, NULL);
 }
 IL2CPP_EXTERN_C void ParsingState_tF0FABA16483FCC2DB710460D11CD79D35C4E2886_marshal_com_cleanup(ParsingState_tF0FABA16483FCC2DB710460D11CD79D35C4E2886_marshaled_com& marshaled)

@@ -246,6 +246,7 @@ struct PurchasingFactory_tC87E368967334D76A150DEE74D0DDFEB9A502935;
 struct PurchasingManager_t5B0BEE02EA117D0E725027C41D555A66FD16E1DE;
 struct SafeSerializationManager_tCBB85B95DFD1634237140CD892E82D06ECB3F5E6;
 struct SerializationInfo_t3C47F63E24BEB9FCE2DC6309E027F238DC5C5E37;
+struct ServicesInitializationException_tBF84F1801B1054DE91A79436CA6D3FA5F0F68631;
 struct Stopwatch_tA188A210449E22C07053A7D3014DD182C7369043;
 struct StoreListenerProxy_t011B0E88BA5EF3BCB11272652AEF46A9DA4C030F;
 struct String_t;
@@ -261,7 +262,7 @@ struct UnityServicesInitializationChecker_tE651568BCAF5B02A3630004F51F7BDFA22569
 struct Void_t4861ACF8F4594C3437BB48B6E56783494B843915;
 struct U3CU3Ec_t6F0E7A762FB7BB40163AE114C9E0EC7FA298A3C0;
 struct U3CU3Ec_t1F4E004D45CBAD0E5FA68A93535154D12FC86AD7;
-struct U3CU3Ec__DisplayClass26_0_t481F3074231630DE5EB0C1B98C44F57DDA22FC18;
+struct U3CU3Ec__DisplayClass27_0_tB3C1AADF362ABAB552B1746461F59C25C65FCCD2;
 struct U3CU3Ec__DisplayClass7_0_t6FE41CACC35E42E28AA951589260557421F8B550;
 struct U3CU3Ec__DisplayClass7_0_t0D89BF0DA1D60CB93798AB0272022B4DF31FAB95;
 struct U3CU3Ec__DisplayClass5_0_t5CD2AA9261C1D1856AA9D2B8906FC719824513C8;
@@ -342,7 +343,7 @@ IL2CPP_EXTERN_C RuntimeClass* TelemetryQueue_1_t71F581BCF409EA50749227266A8F0545
 IL2CPP_EXTERN_C RuntimeClass* TelemetryQueue_1_tE69AACA7FF360B5C3476D4B90E74FE85F71F5F39_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* TimeSpan_t8195C5B013A2C532FEBDF0B64B6911982E750F5A_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* TransactionLog_tBA7947603F9D57F9EB3032F06272D292C31910CD_il2cpp_TypeInfo_var;
-IL2CPP_EXTERN_C RuntimeClass* U3CU3Ec__DisplayClass26_0_t481F3074231630DE5EB0C1B98C44F57DDA22FC18_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* U3CU3Ec__DisplayClass27_0_tB3C1AADF362ABAB552B1746461F59C25C65FCCD2_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* U3CU3Ec__DisplayClass5_0_t5CD2AA9261C1D1856AA9D2B8906FC719824513C8_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* U3CU3Ec__DisplayClass6_0_t373587A0C2D7CF0F2D78974856E7F436900EBE04_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* U3CU3Ec__DisplayClass7_0_t0D89BF0DA1D60CB93798AB0272022B4DF31FAB95_il2cpp_TypeInfo_var;
@@ -365,6 +366,7 @@ IL2CPP_EXTERN_C String_t* _stringLiteral364F4173856E05DF96506EB76D1DECAD55D36048
 IL2CPP_EXTERN_C String_t* _stringLiteral368ED69B133AEBBDB17933F11F0569E5D8B0432C;
 IL2CPP_EXTERN_C String_t* _stringLiteral36E11B7148F1843CD0462BD31F425C12CE582990;
 IL2CPP_EXTERN_C String_t* _stringLiteral39A764A8A22B3E3B271699FF803F27F03FB1AF1C;
+IL2CPP_EXTERN_C String_t* _stringLiteral3F84BDE7A93D58E5F12D9346EEC5E5496C7D479E;
 IL2CPP_EXTERN_C String_t* _stringLiteral42A23F13F6AC0F09ACA41A15374097EB9D302DF5;
 IL2CPP_EXTERN_C String_t* _stringLiteral474DAFF928C5AC11FD7C81344E18501ED567C068;
 IL2CPP_EXTERN_C String_t* _stringLiteral48B3AFD2FA1A354107959D5370A991BA1112EAA2;
@@ -391,6 +393,7 @@ IL2CPP_EXTERN_C String_t* _stringLiteralC0C6E4C63162EC9A8B00ABF4F6F6C29A861AE083
 IL2CPP_EXTERN_C String_t* _stringLiteralC12B0525FE4A7F52BA51C6514949B9777123CD42;
 IL2CPP_EXTERN_C String_t* _stringLiteralC18E9CCAC1016A10BA9513A2E6CF1F1FB023D755;
 IL2CPP_EXTERN_C String_t* _stringLiteralC255CA2EE321043C12A8D85877B47FFCD84D257C;
+IL2CPP_EXTERN_C String_t* _stringLiteralCA254522F25798E4F00D873C3CB4AB81B4A0BC86;
 IL2CPP_EXTERN_C String_t* _stringLiteralCCF61560F975CE0277056BFB608A45AEC418A3D0;
 IL2CPP_EXTERN_C String_t* _stringLiteralDBA0415868C39807EDD840405C286D020263EED2;
 IL2CPP_EXTERN_C String_t* _stringLiteralDD638980A42773DBA4D111CE8D3979093BAC27E5;
@@ -445,6 +448,7 @@ IL2CPP_EXTERN_C const RuntimeMethod* List_1_GetEnumerator_m7EF06127A10412F803A80
 IL2CPP_EXTERN_C const RuntimeMethod* List_1_GetEnumerator_m9C6DEAA953F9F0DC8DE7615590E1948D084B85CB_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* List_1__ctor_m1342ABA033C6BF6662A8E7C8FF4B7381ED85030D_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* List_1__ctor_mD4AA0B94A91A7E1A13191ACD8BB91770391AD2A1_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* List_1_get_Count_m2DAD80BC14FA48028A9A0EA3F40D6BCD74ABBE93_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* PurchasingFactory_get_service_mF812B5981F40344A38958D66863F100BA9CEFAFA_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* ReadOnlyCollection_1__ctor_m87BA0E48279DE06FEEB6CF7059964F97DD088A9E_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* TelemetryDiagnosticsInstanceWrapper_SendDiagnosticOnMainThread_mAA5020FB1A60E79857166D9448F50AF6B82667F8_RuntimeMethod_var;
@@ -459,8 +463,8 @@ IL2CPP_EXTERN_C const RuntimeMethod* TelemetryQueue_1__ctor_m2FC7970A5AE71528622
 IL2CPP_EXTERN_C const RuntimeMethod* TelemetryQueue_1__ctor_mD16C513071C2002FD902E25C9CA8B987896EBEDE_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* U3CU3Ec_U3CAddProductsU3Eb__3_0_m29013D41A6F1B82E0CC919E01F64B77D744F4862_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* U3CU3Ec_U3CAddProductsU3Eb__3_1_m797E30DE7D9504B49578F66020B87EF8248F9E52_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* U3CU3Ec_U3CInitializeU3Eb__44_0_m04BCD6775FF3EDEF1CF0B561CB45B700EAF1764F_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* U3CU3Ec__DisplayClass26_0_U3COnAllPurchasesRetrievedU3Eb__0_m7C120E5F9D87D220402D086FF92DD52D6444C503_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* U3CU3Ec_U3CInitializeU3Eb__45_0_m57A8360DD060BB5790F18BA7D93629456A960818_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* U3CU3Ec__DisplayClass27_0_U3COnAllPurchasesRetrievedU3Eb__0_m4F89D98F7405AF713DCE48EEC4DA5A7472AC722F_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* U3CU3Ec__DisplayClass5_0_U3CInitializeU3Eb__0_mB5371937C878021DE448417405772273DA152250_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* U3CU3Ec__DisplayClass6_0_U3CFetchAndMergeProductsU3Eb__0_mE9B9CF0F4833AADDBE91F22DC644F63F82F8C743_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* U3CU3Ec__DisplayClass7_0_U3CSendDiagnosticOnMainThreadU3Eb__0_m9765C66642D4181BF7796E3B9EAB9C531A2F7A14_RuntimeMethod_var;
@@ -671,6 +675,7 @@ struct Attribute_tFDA8EFEFB0711976D22474794576DAF28F7440AA  : public RuntimeObje
 struct ConfigurationBuilder_tCB23D9049605117E5216D50DC18E1D459590F90D  : public RuntimeObject
 {
 	bool ___U3CuseCatalogProviderU3Ek__BackingField;
+	bool ___U3ClogUnavailableProductsU3Ek__BackingField;
 	HashSet_1_t83DC1A9F0F77879B6812C63406A0B53B8B159195* ___U3CproductsU3Ek__BackingField;
 	PurchasingFactory_tC87E368967334D76A150DEE74D0DDFEB9A502935* ___U3CfactoryU3Ek__BackingField;
 };
@@ -761,6 +766,7 @@ struct PurchasingManager_t5B0BEE02EA117D0E725027C41D555A66FD16E1DE  : public Run
 	RuntimeObject* ___m_Logger;
 	TransactionLog_tBA7947603F9D57F9EB3032F06272D292C31910CD* ___m_TransactionLog;
 	String_t* ___m_StoreName;
+	bool ___m_logUnavailableProducts;
 	RuntimeObject* ___m_UnityServicesInitializationChecker;
 	Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* ___m_AdditionalProductsCallback;
 	Action_1_t77B39FE5552731D1AF7D8771956039E76E6C4597* ___m_AdditionalProductsFailCallback;
@@ -856,7 +862,7 @@ struct U3CU3Ec_t6F0E7A762FB7BB40163AE114C9E0EC7FA298A3C0  : public RuntimeObject
 struct U3CU3Ec_t1F4E004D45CBAD0E5FA68A93535154D12FC86AD7  : public RuntimeObject
 {
 };
-struct U3CU3Ec__DisplayClass26_0_t481F3074231630DE5EB0C1B98C44F57DDA22FC18  : public RuntimeObject
+struct U3CU3Ec__DisplayClass27_0_tB3C1AADF362ABAB552B1746461F59C25C65FCCD2  : public RuntimeObject
 {
 	Product_t8CB4C6F2541BB4560097D6E07ABCB3AD3BB6082E* ___product;
 };
@@ -1486,7 +1492,7 @@ struct U3CU3Ec_t6F0E7A762FB7BB40163AE114C9E0EC7FA298A3C0_StaticFields
 struct U3CU3Ec_t1F4E004D45CBAD0E5FA68A93535154D12FC86AD7_StaticFields
 {
 	U3CU3Ec_t1F4E004D45CBAD0E5FA68A93535154D12FC86AD7* ___U3CU3E9;
-	Func_2_t2778DF1CCAFA1D28C30AC692AD174F10703E2EA8* ___U3CU3E9__44_0;
+	Func_2_t2778DF1CCAFA1D28C30AC692AD174F10703E2EA8* ___U3CU3E9__45_0;
 };
 struct Boolean_t09A6377A54BE2F9E6985A8149F19234FD7DDFE22_StaticFields
 {
@@ -1723,6 +1729,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool HashSet_1_Contains_m9BACE52BFA0BD83C6015
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Action_1_Invoke_mBF7DDBCD230E9D28EDF45D3E65F907DE1AE0CCBC_gshared_inline (Action_1_tC926860F20D428DA3E93D6FBA36420E904DD903B* __this, int32_t ___0_obj, const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Action_2_Invoke_m05605BFAA1396765DE23112419D8E6F797B65101_gshared_inline (Action_2_t829FF86EEA250A853DF3A95B2C4DAC034707E20F* __this, int32_t ___0_arg1, RuntimeObject* ___1_arg2, const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t HashSet_1_get_Count_m41CC85EEB7855CEFA3BC7A32F115387939318ED3_gshared_inline (HashSet_1_t2F33BEB06EEA4A872E2FAF464382422AA39AE885* __this, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t List_1_get_Count_m4407E4C389F22B8CEC282C15D56516658746C383_gshared_inline (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Enumerator_t72556E98D7DDBE118A973D782D523D15A96461C8 HashSet_1_GetEnumerator_m143B98FEED7E9CABA2C494AB2F04DAD60A504635_gshared (HashSet_1_t2F33BEB06EEA4A872E2FAF464382422AA39AE885* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator_Dispose_mFB582AEAA2E73F3128B5571197BEDE256A83F657_gshared (Enumerator_t72556E98D7DDBE118A973D782D523D15A96461C8* __this, const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR RuntimeObject* Enumerator_get_Current_m139A176CD271A0532D75BE08DA7831C8C45CE28F_gshared_inline (Enumerator_t72556E98D7DDBE118A973D782D523D15A96461C8* __this, const RuntimeMethod* method) ;
@@ -1929,7 +1936,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PurchasingManager_UpdateProductReceiptAn
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PurchasingManager_ProcessPurchaseIfNew_m2D54C04E78727264E91828FF8CCE516670D122EE (PurchasingManager_t5B0BEE02EA117D0E725027C41D555A66FD16E1DE* __this, Product_t8CB4C6F2541BB4560097D6E07ABCB3AD3BB6082E* ___0_product, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* PurchasingManager_CreateUnifiedReceipt_m589FC4DFAEE334D049CCC5877BCE31F9597C19F1 (PurchasingManager_t5B0BEE02EA117D0E725027C41D555A66FD16E1DE* __this, String_t* ___0_rawReceipt, String_t* ___1_transactionId, const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Product_set_transactionID_m9225097DF50CC23D6161CE94FD192027D94C1207_inline (Product_t8CB4C6F2541BB4560097D6E07ABCB3AD3BB6082E* __this, String_t* ___0_value, const RuntimeMethod* method) ;
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass26_0__ctor_mE6DD8E972FC1800668869FC728EAD1200DEDA2CC (U3CU3Ec__DisplayClass26_0_t481F3074231630DE5EB0C1B98C44F57DDA22FC18* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass27_0__ctor_m9AEDFA910351B1318D7D5137D976F6F2A4E55A96 (U3CU3Ec__DisplayClass27_0_tB3C1AADF362ABAB552B1746461F59C25C65FCCD2* __this, const RuntimeMethod* method) ;
 inline void Func_2__ctor_m6D0EC6EBDD1E8220B7230B0052F2B0ADCE1BF840 (Func_2_t909D7C65C2F965593C67C10E8D7D1A3B57605107* __this, RuntimeObject* ___0_object, intptr_t ___1_method, const RuntimeMethod* method)
 {
 	((  void (*) (Func_2_t909D7C65C2F965593C67C10E8D7D1A3B57605107*, RuntimeObject*, intptr_t, const RuntimeMethod*))Func_2__ctor_m13C0A7F33154D861E2A041B52E88461832DA1697_gshared)(__this, ___0_object, ___1_method, method);
@@ -1987,7 +1994,11 @@ inline int32_t HashSet_1_get_Count_m2D72F1FA79744EA12C545A127C98C56EA0638A75_inl
 {
 	return ((  int32_t (*) (HashSet_1_t609586F7A2EB402C5AA35903DB236CD264F2D707*, const RuntimeMethod*))HashSet_1_get_Count_m41CC85EEB7855CEFA3BC7A32F115387939318ED3_gshared_inline)(__this, method);
 }
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PurchasingManager_CheckForInitialization_m6144B75126F92494E3EBEC736763C4FC9D77773E (PurchasingManager_t5B0BEE02EA117D0E725027C41D555A66FD16E1DE* __this, const RuntimeMethod* method) ;
+inline int32_t List_1_get_Count_m2DAD80BC14FA48028A9A0EA3F40D6BCD74ABBE93_inline (List_1_tC907BA3C053A12CF512BC52B3657F30C756D4B7B* __this, const RuntimeMethod* method)
+{
+	return ((  int32_t (*) (List_1_tC907BA3C053A12CF512BC52B3657F30C756D4B7B*, const RuntimeMethod*))List_1_get_Count_m4407E4C389F22B8CEC282C15D56516658746C383_gshared_inline)(__this, method);
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PurchasingManager_CheckForInitialization_m1CBFCC31231743408044D3F886ACCC588E599FFD (PurchasingManager_t5B0BEE02EA117D0E725027C41D555A66FD16E1DE* __this, int32_t ___0_productCount, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PurchasingManager_ProcessPurchaseOnStart_m320FBE849060CC66940DD2DB3A886C1EC4716759 (PurchasingManager_t5B0BEE02EA117D0E725027C41D555A66FD16E1DE* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* UnifiedReceiptFormatter_FormatUnifiedReceipt_m132801F6A6A9AF0576B9B5B51C1DA051830AE2BF (String_t* ___0_platformReceipt, String_t* ___1_transactionId, String_t* ___2_storeName, const RuntimeMethod* method) ;
 inline Enumerator_t08F12D47B6F935BADCBD9B184652E15D46F67FF4 HashSet_1_GetEnumerator_m5345611087D56A1043108E4FF14B2FDDC50757A2 (HashSet_1_t609586F7A2EB402C5AA35903DB236CD264F2D707* __this, const RuntimeMethod* method)
@@ -2014,7 +2025,7 @@ inline bool HashSet_1_Add_mF3D4CF6D0150392127D5561A87DCDEDA9A81BE5D (HashSet_1_t
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PurchaseEventArgs__ctor_m23F65E3572BA3903FC0362B332D12E4F83715167 (PurchaseEventArgs_t5203D89DD89FCB37A77025275F8AD1D71CF92A39* __this, Product_t8CB4C6F2541BB4560097D6E07ABCB3AD3BB6082E* ___0_purchasedProduct, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PurchasingManager_ConfirmPendingPurchase_m2165315C71C86149C51E5754EE535640CBD21165 (PurchasingManager_t5B0BEE02EA117D0E725027C41D555A66FD16E1DE* __this, Product_t8CB4C6F2541BB4560097D6E07ABCB3AD3BB6082E* ___0_product, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool TransactionLog_HasRecordOf_m29C07CD50A9B3BE8070224551D9B901BDCC41A17 (TransactionLog_tBA7947603F9D57F9EB3032F06272D292C31910CD* __this, String_t* ___0_transactionID, const RuntimeMethod* method) ;
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool PurchasingManager_HasAvailableProductsToPurchase_m67C7C445B0E25C36F4C5D719F1B0C600CC3B35F3 (PurchasingManager_t5B0BEE02EA117D0E725027C41D555A66FD16E1DE* __this, bool ___0_shouldLogUnavailableProducts, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool PurchasingManager_HasAvailableProductsToPurchase_m83054F4D3544D96906825A963AD1E25F9785AA19 (PurchasingManager_t5B0BEE02EA117D0E725027C41D555A66FD16E1DE* __this, const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Action_Invoke_m7126A54DACA72B845424072887B5F3A51FC3808E_inline (Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* __this, const RuntimeMethod* method) ;
 inline void Func_2__ctor_m004F4F36E1E8F8489E8476F06E8104971E8F5787 (Func_2_t2778DF1CCAFA1D28C30AC692AD174F10703E2EA8* __this, RuntimeObject* ___0_object, intptr_t ___1_method, const RuntimeMethod* method)
 {
@@ -2059,7 +2070,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LegacyAnalyticsAdapter__ctor_m22B82E810F
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass5_0__ctor_m8B4C60527FA6E4E3CB1F8B3A815E815CEFF66ECB (U3CU3Ec__DisplayClass5_0_t5CD2AA9261C1D1856AA9D2B8906FC719824513C8* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TransactionLog__ctor_mC5BB2BB83711CFE938B9A2AD4EA61DEEBF4495B1 (TransactionLog_tBA7947603F9D57F9EB3032F06272D292C31910CD* __this, RuntimeObject* ___0_logger, String_t* ___1_persistentDataPath, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* PurchasingFactory_get_service_mF812B5981F40344A38958D66863F100BA9CEFAFA (PurchasingFactory_tC87E368967334D76A150DEE74D0DDFEB9A502935* __this, const RuntimeMethod* method) ;
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PurchasingManager__ctor_mCB0D60087EAFAB1B80E4429384FC486B0D6C84DD (PurchasingManager_t5B0BEE02EA117D0E725027C41D555A66FD16E1DE* __this, TransactionLog_tBA7947603F9D57F9EB3032F06272D292C31910CD* ___0_tDb, RuntimeObject* ___1_logger, RuntimeObject* ___2_store, String_t* ___3_storeName, RuntimeObject* ___4_unityServicesInitializationChecker, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool ConfigurationBuilder_get_logUnavailableProducts_mADF82B9D1E33BF480FB8A8A0A693811A17057751_inline (ConfigurationBuilder_tCB23D9049605117E5216D50DC18E1D459590F90D* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PurchasingManager__ctor_m9D4AEEEA82DB0C4012AAAE78D2CD073104C43C22 (PurchasingManager_t5B0BEE02EA117D0E725027C41D555A66FD16E1DE* __this, TransactionLog_tBA7947603F9D57F9EB3032F06272D292C31910CD* ___0_tDb, RuntimeObject* ___1_logger, RuntimeObject* ___2_store, String_t* ___3_storeName, RuntimeObject* ___4_unityServicesInitializationChecker, bool ___5_logUnavailableProducts, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AnalyticsClient__ctor_m2B3BC8C9E0F2DEACBF520EA2CCBF1EA84086B6F5 (AnalyticsClient_t0A0625E3F9E875443A5CD224EAAE8D6CD4D42C1F* __this, RuntimeObject* ___0_analytics, RuntimeObject* ___1_legacyAnalytics, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void StoreListenerProxy__ctor_mCFBF42DC965A2C076697C559F973529EDC3FC7CF (StoreListenerProxy_t011B0E88BA5EF3BCB11272652AEF46A9DA4C030F* __this, RuntimeObject* ___0_forwardTo, RuntimeObject* ___1_analytics, RuntimeObject* ___2_extensions, const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool ConfigurationBuilder_get_useCatalogProvider_m91A7BC2D3B3C3C13DF77F8CA628820587F1FE99C_inline (ConfigurationBuilder_tCB23D9049605117E5216D50DC18E1D459590F90D* __this, const RuntimeMethod* method) ;
@@ -2702,6 +2714,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ConfigurationBuilder__ctor_m90B3A0F2A86E
 		s_Il2CppMethodInitialized = true;
 	}
 	{
+		__this->___U3ClogUnavailableProductsU3Ek__BackingField = (bool)1;
 		HashSet_1_t83DC1A9F0F77879B6812C63406A0B53B8B159195* L_0 = (HashSet_1_t83DC1A9F0F77879B6812C63406A0B53B8B159195*)il2cpp_codegen_object_new(HashSet_1_t83DC1A9F0F77879B6812C63406A0B53B8B159195_il2cpp_TypeInfo_var);
 		HashSet_1__ctor_m940E4BD5264DCB4D259F287D3D224A0B51244B9E(L_0, HashSet_1__ctor_m940E4BD5264DCB4D259F287D3D224A0B51244B9E_RuntimeMethod_var);
 		__this->___U3CproductsU3Ek__BackingField = L_0;
@@ -2717,6 +2730,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool ConfigurationBuilder_get_useCatalogProvi
 {
 	{
 		bool L_0 = __this->___U3CuseCatalogProviderU3Ek__BackingField;
+		return L_0;
+	}
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool ConfigurationBuilder_get_logUnavailableProducts_mADF82B9D1E33BF480FB8A8A0A693811A17057751 (ConfigurationBuilder_tCB23D9049605117E5216D50DC18E1D459590F90D* __this, const RuntimeMethod* method) 
+{
+	{
+		bool L_0 = __this->___U3ClogUnavailableProductsU3Ek__BackingField;
 		return L_0;
 	}
 }
@@ -4216,7 +4236,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PurchasingManager_set_useTransactionLog_
 		return;
 	}
 }
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PurchasingManager__ctor_mCB0D60087EAFAB1B80E4429384FC486B0D6C84DD (PurchasingManager_t5B0BEE02EA117D0E725027C41D555A66FD16E1DE* __this, TransactionLog_tBA7947603F9D57F9EB3032F06272D292C31910CD* ___0_tDb, RuntimeObject* ___1_logger, RuntimeObject* ___2_store, String_t* ___3_storeName, RuntimeObject* ___4_unityServicesInitializationChecker, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PurchasingManager__ctor_m9D4AEEEA82DB0C4012AAAE78D2CD073104C43C22 (PurchasingManager_t5B0BEE02EA117D0E725027C41D555A66FD16E1DE* __this, TransactionLog_tBA7947603F9D57F9EB3032F06272D292C31910CD* ___0_tDb, RuntimeObject* ___1_logger, RuntimeObject* ___2_store, String_t* ___3_storeName, RuntimeObject* ___4_unityServicesInitializationChecker, bool ___5_logUnavailableProducts, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -4244,9 +4264,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PurchasingManager__ctor_mCB0D60087EAFAB1
 		__this->___m_StoreName = L_4;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_StoreName), (void*)L_4);
 		PurchasingManager_set_useTransactionLog_m7506E4D5162E0DC5017DD5EF787B558C26DE3B32_inline(__this, (bool)1, NULL);
-		RuntimeObject* L_5 = ___4_unityServicesInitializationChecker;
-		__this->___m_UnityServicesInitializationChecker = L_5;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_UnityServicesInitializationChecker), (void*)L_5);
+		bool L_5 = ___5_logUnavailableProducts;
+		__this->___m_logUnavailableProducts = L_5;
+		RuntimeObject* L_6 = ___4_unityServicesInitializationChecker;
+		__this->___m_UnityServicesInitializationChecker = L_6;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_UnityServicesInitializationChecker), (void*)L_6);
 		return;
 	}
 }
@@ -4382,7 +4404,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PurchasingManager_InitiatePurchase_m2795
 		ArrayElementTypeCheck (L_6, L_7);
 		(L_6)->SetAt(static_cast<il2cpp_array_size_t>(0), (RuntimeObject*)L_7);
 		NullCheck(L_4);
-		InterfaceActionInvoker3< int32_t, String_t*, ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* >::Invoke(8, ILogger_tD1F573C6DC829FBA987FA1EBA0A5FA64E0C2BC42_il2cpp_TypeInfo_var, L_4, 2, _stringLiteral4DE23968783D5DEB5F6BE143939E06BD12233E54, L_6);
+		InterfaceActionInvoker3< int32_t, String_t*, ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* >::Invoke(9, ILogger_tD1F573C6DC829FBA987FA1EBA0A5FA64E0C2BC42_il2cpp_TypeInfo_var, L_4, 2, _stringLiteral4DE23968783D5DEB5F6BE143939E06BD12233E54, L_6);
 	}
 
 IL_002b:
@@ -4589,13 +4611,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PurchasingManager_OnAllPurchasesRetrieve
 	{
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Enumerable_FirstOrDefault_TisProduct_t8CB4C6F2541BB4560097D6E07ABCB3AD3BB6082E_m6E331C73B5A928E6D4A26992317CB589C28C4E9F_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Func_2_t909D7C65C2F965593C67C10E8D7D1A3B57605107_il2cpp_TypeInfo_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CU3Ec__DisplayClass26_0_U3COnAllPurchasesRetrievedU3Eb__0_m7C120E5F9D87D220402D086FF92DD52D6444C503_RuntimeMethod_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CU3Ec__DisplayClass26_0_t481F3074231630DE5EB0C1B98C44F57DDA22FC18_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CU3Ec__DisplayClass27_0_U3COnAllPurchasesRetrievedU3Eb__0_m4F89D98F7405AF713DCE48EEC4DA5A7472AC722F_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CU3Ec__DisplayClass27_0_tB3C1AADF362ABAB552B1746461F59C25C65FCCD2_il2cpp_TypeInfo_var);
 		s_Il2CppMethodInitialized = true;
 	}
 	ProductU5BU5D_t730BA37CF8A2E27DF6BB25D559268D5F1C8B028E* V_0 = NULL;
 	int32_t V_1 = 0;
-	U3CU3Ec__DisplayClass26_0_t481F3074231630DE5EB0C1B98C44F57DDA22FC18* V_2 = NULL;
+	U3CU3Ec__DisplayClass27_0_tB3C1AADF362ABAB552B1746461F59C25C65FCCD2* V_2 = NULL;
 	Product_t8CB4C6F2541BB4560097D6E07ABCB3AD3BB6082E* V_3 = NULL;
 	Product_t8CB4C6F2541BB4560097D6E07ABCB3AD3BB6082E* G_B5_0 = NULL;
 	{
@@ -4619,10 +4641,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PurchasingManager_OnAllPurchasesRetrieve
 
 IL_0018:
 	{
-		U3CU3Ec__DisplayClass26_0_t481F3074231630DE5EB0C1B98C44F57DDA22FC18* L_3 = (U3CU3Ec__DisplayClass26_0_t481F3074231630DE5EB0C1B98C44F57DDA22FC18*)il2cpp_codegen_object_new(U3CU3Ec__DisplayClass26_0_t481F3074231630DE5EB0C1B98C44F57DDA22FC18_il2cpp_TypeInfo_var);
-		U3CU3Ec__DisplayClass26_0__ctor_mE6DD8E972FC1800668869FC728EAD1200DEDA2CC(L_3, NULL);
+		U3CU3Ec__DisplayClass27_0_tB3C1AADF362ABAB552B1746461F59C25C65FCCD2* L_3 = (U3CU3Ec__DisplayClass27_0_tB3C1AADF362ABAB552B1746461F59C25C65FCCD2*)il2cpp_codegen_object_new(U3CU3Ec__DisplayClass27_0_tB3C1AADF362ABAB552B1746461F59C25C65FCCD2_il2cpp_TypeInfo_var);
+		U3CU3Ec__DisplayClass27_0__ctor_m9AEDFA910351B1318D7D5137D976F6F2A4E55A96(L_3, NULL);
 		V_2 = L_3;
-		U3CU3Ec__DisplayClass26_0_t481F3074231630DE5EB0C1B98C44F57DDA22FC18* L_4 = V_2;
+		U3CU3Ec__DisplayClass27_0_tB3C1AADF362ABAB552B1746461F59C25C65FCCD2* L_4 = V_2;
 		ProductU5BU5D_t730BA37CF8A2E27DF6BB25D559268D5F1C8B028E* L_5 = V_0;
 		int32_t L_6 = V_1;
 		NullCheck(L_5);
@@ -4645,9 +4667,9 @@ IL_0018:
 IL_002d:
 	{
 		List_1_t87EB69E35F884E1E2C4146017DB27022FA9AC460* L_10 = ___0_purchasedProducts;
-		U3CU3Ec__DisplayClass26_0_t481F3074231630DE5EB0C1B98C44F57DDA22FC18* L_11 = V_2;
+		U3CU3Ec__DisplayClass27_0_tB3C1AADF362ABAB552B1746461F59C25C65FCCD2* L_11 = V_2;
 		Func_2_t909D7C65C2F965593C67C10E8D7D1A3B57605107* L_12 = (Func_2_t909D7C65C2F965593C67C10E8D7D1A3B57605107*)il2cpp_codegen_object_new(Func_2_t909D7C65C2F965593C67C10E8D7D1A3B57605107_il2cpp_TypeInfo_var);
-		Func_2__ctor_m6D0EC6EBDD1E8220B7230B0052F2B0ADCE1BF840(L_12, L_11, (intptr_t)((void*)U3CU3Ec__DisplayClass26_0_U3COnAllPurchasesRetrievedU3Eb__0_m7C120E5F9D87D220402D086FF92DD52D6444C503_RuntimeMethod_var), NULL);
+		Func_2__ctor_m6D0EC6EBDD1E8220B7230B0052F2B0ADCE1BF840(L_12, L_11, (intptr_t)((void*)U3CU3Ec__DisplayClass27_0_U3COnAllPurchasesRetrievedU3Eb__0_m4F89D98F7405AF713DCE48EEC4DA5A7472AC722F_RuntimeMethod_var), NULL);
 		Product_t8CB4C6F2541BB4560097D6E07ABCB3AD3BB6082E* L_13;
 		L_13 = Enumerable_FirstOrDefault_TisProduct_t8CB4C6F2541BB4560097D6E07ABCB3AD3BB6082E_m6E331C73B5A928E6D4A26992317CB589C28C4E9F(L_10, L_12, Enumerable_FirstOrDefault_TisProduct_t8CB4C6F2541BB4560097D6E07ABCB3AD3BB6082E_m6E331C73B5A928E6D4A26992317CB589C28C4E9F_RuntimeMethod_var);
 		G_B5_0 = L_13;
@@ -4663,7 +4685,7 @@ IL_003f:
 		}
 	}
 	{
-		U3CU3Ec__DisplayClass26_0_t481F3074231630DE5EB0C1B98C44F57DDA22FC18* L_15 = V_2;
+		U3CU3Ec__DisplayClass27_0_tB3C1AADF362ABAB552B1746461F59C25C65FCCD2* L_15 = V_2;
 		NullCheck(L_15);
 		Product_t8CB4C6F2541BB4560097D6E07ABCB3AD3BB6082E* L_16 = L_15->___product;
 		Product_t8CB4C6F2541BB4560097D6E07ABCB3AD3BB6082E* L_17 = V_3;
@@ -4673,7 +4695,7 @@ IL_003f:
 
 IL_0052:
 	{
-		U3CU3Ec__DisplayClass26_0_t481F3074231630DE5EB0C1B98C44F57DDA22FC18* L_18 = V_2;
+		U3CU3Ec__DisplayClass27_0_tB3C1AADF362ABAB552B1746461F59C25C65FCCD2* L_18 = V_2;
 		NullCheck(L_18);
 		Product_t8CB4C6F2541BB4560097D6E07ABCB3AD3BB6082E* L_19 = L_18->___product;
 		PurchasingManager_ClearProductReceipt_m5B310DC62F6E0AFBAFD871DB8A6312A394C6647D(L_19, NULL);
@@ -4959,7 +4981,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PurchasingManager_OnPurchaseFailed_m3F24
 		ArrayElementTypeCheck (L_8, L_24);
 		(L_8)->SetAt(static_cast<il2cpp_array_size_t>(0), (RuntimeObject*)L_24);
 		NullCheck(L_6);
-		InterfaceActionInvoker3< int32_t, String_t*, ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* >::Invoke(8, ILogger_tD1F573C6DC829FBA987FA1EBA0A5FA64E0C2BC42_il2cpp_TypeInfo_var, L_6, 0, _stringLiteral0D0B37FF71B4D60D0DEBB7B5FC4A114D5D152406, L_8);
+		InterfaceActionInvoker3< int32_t, String_t*, ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* >::Invoke(9, ILogger_tD1F573C6DC829FBA987FA1EBA0A5FA64E0C2BC42_il2cpp_TypeInfo_var, L_6, 0, _stringLiteral0D0B37FF71B4D60D0DEBB7B5FC4A114D5D152406, L_8);
 		return;
 	}
 
@@ -4985,7 +5007,7 @@ IL_0082:
 		ArrayElementTypeCheck (L_27, L_33);
 		(L_27)->SetAt(static_cast<il2cpp_array_size_t>(0), (RuntimeObject*)L_33);
 		NullCheck(L_25);
-		InterfaceActionInvoker3< int32_t, String_t*, ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* >::Invoke(8, ILogger_tD1F573C6DC829FBA987FA1EBA0A5FA64E0C2BC42_il2cpp_TypeInfo_var, L_25, 2, _stringLiteralC12B0525FE4A7F52BA51C6514949B9777123CD42, L_27);
+		InterfaceActionInvoker3< int32_t, String_t*, ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* >::Invoke(9, ILogger_tD1F573C6DC829FBA987FA1EBA0A5FA64E0C2BC42_il2cpp_TypeInfo_var, L_25, 2, _stringLiteralC12B0525FE4A7F52BA51C6514949B9777123CD42, L_27);
 		RuntimeObject* L_34 = __this->___m_Listener;
 		RuntimeObject* L_35 = L_34;
 		if (L_35)
@@ -5025,6 +5047,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PurchasingManager_OnProductsRetrieved_m2
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&HashSet_1_get_Count_m2D72F1FA79744EA12C545A127C98C56EA0638A75_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&HashSet_1_t609586F7A2EB402C5AA35903DB236CD264F2D707_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_GetEnumerator_m7EF06127A10412F803A803B595D5C1A396E33123_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_get_Count_m2DAD80BC14FA48028A9A0EA3F40D6BCD74ABBE93_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ProductDefinition_t0ECCC323EC3E52DE3143F374262050ADCECB1517_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Product_t8CB4C6F2541BB4560097D6E07ABCB3AD3BB6082E_il2cpp_TypeInfo_var);
 		s_Il2CppMethodInitialized = true;
@@ -5195,7 +5218,11 @@ IL_00ba:
 
 IL_00cf:
 	{
-		PurchasingManager_CheckForInitialization_m6144B75126F92494E3EBEC736763C4FC9D77773E(__this, NULL);
+		List_1_tC907BA3C053A12CF512BC52B3657F30C756D4B7B* L_43 = ___0_products;
+		NullCheck(L_43);
+		int32_t L_44;
+		L_44 = List_1_get_Count_m2DAD80BC14FA48028A9A0EA3F40D6BCD74ABBE93_inline(L_43, List_1_get_Count_m2DAD80BC14FA48028A9A0EA3F40D6BCD74ABBE93_RuntimeMethod_var);
+		PurchasingManager_CheckForInitialization_m1CBFCC31231743408044D3F886ACCC588E599FFD(__this, L_44, NULL);
 		PurchasingManager_ProcessPurchaseOnStart_m320FBE849060CC66940DD2DB3A886C1EC4716759(__this, NULL);
 		return;
 	}
@@ -5429,89 +5456,97 @@ IL_0015:
 		return (bool)0;
 	}
 }
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PurchasingManager_CheckForInitialization_m6144B75126F92494E3EBEC736763C4FC9D77773E (PurchasingManager_t5B0BEE02EA117D0E725027C41D555A66FD16E1DE* __this, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PurchasingManager_CheckForInitialization_m1CBFCC31231743408044D3F886ACCC588E599FFD (PurchasingManager_t5B0BEE02EA117D0E725027C41D555A66FD16E1DE* __this, int32_t ___0_productCount, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&IInternalStoreListener_t3C1BA3DCCCFB51AA36194BDC8FBB06C14F842E33_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral3F84BDE7A93D58E5F12D9346EEC5E5496C7D479E);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralCA254522F25798E4F00D873C3CB4AB81B4A0BC86);
 		s_Il2CppMethodInitialized = true;
 	}
+	String_t* V_0 = NULL;
+	RuntimeObject* G_B5_0 = NULL;
 	RuntimeObject* G_B4_0 = NULL;
-	RuntimeObject* G_B3_0 = NULL;
-	RuntimeObject* G_B7_0 = NULL;
-	RuntimeObject* G_B6_0 = NULL;
-	Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* G_B10_0 = NULL;
-	Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* G_B9_0 = NULL;
+	String_t* G_B9_0 = NULL;
+	RuntimeObject* G_B11_0 = NULL;
+	RuntimeObject* G_B10_0 = NULL;
+	Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* G_B14_0 = NULL;
+	Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* G_B13_0 = NULL;
 	{
 		bool L_0 = __this->___initialized;
 		if (L_0)
 		{
-			goto IL_003d;
+			goto IL_0050;
 		}
 	}
 	{
 		__this->___initialized = (bool)1;
-		bool L_1;
-		L_1 = PurchasingManager_HasAvailableProductsToPurchase_m67C7C445B0E25C36F4C5D719F1B0C600CC3B35F3(__this, (bool)1, NULL);
-		if (!L_1)
+		int32_t L_1 = ___0_productCount;
+		if ((((int32_t)L_1) <= ((int32_t)0)))
 		{
-			goto IL_002a;
+			goto IL_002d;
 		}
 	}
 	{
-		RuntimeObject* L_2 = __this->___m_Listener;
-		RuntimeObject* L_3 = L_2;
-		if (L_3)
+		bool L_2;
+		L_2 = PurchasingManager_HasAvailableProductsToPurchase_m83054F4D3544D96906825A963AD1E25F9785AA19(__this, NULL);
+		if (!L_2)
 		{
-			G_B4_0 = L_3;
-			goto IL_0023;
+			goto IL_002d;
 		}
-		G_B3_0 = L_3;
 	}
 	{
-		return;
-	}
-
-IL_0023:
-	{
-		NullCheck(G_B4_0);
-		InterfaceActionInvoker1< RuntimeObject* >::Invoke(3, IInternalStoreListener_t3C1BA3DCCCFB51AA36194BDC8FBB06C14F842E33_il2cpp_TypeInfo_var, G_B4_0, __this);
-		return;
-	}
-
-IL_002a:
-	{
-		RuntimeObject* L_4 = __this->___m_Listener;
-		RuntimeObject* L_5 = L_4;
-		if (L_5)
+		RuntimeObject* L_3 = __this->___m_Listener;
+		RuntimeObject* L_4 = L_3;
+		if (L_4)
 		{
-			G_B7_0 = L_5;
-			goto IL_0035;
+			G_B5_0 = L_4;
+			goto IL_0026;
 		}
-		G_B6_0 = L_5;
+		G_B4_0 = L_4;
 	}
 	{
 		return;
 	}
 
-IL_0035:
+IL_0026:
 	{
-		NullCheck(G_B7_0);
-		InterfaceActionInvoker2< int32_t, String_t* >::Invoke(0, IInternalStoreListener_t3C1BA3DCCCFB51AA36194BDC8FBB06C14F842E33_il2cpp_TypeInfo_var, G_B7_0, 1, (String_t*)NULL);
+		NullCheck(G_B5_0);
+		InterfaceActionInvoker1< RuntimeObject* >::Invoke(3, IInternalStoreListener_t3C1BA3DCCCFB51AA36194BDC8FBB06C14F842E33_il2cpp_TypeInfo_var, G_B5_0, __this);
 		return;
 	}
 
-IL_003d:
+IL_002d:
 	{
-		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_6 = __this->___m_AdditionalProductsCallback;
-		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_7 = L_6;
+		int32_t L_5 = ___0_productCount;
+		if (!L_5)
+		{
+			goto IL_0037;
+		}
+	}
+	{
+		G_B9_0 = _stringLiteral3F84BDE7A93D58E5F12D9346EEC5E5496C7D479E;
+		goto IL_003c;
+	}
+
+IL_0037:
+	{
+		G_B9_0 = _stringLiteralCA254522F25798E4F00D873C3CB4AB81B4A0BC86;
+	}
+
+IL_003c:
+	{
+		V_0 = G_B9_0;
+		RuntimeObject* L_6 = __this->___m_Listener;
+		RuntimeObject* L_7 = L_6;
 		if (L_7)
 		{
-			G_B10_0 = L_7;
+			G_B11_0 = L_7;
 			goto IL_0048;
 		}
-		G_B9_0 = L_7;
+		G_B10_0 = L_7;
 	}
 	{
 		return;
@@ -5519,12 +5554,35 @@ IL_003d:
 
 IL_0048:
 	{
-		NullCheck(G_B10_0);
-		Action_Invoke_m7126A54DACA72B845424072887B5F3A51FC3808E_inline(G_B10_0, NULL);
+		String_t* L_8 = V_0;
+		NullCheck(G_B11_0);
+		InterfaceActionInvoker2< int32_t, String_t* >::Invoke(0, IInternalStoreListener_t3C1BA3DCCCFB51AA36194BDC8FBB06C14F842E33_il2cpp_TypeInfo_var, G_B11_0, 1, L_8);
+		return;
+	}
+
+IL_0050:
+	{
+		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_9 = __this->___m_AdditionalProductsCallback;
+		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_10 = L_9;
+		if (L_10)
+		{
+			G_B14_0 = L_10;
+			goto IL_005b;
+		}
+		G_B13_0 = L_10;
+	}
+	{
+		return;
+	}
+
+IL_005b:
+	{
+		NullCheck(G_B14_0);
+		Action_Invoke_m7126A54DACA72B845424072887B5F3A51FC3808E_inline(G_B14_0, NULL);
 		return;
 	}
 }
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool PurchasingManager_HasAvailableProductsToPurchase_m67C7C445B0E25C36F4C5D719F1B0C600CC3B35F3 (PurchasingManager_t5B0BEE02EA117D0E725027C41D555A66FD16E1DE* __this, bool ___0_shouldLogUnavailableProducts, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool PurchasingManager_HasAvailableProductsToPurchase_m83054F4D3544D96906825A963AD1E25F9785AA19 (PurchasingManager_t5B0BEE02EA117D0E725027C41D555A66FD16E1DE* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -5558,7 +5616,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool PurchasingManager_HasAvailableProductsTo
 		auto __finallyBlock = il2cpp::utils::Finally([&]
 		{
 
-FINALLY_006a:
+FINALLY_006f:
 			{
 				Enumerator_Dispose_m7677576F68A88A50A5D4C74D05441CD5DF65397C((&V_1), Enumerator_Dispose_m7677576F68A88A50A5D4C74D05441CD5DF65397C_RuntimeMethod_var);
 				return;
@@ -5567,7 +5625,7 @@ FINALLY_006a:
 		try
 		{
 			{
-				goto IL_005f_1;
+				goto IL_0064_1;
 			}
 
 IL_0015_1:
@@ -5586,15 +5644,15 @@ IL_0015_1:
 			}
 			{
 				V_0 = (bool)1;
-				goto IL_005f_1;
+				goto IL_0064_1;
 			}
 
 IL_0029_1:
 			{
-				bool L_6 = ___0_shouldLogUnavailableProducts;
+				bool L_6 = __this->___m_logUnavailableProducts;
 				if (!L_6)
 				{
-					goto IL_005f_1;
+					goto IL_0064_1;
 				}
 			}
 			{
@@ -5623,10 +5681,10 @@ IL_0029_1:
 				ArrayElementTypeCheck (L_13, L_16);
 				(L_13)->SetAt(static_cast<il2cpp_array_size_t>(1), (RuntimeObject*)L_16);
 				NullCheck(L_7);
-				InterfaceActionInvoker3< int32_t, String_t*, ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* >::Invoke(8, ILogger_tD1F573C6DC829FBA987FA1EBA0A5FA64E0C2BC42_il2cpp_TypeInfo_var, L_7, 2, _stringLiteral89C49DC40879EC998EC0B3FD9E005123B80E7297, L_13);
+				InterfaceActionInvoker3< int32_t, String_t*, ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* >::Invoke(9, ILogger_tD1F573C6DC829FBA987FA1EBA0A5FA64E0C2BC42_il2cpp_TypeInfo_var, L_7, 2, _stringLiteral89C49DC40879EC998EC0B3FD9E005123B80E7297, L_13);
 			}
 
-IL_005f_1:
+IL_0064_1:
 			{
 				bool L_17;
 				L_17 = Enumerator_MoveNext_m459E598B3EFB68A922590DF434EB03FE643EF636((&V_1), Enumerator_MoveNext_m459E598B3EFB68A922590DF434EB03FE643EF636_RuntimeMethod_var);
@@ -5636,7 +5694,7 @@ IL_005f_1:
 				}
 			}
 			{
-				goto IL_0078;
+				goto IL_007d;
 			}
 		}
 		catch(Il2CppExceptionWrapper& e)
@@ -5645,7 +5703,7 @@ IL_005f_1:
 		}
 	}
 
-IL_0078:
+IL_007d:
 	{
 		bool L_18 = V_0;
 		return L_18;
@@ -5664,7 +5722,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PurchasingManager_Initialize_mA99E10460D
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ProductCollection_tB918E64F4183B0EF135D05E7BC5835C6BBA50C69_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ReadOnlyCollection_1__ctor_m87BA0E48279DE06FEEB6CF7059964F97DD088A9E_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ReadOnlyCollection_1_tA49701F42E3782EB8804C53D26901317BAD43A9E_il2cpp_TypeInfo_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CU3Ec_U3CInitializeU3Eb__44_0_m04BCD6775FF3EDEF1CF0B561CB45B700EAF1764F_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CU3Ec_U3CInitializeU3Eb__45_0_m57A8360DD060BB5790F18BA7D93629456A960818_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CU3Ec_t1F4E004D45CBAD0E5FA68A93535154D12FC86AD7_il2cpp_TypeInfo_var);
 		s_Il2CppMethodInitialized = true;
 	}
@@ -5683,7 +5741,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PurchasingManager_Initialize_mA99E10460D
 		InterfaceActionInvoker1< RuntimeObject* >::Invoke(0, IStore_t6108200CA69362D316974FF860D2A84E4D74DD4B_il2cpp_TypeInfo_var, L_1, __this);
 		HashSet_1_t83DC1A9F0F77879B6812C63406A0B53B8B159195* L_2 = ___1_products;
 		il2cpp_codegen_runtime_class_init_inline(U3CU3Ec_t1F4E004D45CBAD0E5FA68A93535154D12FC86AD7_il2cpp_TypeInfo_var);
-		Func_2_t2778DF1CCAFA1D28C30AC692AD174F10703E2EA8* L_3 = ((U3CU3Ec_t1F4E004D45CBAD0E5FA68A93535154D12FC86AD7_StaticFields*)il2cpp_codegen_static_fields_for(U3CU3Ec_t1F4E004D45CBAD0E5FA68A93535154D12FC86AD7_il2cpp_TypeInfo_var))->___U3CU3E9__44_0;
+		Func_2_t2778DF1CCAFA1D28C30AC692AD174F10703E2EA8* L_3 = ((U3CU3Ec_t1F4E004D45CBAD0E5FA68A93535154D12FC86AD7_StaticFields*)il2cpp_codegen_static_fields_for(U3CU3Ec_t1F4E004D45CBAD0E5FA68A93535154D12FC86AD7_il2cpp_TypeInfo_var))->___U3CU3E9__45_0;
 		Func_2_t2778DF1CCAFA1D28C30AC692AD174F10703E2EA8* L_4 = L_3;
 		if (L_4)
 		{
@@ -5698,10 +5756,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PurchasingManager_Initialize_mA99E10460D
 		il2cpp_codegen_runtime_class_init_inline(U3CU3Ec_t1F4E004D45CBAD0E5FA68A93535154D12FC86AD7_il2cpp_TypeInfo_var);
 		U3CU3Ec_t1F4E004D45CBAD0E5FA68A93535154D12FC86AD7* L_5 = ((U3CU3Ec_t1F4E004D45CBAD0E5FA68A93535154D12FC86AD7_StaticFields*)il2cpp_codegen_static_fields_for(U3CU3Ec_t1F4E004D45CBAD0E5FA68A93535154D12FC86AD7_il2cpp_TypeInfo_var))->___U3CU3E9;
 		Func_2_t2778DF1CCAFA1D28C30AC692AD174F10703E2EA8* L_6 = (Func_2_t2778DF1CCAFA1D28C30AC692AD174F10703E2EA8*)il2cpp_codegen_object_new(Func_2_t2778DF1CCAFA1D28C30AC692AD174F10703E2EA8_il2cpp_TypeInfo_var);
-		Func_2__ctor_m004F4F36E1E8F8489E8476F06E8104971E8F5787(L_6, L_5, (intptr_t)((void*)U3CU3Ec_U3CInitializeU3Eb__44_0_m04BCD6775FF3EDEF1CF0B561CB45B700EAF1764F_RuntimeMethod_var), NULL);
+		Func_2__ctor_m004F4F36E1E8F8489E8476F06E8104971E8F5787(L_6, L_5, (intptr_t)((void*)U3CU3Ec_U3CInitializeU3Eb__45_0_m57A8360DD060BB5790F18BA7D93629456A960818_RuntimeMethod_var), NULL);
 		Func_2_t2778DF1CCAFA1D28C30AC692AD174F10703E2EA8* L_7 = L_6;
-		((U3CU3Ec_t1F4E004D45CBAD0E5FA68A93535154D12FC86AD7_StaticFields*)il2cpp_codegen_static_fields_for(U3CU3Ec_t1F4E004D45CBAD0E5FA68A93535154D12FC86AD7_il2cpp_TypeInfo_var))->___U3CU3E9__44_0 = L_7;
-		Il2CppCodeGenWriteBarrier((void**)(&((U3CU3Ec_t1F4E004D45CBAD0E5FA68A93535154D12FC86AD7_StaticFields*)il2cpp_codegen_static_fields_for(U3CU3Ec_t1F4E004D45CBAD0E5FA68A93535154D12FC86AD7_il2cpp_TypeInfo_var))->___U3CU3E9__44_0), (void*)L_7);
+		((U3CU3Ec_t1F4E004D45CBAD0E5FA68A93535154D12FC86AD7_StaticFields*)il2cpp_codegen_static_fields_for(U3CU3Ec_t1F4E004D45CBAD0E5FA68A93535154D12FC86AD7_il2cpp_TypeInfo_var))->___U3CU3E9__45_0 = L_7;
+		Il2CppCodeGenWriteBarrier((void**)(&((U3CU3Ec_t1F4E004D45CBAD0E5FA68A93535154D12FC86AD7_StaticFields*)il2cpp_codegen_static_fields_for(U3CU3Ec_t1F4E004D45CBAD0E5FA68A93535154D12FC86AD7_il2cpp_TypeInfo_var))->___U3CU3E9__45_0), (void*)L_7);
 		G_B2_0 = L_7;
 		G_B2_1 = G_B1_1;
 	}
@@ -5761,7 +5819,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__ctor_m58310A3BCE52DBB543D6ED6CD
 		return;
 	}
 }
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Product_t8CB4C6F2541BB4560097D6E07ABCB3AD3BB6082E* U3CU3Ec_U3CInitializeU3Eb__44_0_m04BCD6775FF3EDEF1CF0B561CB45B700EAF1764F (U3CU3Ec_t1F4E004D45CBAD0E5FA68A93535154D12FC86AD7* __this, ProductDefinition_t0ECCC323EC3E52DE3143F374262050ADCECB1517* ___0_x, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Product_t8CB4C6F2541BB4560097D6E07ABCB3AD3BB6082E* U3CU3Ec_U3CInitializeU3Eb__45_0_m57A8360DD060BB5790F18BA7D93629456A960818 (U3CU3Ec_t1F4E004D45CBAD0E5FA68A93535154D12FC86AD7* __this, ProductDefinition_t0ECCC323EC3E52DE3143F374262050ADCECB1517* ___0_x, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -5787,14 +5845,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Product_t8CB4C6F2541BB4560097D6E07ABCB3AD3BB6
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass26_0__ctor_mE6DD8E972FC1800668869FC728EAD1200DEDA2CC (U3CU3Ec__DisplayClass26_0_t481F3074231630DE5EB0C1B98C44F57DDA22FC18* __this, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass27_0__ctor_m9AEDFA910351B1318D7D5137D976F6F2A4E55A96 (U3CU3Ec__DisplayClass27_0_tB3C1AADF362ABAB552B1746461F59C25C65FCCD2* __this, const RuntimeMethod* method) 
 {
 	{
 		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
 		return;
 	}
 }
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CU3Ec__DisplayClass26_0_U3COnAllPurchasesRetrievedU3Eb__0_m7C120E5F9D87D220402D086FF92DD52D6444C503 (U3CU3Ec__DisplayClass26_0_t481F3074231630DE5EB0C1B98C44F57DDA22FC18* __this, Product_t8CB4C6F2541BB4560097D6E07ABCB3AD3BB6082E* ___0_firstPurchasedProduct, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CU3Ec__DisplayClass27_0_U3COnAllPurchasesRetrievedU3Eb__0_m4F89D98F7405AF713DCE48EEC4DA5A7472AC722F (U3CU3Ec__DisplayClass27_0_tB3C1AADF362ABAB552B1746461F59C25C65FCCD2* __this, Product_t8CB4C6F2541BB4560097D6E07ABCB3AD3BB6082E* ___0_firstPurchasedProduct, const RuntimeMethod* method) 
 {
 	{
 		Product_t8CB4C6F2541BB4560097D6E07ABCB3AD3BB6082E* L_0 = ___0_firstPurchasedProduct;
@@ -6090,7 +6148,7 @@ CATCH_0026:
 		RuntimeObject* L_9 = __this->___logger;
 		Exception_t* L_10 = V_1;
 		NullCheck(L_9);
-		InterfaceActionInvoker1< Exception_t* >::Invoke(9, ((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&ILogger_tD1F573C6DC829FBA987FA1EBA0A5FA64E0C2BC42_il2cpp_TypeInfo_var)), L_9, L_10);
+		InterfaceActionInvoker1< Exception_t* >::Invoke(10, ((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&ILogger_tD1F573C6DC829FBA987FA1EBA0A5FA64E0C2BC42_il2cpp_TypeInfo_var)), L_9, L_10);
 		IL2CPP_POP_ACTIVE_EXCEPTION(Exception_t*);
 		goto IL_0035;
 	}
@@ -6372,41 +6430,45 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UnityPurchasing_Initialize_m711679C30BD6
 		String_t* L_13;
 		L_13 = PurchasingFactory_get_storeName_m90F704A0005078440D884F0179E2DD69CD845532_inline(L_12, NULL);
 		RuntimeObject* L_14 = ___7_unityServicesInitializationChecker;
-		PurchasingManager_t5B0BEE02EA117D0E725027C41D555A66FD16E1DE* L_15 = (PurchasingManager_t5B0BEE02EA117D0E725027C41D555A66FD16E1DE*)il2cpp_codegen_object_new(PurchasingManager_t5B0BEE02EA117D0E725027C41D555A66FD16E1DE_il2cpp_TypeInfo_var);
-		PurchasingManager__ctor_mCB0D60087EAFAB1B80E4429384FC486B0D6C84DD(L_15, L_6, L_7, L_10, L_13, L_14, NULL);
+		ConfigurationBuilder_tCB23D9049605117E5216D50DC18E1D459590F90D* L_15 = ___1_builder;
+		NullCheck(L_15);
+		bool L_16;
+		L_16 = ConfigurationBuilder_get_logUnavailableProducts_mADF82B9D1E33BF480FB8A8A0A693811A17057751_inline(L_15, NULL);
+		PurchasingManager_t5B0BEE02EA117D0E725027C41D555A66FD16E1DE* L_17 = (PurchasingManager_t5B0BEE02EA117D0E725027C41D555A66FD16E1DE*)il2cpp_codegen_object_new(PurchasingManager_t5B0BEE02EA117D0E725027C41D555A66FD16E1DE_il2cpp_TypeInfo_var);
+		PurchasingManager__ctor_m9D4AEEEA82DB0C4012AAAE78D2CD073104C43C22(L_17, L_6, L_7, L_10, L_13, L_14, L_16, NULL);
 		NullCheck(L_5);
-		L_5->___manager = L_15;
-		Il2CppCodeGenWriteBarrier((void**)(&L_5->___manager), (void*)L_15);
-		RuntimeObject* L_16 = ___4_ugsAnalytics;
-		RuntimeObject* L_17 = ___5_legacyAnalytics;
-		AnalyticsClient_t0A0625E3F9E875443A5CD224EAAE8D6CD4D42C1F* L_18 = (AnalyticsClient_t0A0625E3F9E875443A5CD224EAAE8D6CD4D42C1F*)il2cpp_codegen_object_new(AnalyticsClient_t0A0625E3F9E875443A5CD224EAAE8D6CD4D42C1F_il2cpp_TypeInfo_var);
-		AnalyticsClient__ctor_m2B3BC8C9E0F2DEACBF520EA2CCBF1EA84086B6F5(L_18, L_16, L_17, NULL);
-		V_2 = L_18;
-		U3CU3Ec__DisplayClass5_0_t5CD2AA9261C1D1856AA9D2B8906FC719824513C8* L_19 = V_0;
-		RuntimeObject* L_20 = ___0_listener;
-		AnalyticsClient_t0A0625E3F9E875443A5CD224EAAE8D6CD4D42C1F* L_21 = V_2;
-		ConfigurationBuilder_tCB23D9049605117E5216D50DC18E1D459590F90D* L_22 = ___1_builder;
-		NullCheck(L_22);
-		PurchasingFactory_tC87E368967334D76A150DEE74D0DDFEB9A502935* L_23;
-		L_23 = ConfigurationBuilder_get_factory_mEE2B11F372E146204E1DC9217E30587F2185F9A5_inline(L_22, NULL);
-		StoreListenerProxy_t011B0E88BA5EF3BCB11272652AEF46A9DA4C030F* L_24 = (StoreListenerProxy_t011B0E88BA5EF3BCB11272652AEF46A9DA4C030F*)il2cpp_codegen_object_new(StoreListenerProxy_t011B0E88BA5EF3BCB11272652AEF46A9DA4C030F_il2cpp_TypeInfo_var);
-		StoreListenerProxy__ctor_mCFBF42DC965A2C076697C559F973529EDC3FC7CF(L_24, L_20, L_21, L_23, NULL);
-		NullCheck(L_19);
-		L_19->___proxy = L_24;
-		Il2CppCodeGenWriteBarrier((void**)(&L_19->___proxy), (void*)L_24);
-		ConfigurationBuilder_tCB23D9049605117E5216D50DC18E1D459590F90D* L_25 = ___1_builder;
-		NullCheck(L_25);
-		bool L_26;
-		L_26 = ConfigurationBuilder_get_useCatalogProvider_m91A7BC2D3B3C3C13DF77F8CA628820587F1FE99C_inline(L_25, NULL);
+		L_5->___manager = L_17;
+		Il2CppCodeGenWriteBarrier((void**)(&L_5->___manager), (void*)L_17);
+		RuntimeObject* L_18 = ___4_ugsAnalytics;
+		RuntimeObject* L_19 = ___5_legacyAnalytics;
+		AnalyticsClient_t0A0625E3F9E875443A5CD224EAAE8D6CD4D42C1F* L_20 = (AnalyticsClient_t0A0625E3F9E875443A5CD224EAAE8D6CD4D42C1F*)il2cpp_codegen_object_new(AnalyticsClient_t0A0625E3F9E875443A5CD224EAAE8D6CD4D42C1F_il2cpp_TypeInfo_var);
+		AnalyticsClient__ctor_m2B3BC8C9E0F2DEACBF520EA2CCBF1EA84086B6F5(L_20, L_18, L_19, NULL);
+		V_2 = L_20;
+		U3CU3Ec__DisplayClass5_0_t5CD2AA9261C1D1856AA9D2B8906FC719824513C8* L_21 = V_0;
+		RuntimeObject* L_22 = ___0_listener;
+		AnalyticsClient_t0A0625E3F9E875443A5CD224EAAE8D6CD4D42C1F* L_23 = V_2;
+		ConfigurationBuilder_tCB23D9049605117E5216D50DC18E1D459590F90D* L_24 = ___1_builder;
+		NullCheck(L_24);
+		PurchasingFactory_tC87E368967334D76A150DEE74D0DDFEB9A502935* L_25;
+		L_25 = ConfigurationBuilder_get_factory_mEE2B11F372E146204E1DC9217E30587F2185F9A5_inline(L_24, NULL);
+		StoreListenerProxy_t011B0E88BA5EF3BCB11272652AEF46A9DA4C030F* L_26 = (StoreListenerProxy_t011B0E88BA5EF3BCB11272652AEF46A9DA4C030F*)il2cpp_codegen_object_new(StoreListenerProxy_t011B0E88BA5EF3BCB11272652AEF46A9DA4C030F_il2cpp_TypeInfo_var);
+		StoreListenerProxy__ctor_mCFBF42DC965A2C076697C559F973529EDC3FC7CF(L_26, L_22, L_23, L_25, NULL);
+		NullCheck(L_21);
+		L_21->___proxy = L_26;
+		Il2CppCodeGenWriteBarrier((void**)(&L_21->___proxy), (void*)L_26);
 		ConfigurationBuilder_tCB23D9049605117E5216D50DC18E1D459590F90D* L_27 = ___1_builder;
 		NullCheck(L_27);
-		HashSet_1_t83DC1A9F0F77879B6812C63406A0B53B8B159195* L_28;
-		L_28 = ConfigurationBuilder_get_products_m58DC9D24139168ED98A7B444EE7C10248857FB80_inline(L_27, NULL);
-		RuntimeObject* L_29 = ___6_catalog;
-		U3CU3Ec__DisplayClass5_0_t5CD2AA9261C1D1856AA9D2B8906FC719824513C8* L_30 = V_0;
-		Action_1_t32BECB4358B6D3489D81F30C031FA2C38BC3DB04* L_31 = (Action_1_t32BECB4358B6D3489D81F30C031FA2C38BC3DB04*)il2cpp_codegen_object_new(Action_1_t32BECB4358B6D3489D81F30C031FA2C38BC3DB04_il2cpp_TypeInfo_var);
-		Action_1__ctor_m96581FA8CA8E1F3980D6AC44E4BFA71BA407F763(L_31, L_30, (intptr_t)((void*)U3CU3Ec__DisplayClass5_0_U3CInitializeU3Eb__0_mB5371937C878021DE448417405772273DA152250_RuntimeMethod_var), NULL);
-		UnityPurchasing_FetchAndMergeProducts_m0C2FA51B14E497607B9B187BCCC05C86F79AA7F2(L_26, L_28, L_29, L_31, NULL);
+		bool L_28;
+		L_28 = ConfigurationBuilder_get_useCatalogProvider_m91A7BC2D3B3C3C13DF77F8CA628820587F1FE99C_inline(L_27, NULL);
+		ConfigurationBuilder_tCB23D9049605117E5216D50DC18E1D459590F90D* L_29 = ___1_builder;
+		NullCheck(L_29);
+		HashSet_1_t83DC1A9F0F77879B6812C63406A0B53B8B159195* L_30;
+		L_30 = ConfigurationBuilder_get_products_m58DC9D24139168ED98A7B444EE7C10248857FB80_inline(L_29, NULL);
+		RuntimeObject* L_31 = ___6_catalog;
+		U3CU3Ec__DisplayClass5_0_t5CD2AA9261C1D1856AA9D2B8906FC719824513C8* L_32 = V_0;
+		Action_1_t32BECB4358B6D3489D81F30C031FA2C38BC3DB04* L_33 = (Action_1_t32BECB4358B6D3489D81F30C031FA2C38BC3DB04*)il2cpp_codegen_object_new(Action_1_t32BECB4358B6D3489D81F30C031FA2C38BC3DB04_il2cpp_TypeInfo_var);
+		Action_1__ctor_m96581FA8CA8E1F3980D6AC44E4BFA71BA407F763(L_33, L_32, (intptr_t)((void*)U3CU3Ec__DisplayClass5_0_U3CInitializeU3Eb__0_mB5371937C878021DE448417405772273DA152250_RuntimeMethod_var), NULL);
+		UnityPurchasing_FetchAndMergeProducts_m0C2FA51B14E497607B9B187BCCC05C86F79AA7F2(L_28, L_30, L_31, L_33, NULL);
 		return;
 	}
 }
@@ -6625,7 +6687,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LoggerExtensions_LogIAPWarning_m458D0E47
 		RuntimeObject* L_0 = ___0_logger;
 		String_t* L_1 = ___1_message;
 		NullCheck(L_0);
-		InterfaceActionInvoker2< String_t*, RuntimeObject* >::Invoke(6, ILogger_tD1F573C6DC829FBA987FA1EBA0A5FA64E0C2BC42_il2cpp_TypeInfo_var, L_0, _stringLiteralF70186B9E93B040BE74228E43B2D0DFEECC9C509, L_1);
+		InterfaceActionInvoker2< String_t*, RuntimeObject* >::Invoke(7, ILogger_tD1F573C6DC829FBA987FA1EBA0A5FA64E0C2BC42_il2cpp_TypeInfo_var, L_0, _stringLiteralF70186B9E93B040BE74228E43B2D0DFEECC9C509, L_1);
 		return;
 	}
 }
@@ -6642,7 +6704,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LoggerExtensions_LogIAPError_mD1B9F54F05
 		RuntimeObject* L_0 = ___0_logger;
 		String_t* L_1 = ___1_message;
 		NullCheck(L_0);
-		InterfaceActionInvoker2< String_t*, RuntimeObject* >::Invoke(7, ILogger_tD1F573C6DC829FBA987FA1EBA0A5FA64E0C2BC42_il2cpp_TypeInfo_var, L_0, _stringLiteralF70186B9E93B040BE74228E43B2D0DFEECC9C509, L_1);
+		InterfaceActionInvoker2< String_t*, RuntimeObject* >::Invoke(8, ILogger_tD1F573C6DC829FBA987FA1EBA0A5FA64E0C2BC42_il2cpp_TypeInfo_var, L_0, _stringLiteralF70186B9E93B040BE74228E43B2D0DFEECC9C509, L_1);
 		return;
 	}
 }
@@ -8538,6 +8600,13 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR RuntimeObject* PurchasingFactory_
 		return L_0;
 	}
 }
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool ConfigurationBuilder_get_logUnavailableProducts_mADF82B9D1E33BF480FB8A8A0A693811A17057751_inline (ConfigurationBuilder_tCB23D9049605117E5216D50DC18E1D459590F90D* __this, const RuntimeMethod* method) 
+{
+	{
+		bool L_0 = __this->___U3ClogUnavailableProductsU3Ek__BackingField;
+		return L_0;
+	}
+}
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool ConfigurationBuilder_get_useCatalogProvider_m91A7BC2D3B3C3C13DF77F8CA628820587F1FE99C_inline (ConfigurationBuilder_tCB23D9049605117E5216D50DC18E1D459590F90D* __this, const RuntimeMethod* method) 
 {
 	{
@@ -8715,6 +8784,13 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t HashSet_1_get_Count_m41CC
 {
 	{
 		int32_t L_0 = __this->____count;
+		return L_0;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t List_1_get_Count_m4407E4C389F22B8CEC282C15D56516658746C383_gshared_inline (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, const RuntimeMethod* method) 
+{
+	{
+		int32_t L_0 = __this->____size;
 		return L_0;
 	}
 }

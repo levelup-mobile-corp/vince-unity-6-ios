@@ -46,8 +46,10 @@ bool _ios100orNewer = false, _ios101orNewer = false, _ios102orNewer = false, _io
 bool _ios110orNewer = false, _ios111orNewer = false, _ios112orNewer = false;
 bool _ios130orNewer = false, _ios140orNewer = false, _ios150orNewer = false, _ios160orNewer = false;
 
+// minimal Unity initialization done, enough to do calls to provide data like URL launch
+bool    _unityEngineLoaded = false;
 // was core of Unity loaded (non-graphics part prior to loading first scene)
-bool _unityEngineInitialized = false;
+bool    _unityEngineInitialized = false;
 // was unity rendering already inited: we should not touch rendering while this is false
 bool    _renderingInited        = false;
 // was unity inited: we should not touch unity api while this is false
@@ -277,7 +279,37 @@ extern "C" void UnityCleanupTrampoline()
 - (BOOL)application:(UIApplication*)application willFinishLaunchingWithOptions:(NSDictionary*)launchOptions
 {
     AppController_SendNotificationWithArg(kUnityWillFinishLaunchingWithOptions, launchOptions);
+    NSURL* url = [self extractURLFromLaunchOptions: launchOptions];
+    if (url != nil)
+    {
+        [self initUnityApplicationNoGraphics];
+        UnitySetAbsoluteURL(url.absoluteString.UTF8String);
+    }
     return YES;
+}
+
+// Helper method to extract URL from launch options
+- (NSURL*)extractURLFromLaunchOptions:(NSDictionary*)launchOptions
+{
+    // Check for the direct launch URL
+    NSURL* url = launchOptions[UIApplicationLaunchOptionsURLKey];
+    if (url != nil)
+    {
+        return url;
+    }
+
+    // Check for the user activity dictionary and URL from user activity
+    NSUserActivity* userActivity = launchOptions[UIApplicationLaunchOptionsUserActivityDictionaryKey][@"UIApplicationLaunchOptionsUserActivityKey"];
+    if (userActivity != nil && [userActivity.activityType isEqualToString: NSUserActivityTypeBrowsingWeb])
+    {
+        url = userActivity.webpageURL;
+        if (url != nil)
+        {
+            return url;
+        }
+    }
+
+    return nil;
 }
 
 - (UIWindowScene*)pickStartupWindowScene:(NSSet<UIScene*>*)scenes API_AVAILABLE(ios(13.0), tvos(13.0))
@@ -334,6 +366,14 @@ extern "C" void UnityCleanupTrampoline()
     return NO;
 }
 
+- (void)initUnityApplicationNoGraphics
+{
+    if (_unityEngineLoaded)
+        return;
+    _unityEngineLoaded = true;
+    UnityInitApplicationNoGraphics(UnityDataBundleDir());
+}
+
 - (void)initUnityWithApplication:(UIApplication*)application
 {
     if (_unityEngineInitialized)
@@ -341,7 +381,7 @@ extern "C" void UnityCleanupTrampoline()
     _unityEngineInitialized = true;
 
     // basic unity init
-    UnityInitApplicationNoGraphics(UnityDataBundleDir());
+    [self initUnityApplicationNoGraphics];
 
     [self selectRenderingAPI];
     [UnityRenderingView InitializeForAPI: self.renderingAPI];
@@ -528,6 +568,12 @@ extern "C" void UnityCleanupTrampoline()
     // this happens if the app is force closed immediately after opening it.
     if (_unityAppReady)
     {
+        // make sure that we are in a "unity cannot be touched" state
+        // if there was some complex UI shown when terminating, we can get extra UI calls from iOS after applicationWillTerminate:
+        // and we want to make sure we never do anything touching unity runtime at this point
+        _unityAppReady = _renderingInited = _unityEngineInitialized = false;
+        _didResignActive = true;
+
         UnityCleanup();
         UnityCleanupTrampoline();
     }
@@ -557,20 +603,11 @@ void AppController_SendUnityViewControllerNotification(NSString* name)
     [[NSNotificationCenter defaultCenter] postNotificationName: name object: UnityGetGLViewController()];
 }
 
-extern "C" UIWindow*            UnityGetMainWindow()
-{
-    return GetAppController().mainDisplay.window;
-}
+extern "C" UIWindow*            UnityGetMainWindow()        { return GetAppController().mainDisplay.window; }
+extern "C" UIViewController*    UnityGetGLViewController()  { return GetAppController().rootViewController; }
+extern "C" UnityView*           UnityGetUnityView()         { return GetAppController().unityView; }
+extern "C" UIView*              UnityGetGLView()            { return UnityGetUnityView(); }
 
-extern "C" UIViewController*    UnityGetGLViewController()
-{
-    return GetAppController().rootViewController;
-}
-
-extern "C" UIView*              UnityGetGLView()
-{
-    return GetAppController().unityView;
-}
 
 extern "C" ScreenOrientation    UnityCurrentOrientation()   { return GetAppController().unityView.contentOrientation; }
 

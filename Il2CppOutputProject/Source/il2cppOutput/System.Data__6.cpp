@@ -203,6 +203,8 @@ struct FormatException_tCD210E92627903FFEDAAA706C08FB6222B4D012B;
 struct Hashtable_tEFC3B6496E6747787D8BB761B51F2AE3A8CFFE2D;
 struct ICollection_t37E7B9DC5B4EF41D190D607F92835BF1171C0E8E;
 struct IDictionary_t6D03155AF1FA9083817AA5B6AD7DEEACC26AB220;
+struct IDisposable_t030E0496B4E0E4E4F086825007979AF51F7248C5;
+struct IEnumerator_t7B609C2FFA6EB5167D9C62A0C32A21DE2F666DAA;
 struct IEqualityComparer_tEF8F1EC76B9C8E76695BE848D41E6B147928D1C1;
 struct IFormatProvider_tC202922D43BFF3525109ABF3FB79625F5646AB52;
 struct IFormatterConverter_t726606DAC82C384B08C82471313C340968DDB609;
@@ -20024,12 +20026,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SqlDecimal__cctor_m1AB1F25764EBA424AFD5A
 		((SqlDecimal_t7A833A6D857AB79C4B2E4011CB728AEC6954D406_StaticFields*)il2cpp_codegen_static_fields_for(SqlDecimal_t7A833A6D857AB79C4B2E4011CB728AEC6954D406_il2cpp_TypeInfo_var))->___s_bIsNull = (uint8_t)0;
 		((SqlDecimal_t7A833A6D857AB79C4B2E4011CB728AEC6954D406_StaticFields*)il2cpp_codegen_static_fields_for(SqlDecimal_t7A833A6D857AB79C4B2E4011CB728AEC6954D406_il2cpp_TypeInfo_var))->___s_bNotNull = (uint8_t)1;
 		uint8_t L_2 = ((SqlDecimal_t7A833A6D857AB79C4B2E4011CB728AEC6954D406_StaticFields*)il2cpp_codegen_static_fields_for(SqlDecimal_t7A833A6D857AB79C4B2E4011CB728AEC6954D406_il2cpp_TypeInfo_var))->___s_bNullMask;
-		((SqlDecimal_t7A833A6D857AB79C4B2E4011CB728AEC6954D406_StaticFields*)il2cpp_codegen_static_fields_for(SqlDecimal_t7A833A6D857AB79C4B2E4011CB728AEC6954D406_il2cpp_TypeInfo_var))->___s_bReverseNullMask = (uint8_t)((int32_t)(uint8_t)((~L_2)));
+		((SqlDecimal_t7A833A6D857AB79C4B2E4011CB728AEC6954D406_StaticFields*)il2cpp_codegen_static_fields_for(SqlDecimal_t7A833A6D857AB79C4B2E4011CB728AEC6954D406_il2cpp_TypeInfo_var))->___s_bReverseNullMask = (uint8_t)((int32_t)(uint8_t)((~((int32_t)L_2))));
 		((SqlDecimal_t7A833A6D857AB79C4B2E4011CB728AEC6954D406_StaticFields*)il2cpp_codegen_static_fields_for(SqlDecimal_t7A833A6D857AB79C4B2E4011CB728AEC6954D406_il2cpp_TypeInfo_var))->___s_bSignMask = (uint8_t)2;
 		((SqlDecimal_t7A833A6D857AB79C4B2E4011CB728AEC6954D406_StaticFields*)il2cpp_codegen_static_fields_for(SqlDecimal_t7A833A6D857AB79C4B2E4011CB728AEC6954D406_il2cpp_TypeInfo_var))->___s_bPositive = (uint8_t)0;
 		((SqlDecimal_t7A833A6D857AB79C4B2E4011CB728AEC6954D406_StaticFields*)il2cpp_codegen_static_fields_for(SqlDecimal_t7A833A6D857AB79C4B2E4011CB728AEC6954D406_il2cpp_TypeInfo_var))->___s_bNegative = (uint8_t)2;
 		uint8_t L_3 = ((SqlDecimal_t7A833A6D857AB79C4B2E4011CB728AEC6954D406_StaticFields*)il2cpp_codegen_static_fields_for(SqlDecimal_t7A833A6D857AB79C4B2E4011CB728AEC6954D406_il2cpp_TypeInfo_var))->___s_bSignMask;
-		((SqlDecimal_t7A833A6D857AB79C4B2E4011CB728AEC6954D406_StaticFields*)il2cpp_codegen_static_fields_for(SqlDecimal_t7A833A6D857AB79C4B2E4011CB728AEC6954D406_il2cpp_TypeInfo_var))->___s_bReverseSignMask = (uint8_t)((int32_t)(uint8_t)((~L_3)));
+		((SqlDecimal_t7A833A6D857AB79C4B2E4011CB728AEC6954D406_StaticFields*)il2cpp_codegen_static_fields_for(SqlDecimal_t7A833A6D857AB79C4B2E4011CB728AEC6954D406_il2cpp_TypeInfo_var))->___s_bReverseSignMask = (uint8_t)((int32_t)(uint8_t)((~((int32_t)L_3))));
 		((SqlDecimal_t7A833A6D857AB79C4B2E4011CB728AEC6954D406_StaticFields*)il2cpp_codegen_static_fields_for(SqlDecimal_t7A833A6D857AB79C4B2E4011CB728AEC6954D406_il2cpp_TypeInfo_var))->___s_uiZero = 0;
 		((SqlDecimal_t7A833A6D857AB79C4B2E4011CB728AEC6954D406_StaticFields*)il2cpp_codegen_static_fields_for(SqlDecimal_t7A833A6D857AB79C4B2E4011CB728AEC6954D406_il2cpp_TypeInfo_var))->___s_cNumeMax = 4;
 		((SqlDecimal_t7A833A6D857AB79C4B2E4011CB728AEC6954D406_StaticFields*)il2cpp_codegen_static_fields_for(SqlDecimal_t7A833A6D857AB79C4B2E4011CB728AEC6954D406_il2cpp_TypeInfo_var))->___s_lInt32Base = ((int64_t)4294967296LL);
@@ -22591,7 +22593,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR SqlInt16_t30ED9856D3373398B6005B34D664C64EE22
 		int16_t L_2 = L_1.___m_value;
 		SqlInt16_t30ED9856D3373398B6005B34D664C64EE224260B L_3;
 		memset((&L_3), 0, sizeof(L_3));
-		SqlInt16__ctor_mFB6FD66DD3241C0E2D94FA003CF12C28D7163E86((&L_3), ((int16_t)((-L_2))), NULL);
+		SqlInt16__ctor_mFB6FD66DD3241C0E2D94FA003CF12C28D7163E86((&L_3), ((int16_t)((-((int32_t)L_2)))), NULL);
 		return L_3;
 	}
 
@@ -27101,7 +27103,7 @@ IL_007c:
 	}
 	{
 		uint64_t L_21 = V_2;
-		G_B11_0 = ((-((int64_t)L_21)));
+		G_B11_0 = ((uint64_t)(((-((int64_t)L_21)))));
 		G_B11_1 = G_B9_0;
 		goto IL_0085;
 	}
